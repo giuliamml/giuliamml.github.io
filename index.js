@@ -6,6 +6,8 @@ canvas.height = window.innerHeight;
 var c = canvas.getContext('2d');
 
 
+
+
 //full circles
 function Circle(x, y, dx, dy, radius, color) {
     this.x = x;
@@ -15,12 +17,18 @@ function Circle(x, y, dx, dy, radius, color) {
     this.radius = radius;
 
     this.draw = function () {
+        c.font = "50px Courier New";
+        c.textAlign = "center";
+        c.fillStyle = "black";
+        c.fillText("GIULIA MUMMOLO", canvas.width / 2, canvas.height / 2);
         c.beginPath();
         c.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
         c.strokeStyle = color;
         c.stroke();
         c.fillStyle = color;
         c.fill();
+
+
 
     }
     this.update = function () {
@@ -37,18 +45,20 @@ function Circle(x, y, dx, dy, radius, color) {
     }
 }
 
-function getRandomNumber(max){
+function getRandomNumber(max) {
     return Math.floor(Math.random() * Math.floor(max));
 }
 
-function getRandomColor(colorArray){
+function getRandomColor(colorArray) {
     var i = Math.floor(Math.random() * Math.floor(colorArray.length));
     return colorArray[i];
 }
 var colorArray = [
-    'pink',
-    'black',
-    'red'
+    "#090909",
+    "#ED07B5",
+    "#F9DBBD",
+    "#F9D6D6",
+    "#CEC2FF"
 ];
 
 var circleArray = [];
@@ -74,6 +84,10 @@ function animate() {
     }
 
 }
+
+
+
 animate();
+
 
 
