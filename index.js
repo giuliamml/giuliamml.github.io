@@ -1,4 +1,5 @@
 
+
 var canvas = document.querySelector('canvas');
 
 canvas.width = window.innerWidth;
@@ -17,10 +18,7 @@ function Circle(x, y, dx, dy, radius, color) {
     this.radius = radius;
 
     this.draw = function () {
-        c.font = "50px Courier New";
-        c.textAlign = "center";
         c.fillStyle = "black";
-        c.fillText("GIULIA MUMMOLO", canvas.width / 2, canvas.height / 2);
         c.beginPath();
         c.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
         c.strokeStyle = color;
@@ -54,16 +52,16 @@ function getRandomColor(colorArray) {
     return colorArray[i];
 }
 var colorArray = [
-    "#090909",
-    "#ED07B5",
-    "#F9DBBD",
+    // "#090909",
+    // "#ED07B5",
+    // "#F9DBBD",
     "#F9D6D6",
-    "#CEC2FF"
+    // "#CEC2FF"
 ];
 
 var circleArray = [];
-for (var i = 0; i < 200; i++) {
-    var radius = Math.random() * 50;
+for (var i = 0; i < 300; i++) {
+    var radius = Math.random() * 65;
     var x = Math.random() * (innerWidth - radius * 2) + radius;
     var y = Math.random() * (innerHeight - radius * 2) + radius;
     var dx = (Math.random() - 0.5) * 3;
@@ -88,6 +86,5 @@ function animate() {
 
 
 animate();
-
 
 

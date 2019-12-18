@@ -5,20 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href='https://fonts.googleapis.com/css?family=Courier Prime' rel='stylesheet'>
     <style type='text/css'>
         canvas {
             border: 1px solid black;
             width: 100%;
             height: 100%;
-            background-color: none;
+            background-color: black;
         }
 
         body {
             margin: 0;
             width: 100%;
             height: 100%;
-            
+
+
         }
+
+        text {
+            width: 100%;
+            height: 100%;
+        }
+
+        p {
+            font-size: 50px;
+            text-align: center;
+            font-family: 'Courier Prime';
+            color: black;
+            font-weight: bolder;
+            position: relative;
+            margin-top: -60vh;
+            margin-bottom: 0;
+
+        }
+        
+
+        span {
+            padding: 0 10px;
+            box-shadow: inset 0 -30px 0 0 magenta;
+
+
+        }
+
+
     </style>
     <title>Giulia Mummolo</title>
 </head>
@@ -26,8 +55,12 @@
 <body>
     <div class="text">
         <canvas></canvas>
+        <p><span id='name'>.Giulia Mummolo  </span></p>
+        
         <script src="index.js"></script>
+
     </div>
+
 
 
 
