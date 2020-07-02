@@ -1,10 +1,27 @@
 
 
-var canvas = document.querySelector('canvas');
+
+
+var canvas = document.getElementById('canvas_1');
 
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 var c = canvas.getContext('2d');
+
+
+$(function () {
+    var text = $(".text");
+    $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 100) {
+            text.removeClass("hidden");
+        } else {
+            text.addClass("hidden");
+        }
+    });
+});
+
 
 
 
@@ -54,13 +71,16 @@ function getRandomColor(colorArray) {
 var colorArray = [
     // "#090909",
     // "#ED07B5",
-    // "#F9DBBD",
-    "#F9D6D6",
+    //  "#F9DBBD",
+    // "#F9D6D6",
     // "#CEC2FF"
+    '#e9e2fb',
+    '#fbf5e2',
+    '#f5e2fb'
 ];
 
 var circleArray = [];
-for (var i = 0; i < 300; i++) {
+for (var i = 0; i < 100; i++) {
     var radius = Math.random() * 65;
     var x = Math.random() * (innerWidth - radius * 2) + radius;
     var y = Math.random() * (innerHeight - radius * 2) + radius;
@@ -86,5 +106,3 @@ function animate() {
 
 
 animate();
-
-

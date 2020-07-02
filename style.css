@@ -1,0 +1,537 @@
+@import url(//db.onlinewebfonts.com/c/3b303e246a0ce3c7575c1704602411f9?family=TypewriterGothicW01-Regular);
+/*fonts: main, for headings --> Work Sans
+secondary, for any other text --> Cutive Mono
+
+
+
+lilac: #e9e2fb
+pink:#f5e2fb
+white:#f9f9f9
+yellow:#fbf5e2
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+canvas {
+  border: 1px solid black;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  overflow-y: scroll;
+  background-color: black;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: mandatory;
+}
+
+text {
+  width: 100%;
+  height: 100%;
+}
+
+p {
+  font-size: 50px;
+  text-align: center;
+  font-family: "Cutive Mono";
+  color: black;
+  font-weight: bolder;
+  position: relative;
+  margin-top: -60vh;
+  margin-bottom: 0;
+}
+
+h1 {
+  font-family: "Cutive Mono";
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: none;
+  position: absolute;
+  font-family: "Cutive Mono";
+  display: inline;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.wrapper {
+  position: absolute;
+  height: 90%;
+  width: 80%;
+  background-color: rgba(0, 0, 0, 0.95);
+  top: 10%;
+  left: 10%;
+}
+
+.navigation {
+  margin-top: 75vh;
+  width: 100%;
+  display: block;
+  height: 400vh;
+  overflow: visible;
+}
+
+li {
+  display: inline;
+  color: fuchsia;
+}
+
+a {
+  text-decoration: none;
+  color: #e9e2fb;
+}
+
+h2 {
+  font-family: "Cutive Mono";
+  font-size: 80px;
+  text-align: center;
+  -webkit-text-stroke: 0.1px #f9d6d6;
+  -webkit-text-fill-color: black;
+  margin-bottom: -45px;
+  position: relative;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+#name {
+  margin-bottom: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  scroll-behavior: smooth;
+  scroll-snap-type: mandatory;
+  background-color: black;
+  display: inline;
+}
+
+.name_container li {
+  display: inline;
+  color: fuchsia;
+  text-transform: uppercase;
+  font-family: "Work Sans";
+}
+
+.navigation_container {
+  height: auto;
+  float: right;
+  text-align: right;
+  background-color: black;
+  z-index: 11119999;
+  position: sticky;
+  top: 0;
+}
+
+.landing_page {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  scroll-snap-align: center;
+  border-top: 1px solid white;
+}
+
+section h1 {
+  color: #fbf5e2;
+  font-family: "Cutive Mono";
+  font-size: 10rem;
+}
+
+.pages {
+  width: 100%;
+  display: grid;
+  height: 100%;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  list-style: none;
+  border-bottom: 0;
+  width: 100%;
+}
+
+.text li {
+  display: inline-block;
+  font-weight: 350;
+  font-size: 5rem;
+  color: rgb(237, 204, 248);
+  opacity: 1;
+  transition: all 0.8s ease-in-out;
+  max-width: 2em;
+}
+
+.text.hidden li.spaced {
+  padding-left: 0;
+  position: sticky;
+}
+.text li.spaced {
+  padding-left: 0.5em;
+  position: sticky;
+}
+
+.text.hidden li.ghost {
+  opacity: 0;
+  max-width: 0;
+  position: sticky;
+}
+
+.pages h1 {
+  font-size: 10rem;
+  margin: 0;
+  font-family: "Work Sans";
+  float: right;
+  text-transform: uppercase;
+  font-weight: 300;
+  width: 100%;
+  text-align: right;
+  position: relative;
+  top: 30%;
+  z-index: 11111;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+}
+
+/* CAROUSEL */
+
+.carousel {
+  grid-column-start: 2;
+  grid-column-end: span 8;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  height: 80%;
+  width: auto;
+  overflow: hidden;
+  z-index: 1111;
+}
+
+.carousel img {
+  width: auto;
+  height: 100%;
+  position: relative;
+  display: block;
+}
+
+.carousel button {
+  position: relative;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+
+.carousel span {
+  color: #f9f9f9;
+}
+
+.carousel_btns {
+  position: absolute;
+  z-index: 1;
+  padding-top: 0;
+  float: right;
+  right: 50%;
+}
+
+#fashion_text {
+  color: fuchsia;
+  font-size: 1rem;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  text-align: center;
+  z-index: 1111;
+  grid-column-start: 5;
+  grid-column-end: span 7;
+  grid-row-start: 5;
+  grid-row-end: span 6;
+  align-self: end;
+  padding-right: 2%;
+}
+/* 
+#fashion_heading {
+  grid-column-start: 5;
+  grid-column-end: span 7;
+  grid-row-start: 6;
+  grid-row-end: span 7;
+  font-size: 10rem;
+  padding-right: 2%;
+} */
+
+.second_carousel {
+  position: absolute;
+  overflow: hidden;
+  grid-column-start: 1;
+  grid-column-end: span 3;
+  grid-row-start: 1;
+  grid-row-end: span 5;
+  width: 35%;
+  height: 100%;
+}
+
+.second_carousel img {
+  width: auto;
+  height: 120%;
+  transform: translate(-30%, -20%);
+}
+
+/*---WEB DEV---*/
+button#web {
+  position: relative;
+  left: 45%;
+  border: 1px solid #f9f9f9;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: transparent;
+  color: #e9e2fb;
+  font-family: "Cutive Mono";
+  top: -40%;
+}
+
+section#web_development > img {
+  width: 50%;
+  height: auto;
+  position: absolute;
+  transform: translateY(-20%);
+}
+
+/*---CONTACTS---*/
+
+.email > p,
+.socials > p {
+  color: #f5e2fb;
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 100;
+  margin-top: 0;
+}
+
+#contacts {
+  height: 100vh;
+  display: grid;
+  flex-direction: row;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  justify-content: initial;
+}
+
+#email_link,
+#social_link {
+  font-size: 1rem;
+  position: relative;
+  font-weight: 100;
+  color: #fbf5e2;
+}
+
+#email_link:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: fuchsia;
+  visibility: hidden;
+  transition: all 0.9s ease-in-out;
+}
+
+#email_link:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+
+#social_link:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: fuchsia;
+  visibility: hidden;
+  transition: all 0.9s ease-in-out;
+}
+
+#social_link:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+
+li#separator {
+  font-size: 2rem;
+}
+
+.copyright {
+  width: 100%;
+  height: 20%;
+  position: relative;
+  background-color: black;
+}
+
+.copyright p {
+  color: fuchsia;
+  font-size: 0.5rem;
+  margin-top: 0;
+}
+
+#fashion {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 30% 5% 20% auto 5% auto;
+  grid-template-rows: 10% auto 5% 5% auto;
+  justify-content: initial;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+/*ABOUT*/
+section#about {
+  background-image: url("./images/photo.jpg");
+  background-repeat: no-repeat;
+  background-size: 25%;
+  background-position: 10% 20%;
+}
+
+section#about > p {
+  color: #f5e2fb;
+  font-size: 14px;
+  font-weight: normal;
+  margin-top: 10%;
+  margin-left: 25%;
+  margin-right: 10%;
+  text-align: left;
+  z-index: 1111;
+}
+
+/*projects page*/
+.projects-wrapper {
+  width: 100vw;
+  height: 100%;
+}
+
+.projects-wrapper > p {
+  font-size: 12px;
+  color: #e9e2fb;
+  margin-top: 0;
+  text-align: right;
+}
+
+.project>img {
+  width: 50%;
+  height: auto;
+  position: absolute;
+  left: 15%;
+  box-shadow: 0 4px 8px 0 #e9e2fb, 0 6px 20px 0 #e9e2fb;
+  z-index: 11112;
+}
+
+h1 {
+  color: #e9e2fb;
+  font-size: 10rem;
+  margin: 0;
+  font-family: "Work Sans";
+  float: right;
+  text-transform: uppercase;
+  font-weight: 300;
+  width: 100%;
+  text-align: right;
+  z-index: 11111;
+}
+
+h2 {
+  position: absolute;
+  left: 5%;
+}
+
+.project {
+  padding-top: 5%;
+}
+
+
+.project-text {
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px solid white;
+}
+
+.project-text > p {
+  color: #f5e2fb;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  font-family: "Cutive Mono";
+  margin: 0;
+  text-align: right;
+  z-index: 11111;
+  position: relative;
+  padding-bottom: 2%;
+}
+
+.project-text > h3 {
+  color: #fbf5e2;
+  text-transform: uppercase;
+  font-size: 5rem;
+  font-family: "Work Sans";
+  text-align: right;
+  margin: 0;
+  font-weight: normal;
+  z-index: 11111;
+  position: relative;
+}
+
+.project > h1 {
+  color: #f9f9f9;
+  opacity: 0.5;
+  font-size: 10rem;
+  font-family: "Cutive Mono";
+  text-align: left;
+  position: relative;
+  left: 2%;
+}
+
+.project-text > button {
+  position: relative;
+  border: 1px solid #f9f9f9;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: transparent;
+  color: #e9e2fb;
+  font-family: "Cutive Mono";
+  float: right;
+  margin-top:2%;
+}
