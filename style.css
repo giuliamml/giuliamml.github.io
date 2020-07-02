@@ -155,7 +155,7 @@ section {
   width: 100%;
   height: 100vh;
   scroll-snap-align: center;
-  border-top: 1px solid white;
+  /* border-top: 1px solid white; */
 }
 
 section h1 {
@@ -216,7 +216,6 @@ section h1 {
   width: 100%;
   text-align: right;
   position: relative;
-  top: 30%;
   z-index: 11111;
 }
 
@@ -280,15 +279,16 @@ img {
   align-self: end;
   padding-right: 2%;
 }
-/* 
+
 #fashion_heading {
   grid-column-start: 5;
   grid-column-end: span 7;
-  grid-row-start: 6;
-  grid-row-end: span 7;
+  grid-row-start: 2;
+  grid-row-end: span 2;
   font-size: 10rem;
   padding-right: 2%;
-} */
+  align-self: end;
+}
 
 .second_carousel {
   position: absolute;
@@ -308,6 +308,16 @@ img {
 }
 
 /*---WEB DEV---*/
+
+span {
+  width: 70%;
+  height: 1px;
+  display: inline-block;
+  position: absolute;
+  top: 25%;
+  left: 0;
+  background-color: #f9f9f9;
+}
 button#web {
   position: relative;
   left: 45%;
@@ -319,7 +329,6 @@ button#web {
   background-color: transparent;
   color: #e9e2fb;
   font-family: "Cutive Mono";
-  top: -40%;
 }
 
 section#web_development > img {
@@ -330,7 +339,10 @@ section#web_development > img {
 }
 
 /*---CONTACTS---*/
-
+span#contacts{
+  top:50%;
+ 
+}
 .email > p,
 .socials > p {
   color: #f5e2fb;
@@ -448,14 +460,15 @@ section#about > p {
   color: #e9e2fb;
   margin-top: 0;
   text-align: right;
+  padding-bottom: 5%;
 }
 
-.project>img {
+.project > video {
   width: 50%;
   height: auto;
   position: absolute;
   left: 15%;
-  box-shadow: 0 4px 8px 0 #e9e2fb, 0 6px 20px 0 #e9e2fb;
+  /* box-shadow: 0 4px 8px 0 #e9e2fb, 0 6px 20px 0 #e9e2fb; */
   z-index: 11112;
 }
 
@@ -478,19 +491,20 @@ h2 {
 }
 
 .project {
-  padding-top: 5%;
+  width: 100%;
+  height: 80vh;
+  padding: 5% 0;
+  position: relative;
 }
-
 
 .project-text {
   width: 100%;
-  height: 100%;
   border-bottom: 1px solid white;
 }
 
 .project-text > p {
   color: #f5e2fb;
-  text-transform: capitalize;
+  text-transform: none;
   font-size: 0.8rem;
   font-family: "Cutive Mono";
   margin: 0;
@@ -503,12 +517,12 @@ h2 {
 .project-text > h3 {
   color: #fbf5e2;
   text-transform: uppercase;
-  font-size: 5rem;
+  font-size: 3rem;
   font-family: "Work Sans";
   text-align: right;
   margin: 0;
   font-weight: normal;
-  z-index: 11111;
+  z-index: 111111;
   position: relative;
 }
 
@@ -533,5 +547,5 @@ h2 {
   color: #e9e2fb;
   font-family: "Cutive Mono";
   float: right;
-  margin-top:2%;
+  margin-top: 2%;
 }
