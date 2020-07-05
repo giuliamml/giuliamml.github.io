@@ -28,6 +28,7 @@ body {
   overflow: hidden;
   overflow-y: scroll;
   background-color: black;
+
 }
 
 html {
@@ -81,7 +82,7 @@ ul {
   margin-top: 75vh;
   width: 100%;
   display: block;
-  height: 400vh;
+  height: 285vh;
   overflow: visible;
 }
 
@@ -169,6 +170,7 @@ section h1 {
   display: grid;
   height: 100%;
   grid-template-rows: 1fr 1fr 1fr 1fr;
+  padding: 0 1%;
 }
 
 .text {
@@ -250,6 +252,7 @@ img {
   background-color: transparent;
   cursor: pointer;
   padding: 0;
+  width: 100%;
 }
 
 .carousel span {
@@ -319,8 +322,7 @@ span {
   background-color: #f9f9f9;
 }
 button#web {
-  position: relative;
-  left: 45%;
+  position: absolute;
   border: 1px solid #f9f9f9;
   width: 100px;
   height: 100px;
@@ -329,6 +331,8 @@ button#web {
   background-color: transparent;
   color: #e9e2fb;
   font-family: "Cutive Mono";
+  transform: translateY(250%);
+  right: 2%;
 }
 
 section#web_development > img {
@@ -339,10 +343,31 @@ section#web_development > img {
 }
 
 /*---CONTACTS---*/
-span#contacts{
-  top:50%;
- 
+span#contact {
+  top: 50%;
+  width: 40%;
 }
+section#contacts ul {
+  width: 100%;
+  padding:1%;
+}
+section#contacts li {
+  margin: 1%;
+  color: #e9e2fb;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: 'Work Sans';
+  font-weight: 500;
+}
+
+section#contacts a {
+  margin: 1%;
+  color: #e9e2fb;
+  font-size: 14px;
+  font-family: 'Cutive Mono';
+  margin:0;
+}
+
 .email > p,
 .socials > p {
   color: #f5e2fb;
@@ -353,11 +378,9 @@ span#contacts{
 }
 
 #contacts {
-  height: 100vh;
   display: grid;
-  flex-direction: row;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
   justify-content: initial;
+  height: 60vh;
 }
 
 #email_link,
@@ -411,6 +434,7 @@ li#separator {
   height: 20%;
   position: relative;
   background-color: black;
+  padding: 2%;
 }
 
 .copyright p {
@@ -450,9 +474,34 @@ section#about > p {
 }
 
 /*projects page*/
+
 .projects-wrapper {
   width: 100vw;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1%;
+}
+
+.nav {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  background-color: black;
+  z-index: 1111111;
+  border-bottom: 1px solid #fbf5e2;
+  padding: 1%;
+}
+
+.nav > a {
+  color: #fbf5e2;
+  font-size: 1rem;
+  font-family: "Work Sans";
+  margin-top: 0;
+  text-align: left;
+  font-weight: normal;
+  text-transform: uppercase;
+  border: none;
 }
 
 .projects-wrapper > p {
@@ -463,13 +512,20 @@ section#about > p {
   padding-bottom: 5%;
 }
 
-.project > video {
+.project > img {
   width: 50%;
   height: auto;
   position: absolute;
   left: 15%;
   /* box-shadow: 0 4px 8px 0 #e9e2fb, 0 6px 20px 0 #e9e2fb; */
   z-index: 11112;
+}
+
+.project > img#mobile {
+  width: 30%;
+  transform: translateX(50%);
+  left: 10%;
+  top: -15%;
 }
 
 h1 {
@@ -492,14 +548,13 @@ h2 {
 
 .project {
   width: 100%;
-  height: 80vh;
-  padding: 5% 0;
+  margin: 5% 0;
   position: relative;
 }
 
 .project-text {
   width: 100%;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #f9f9f9;
 }
 
 .project-text > p {
@@ -524,6 +579,7 @@ h2 {
   font-weight: normal;
   z-index: 111111;
   position: relative;
+  padding-bottom: 1%;
 }
 
 .project > h1 {
@@ -536,7 +592,7 @@ h2 {
   left: 2%;
 }
 
-.project-text > button {
+.project > button {
   position: relative;
   border: 1px solid #f9f9f9;
   width: 100px;
@@ -547,5 +603,99 @@ h2 {
   color: #e9e2fb;
   font-family: "Cutive Mono";
   float: right;
-  margin-top: 2%;
+  margin: 2%;
+  padding: 1%;
+  visibility: hidden;
+
+}
+
+.project-text > ul {
+  width: 90%;
+  border-bottom: 1px solid #f9f9f9;
+  text-align: right;
+  padding: 1% 2%;
+}
+
+div#project-contacts > h1 {
+  font-family: "Work Sans";
+}
+
+div#project-contacts {
+  margin-top: 5%;
+  height: auto;
+  display: grid;
+  grid-template-rows: 20% auto;
+  width: 100%;
+}
+
+div#project-contacts li {
+  font-size: 2rem;
+  font-family: "Work Sans";
+  text-transform: uppercase;
+  color: #e9e2fb;
+}
+
+div#project-contacts{
+  padding: 0 1%;
+}
+
+a {
+  cursor: pointer;
+  text-transform: lowercase;
+  font-family: "Cutive Mono";
+}
+
+/*project page*/
+.project-page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.single-project-text {
+  position: relative;
+  height: 30%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.single-project-text > h1 {
+  font-size: 6rem;
+  position: absolute;
+  color: white;
+}
+
+.single-project-text > hr {
+  height: 1px;
+  background-color: #f9f9f9;
+  width: 50%;
+  position: relative;
+  top: 7%;
+  float: left;
+}
+
+.single-project-text > p {
+  font-family: "Cutive Mono";
+  font-size: 1.5rem;
+  color: #e9e2fb;
+  margin-top: 0;
+}
+
+.project-content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 60% auto;
+}
+
+.project-content > img {
+  width: 60%;
+  height: auto;
+}
+
+.project-content > h3 {
+  color: #f5e2fb;
+  font-size: 0.8rem;
+  font-family: "Cutive Mono";
+  margin: 0;
 }
