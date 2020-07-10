@@ -188,7 +188,7 @@ yellow:#fbf5e2
   .text li {
     display: inline-block;
     font-weight: 350;
-    font-size: 5rem;
+    font-size: 6rem;
     color: rgb(237, 204, 248);
     opacity: 1;
     transition: all 0.8s ease-in-out;
@@ -334,7 +334,7 @@ yellow:#fbf5e2
     color: #e9e2fb;
     font-family: "Cutive Mono";
     transform: translateY(250%);
-    -ms-transform:  translateY(250%);
+    -ms-transform:  translateY(-100%);
     right: 2%;
   }
 
@@ -364,10 +364,7 @@ yellow:#fbf5e2
   }
 
   /*---CONTACTS---*/
-  span#contact {
-    top: 50%;
-    width: 40%;
-  }
+ 
   section#contacts ul {
     width: 100%;
     padding: 1%;
@@ -401,7 +398,7 @@ yellow:#fbf5e2
   }
 
   .section-heading-contacts span {
-    width: 40%;
+    width: 35%;
     height: 1px;
     position: relative;
     top: 50%;
@@ -788,6 +785,8 @@ yellow:#fbf5e2
     text-transform: uppercase;
     font-size: 2rem;
     text-align: center;
+    font-weight: 350;
+    font-size: 4rem;
   }
   .mobile p {
     color: black;
@@ -798,6 +797,7 @@ yellow:#fbf5e2
     margin: 0;
     padding: 0;
     text-align: center;
+    font-size: 1rem;
   }
 
   .pages {
@@ -818,10 +818,10 @@ yellow:#fbf5e2
   .mobile p,
   .mobile h1 {
     color: #f9f9f9;
-    font-weight: bolder;
-  }
+    font-weight: 350;
+    font-size: 1rem;  }
 
   .mobile h1 {
-    font-size: 5rem;
+    font-size: 6rem;
   }
 }

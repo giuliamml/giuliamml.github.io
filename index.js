@@ -1,11 +1,9 @@
 //home button navigation
 let btn = document.querySelector("button#web");
-console.log(btn)
+console.log(btn);
 btn.addEventListener("click", (e) => {
   window.location.replace("/projects.html");
 });
-
-
 
 var canvas = document.getElementById("canvas_1");
 
@@ -105,3 +103,4 @@ animate();
 // btn.addEventListener("click", (e) => {
 //   window.location.replace("/projects.html");
 // });
+
