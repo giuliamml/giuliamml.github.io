@@ -330,7 +330,7 @@ yellow:#fbf5e2
     font-family: "Cutive Mono";
     font-size: 1rem;
     transform: translateY(250%);
-    -ms-transform:  translateY(-30%);
+    -ms-transform:  translateY(-20%);
     right: 2%;
   }
 
@@ -401,7 +401,7 @@ yellow:#fbf5e2
     left: 0;
     background-color: #f9f9f9;
     transform: translateY(0);
-    -ms-transform: translateY(2000%);
+    -ms-transform: translateY(20000%);
 
   }
   .email > p,
