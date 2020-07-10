@@ -317,16 +317,7 @@ yellow:#fbf5e2
   }
 
   /*---WEB DEV---*/
-  /* 
-  span {
-    width: 70%;
-    height: 1px;
-    display: inline-block;
-    position: absolute;
-    top: 25%;
-    left: 0;
-    background-color: #f9f9f9;
-  } */
+
   button#web {
     position: absolute;
     border: 1px solid #f9f9f9;
