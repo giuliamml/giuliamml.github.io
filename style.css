@@ -401,7 +401,7 @@ yellow:#fbf5e2
     left: 0;
     background-color: #f9f9f9;
     transform: translateY(0);
-    -ms-transform: translateY(20000%);
+    -ms-transform: translateY(10000%);
 
   }
   .email > p,
