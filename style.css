@@ -334,6 +334,7 @@ yellow:#fbf5e2
     color: #e9e2fb;
     font-family: "Cutive Mono";
     transform: translateY(250%);
+    -ms-transform:  translateY(-250%);
     right: 2%;
   }
 
