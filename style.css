@@ -339,7 +339,7 @@ yellow:#fbf5e2
     font-family: "Cutive Mono";
     font-size: 1rem;
     transform: translateY(250%);
-    -ms-transform:  translateY(-80%);
+    -ms-transform:  translateY(-50%);
     right: 2%;
   }
 
@@ -409,6 +409,9 @@ yellow:#fbf5e2
     bottom: -50%;
     left: 0;
     background-color: #f9f9f9;
+    transform: translateY(0);
+    -ms-transform: translateY(200%);
+
   }
   .email > p,
   .socials > p {
