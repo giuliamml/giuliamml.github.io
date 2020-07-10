@@ -351,6 +351,10 @@ yellow:#fbf5e2
   section#contacts ul {
     width: 100%;
     padding: 1%;
+    position: relative;
+    text-align: right;
+    right: 2%;
+    padding-top:5%;
   }
   section#contacts li {
     margin: 1%;
@@ -379,7 +383,8 @@ yellow:#fbf5e2
   }
 
   #contacts {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     justify-content: initial;
     height: 60vh;
   }
@@ -467,9 +472,10 @@ yellow:#fbf5e2
     color: #f5e2fb;
     font-size: 14px;
     font-weight: normal;
-    margin-left: 40%;
+    margin-left: 46%;
     margin-top:1%;
     margin-right: 10%;
+    margin-bottom: 2%;
     text-align: left;
     z-index: 1111;
   }
