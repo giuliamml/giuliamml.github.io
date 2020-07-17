@@ -676,6 +676,16 @@ yellow:#fbf5e2
     padding: 1% 2%;
   }
 
+  .project-text > ul:nth-of-type(2) {
+    border-bottom: 0;
+    margin-top:3%;
+  }
+
+  .project-text  img {
+    height:50px;
+    width: auto;
+  }
+
   div#project-contacts > h1 {
     font-family: "Work Sans";
   }
