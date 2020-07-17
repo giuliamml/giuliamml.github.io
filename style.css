@@ -87,6 +87,8 @@ yellow:#fbf5e2
     overflow: visible;
   }
 
+  
+
   li {
     display: inline;
     color: fuchsia;
@@ -131,6 +133,8 @@ yellow:#fbf5e2
     text-transform: uppercase;
     font-family: "Work Sans";
   }
+
+ 
 
   .navigation_container {
     height: auto;
@@ -416,8 +420,7 @@ yellow:#fbf5e2
   #contacts {
     display: flex;
     flex-direction: column;
-    justify-content: initial;
-    height: 60vh;
+    height: 100vh;
   }
 
   #email_link,
@@ -508,6 +511,12 @@ yellow:#fbf5e2
     z-index: 1111;
     width: 50%;
   }
+
+  section#about  a {
+    text-transform: uppercase;
+    
+  }
+
   .section-heading-about {
     width: 100%;
     position: relative;
