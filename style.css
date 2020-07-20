@@ -87,8 +87,6 @@ yellow:#fbf5e2
     overflow: visible;
   }
 
-  
-
   li {
     display: inline;
     color: fuchsia;
@@ -133,8 +131,6 @@ yellow:#fbf5e2
     text-transform: uppercase;
     font-family: "Work Sans";
   }
-
- 
 
   .navigation_container {
     height: auto;
@@ -334,7 +330,7 @@ yellow:#fbf5e2
     font-family: "Cutive Mono";
     font-size: 1rem;
     transform: translateY(250%);
-    -ms-transform:  translateY(-20%);
+    -ms-transform: translateY(-20%);
     right: 2%;
   }
 
@@ -364,7 +360,7 @@ yellow:#fbf5e2
   }
 
   /*---CONTACTS---*/
- 
+
   section#contacts ul {
     width: 100%;
     padding: 1%;
@@ -406,7 +402,6 @@ yellow:#fbf5e2
     background-color: #f9f9f9;
     transform: translateY(0);
     -ms-transform: translateY(10000%);
-
   }
   .email > p,
   .socials > p {
@@ -512,9 +507,8 @@ yellow:#fbf5e2
     width: 50%;
   }
 
-  section#about  a {
+  section#about a {
     text-transform: uppercase;
-    
   }
 
   .section-heading-about {
@@ -563,6 +557,8 @@ yellow:#fbf5e2
     font-weight: 300;
     text-transform: uppercase;
     border: none;
+    position: relative;
+    left:1;
   }
 
   .projects-wrapper > p {
@@ -678,11 +674,11 @@ yellow:#fbf5e2
 
   .project-text > ul:nth-of-type(2) {
     border-bottom: 0;
-    margin-top:3%;
+    margin-top: 3%;
   }
 
-  .project-text  img {
-    height:50px;
+  .project-text img {
+    height: 50px;
     width: auto;
   }
 
@@ -829,6 +825,19 @@ yellow:#fbf5e2
     top: 30%;
     padding: 2% 0%;
   }
+
+  .projects-wrapper,
+  #project-contacts {
+    display: none;
+  }
+
+  #mobile-projects h1,
+  #mobile-projects p {
+    color: #f9f9f9;
+    font-size: 12px;
+  }
+
+ 
 }
 
 @media only screen and (min-width: 700px) {
@@ -836,9 +845,12 @@ yellow:#fbf5e2
   .mobile h1 {
     color: #f9f9f9;
     font-weight: 350;
-    font-size: 1rem;  }
+    font-size: 1rem;
+  }
 
   .mobile h1 {
     font-size: 6rem;
   }
+
+ 
 }
