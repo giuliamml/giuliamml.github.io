@@ -695,11 +695,12 @@ yellow:#fbf5e2
   }
 
   div#project-contacts {
-    margin-top: 5%;
+    margin-top: 10%;
     height: auto;
     width: 100%;
     height: 50px;
     position: relative;
+    z-index: 111111111;
   }
 
   div#project-contacts ul {
