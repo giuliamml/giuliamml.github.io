@@ -478,13 +478,15 @@ yellow:#fbf5e2
     position: relative;
     background-color: black;
     padding: 2%;
+    background-color: #fbf5e2;
   }
+  
 
   .copyright p {
     color: fuchsia;
     font-size: 0.8rem;
     margin-top: 0;
-    
+
   }
 
   #fashion {
