@@ -1,10 +1,12 @@
 //home button navigation
-let btn = document.querySelector("button#web");
-console.log(btn);
-btn.addEventListener("click", (e) => {
-  window.location.replace("/projects.html");
+let webBtn = document.querySelector("button#web");
+console.log(webBtn);
+webBtn.addEventListener("click", (e) => {
+  window.location.replace("./projects.html");
 });
 
+
+//canvas animation
 var canvas = document.getElementById("canvas_1");
 
 canvas.width = window.innerWidth;
