@@ -103,6 +103,48 @@
     text-transform: uppercase;
   }
 
+  /*----- coming soon section ----*/
+
+  h1.coming-soon{
+    text-align: center;
+    transform: translateY(50%);
+  }
+
+  span.animation {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 0.5rem;
+    animation: scaling 2.5s ease-in-out infinite;
+  }
+  
+  span.animation:nth-of-type(1) {
+    animation-delay: 0.2s;
+  }
+  
+  span.animation:nth-of-type(2) {
+    animation-delay: 0.4s;
+  }
+  
+  span.animation:nth-of-type(3) {
+    animation-delay: 0.6s;
+  }
+  
+  @keyframes scaling {
+    0% {
+      transform: scale(0.2);
+      background-color: #e9e2fb;
+    }
+  
+    50% {
+      transform: scale(1);
+      background-color: #f5e2fb;
+    }
+  }
+/*--------*/
+
+
   #name {
     margin-bottom: 0;
   }
