@@ -6,6 +6,39 @@ webBtn.addEventListener("click", (e) => {
 });
 
 
+//coming soon alert
+let comingSoonBtn = document.querySelector("li#coming-soon")
+console.log(comingSoonBtn)
+comingSoonBtn.addEventListener("click", (e) => {
+  var box = document.createElement("div");
+  box.innerHTML = '<h3>coming soon</h3><button id="close">close</button>'
+  box.style.width='200px';
+  box.style.height='200px';
+  box.style.borderRadius = '50%';
+  box.style.fontSize = '12px';
+  box.style.background = '#fbf5e2';
+  box.style.position = 'absolute';
+  box.style.top='50%';
+  box.style.left='55%';
+  box.style.textAlign = 'center'
+  document.body.appendChild(box); 
+
+  let closeBtn = document.querySelector('button#close')
+  closeBtn.style.background = 'transparent';
+  closeBtn.style.border = 'none';
+  closeBtn.style.textDecoration = 'underline'
+  closeBtn.style.cursor = 'pointer';
+  closeBtn.style.position = 'absolute';
+  closeBtn.style.bottom= '20%';
+  closeBtn.style.transform = 'translateX(-50%)'
+  closeBtn.addEventListener('click', e=> {
+    box.remove()
+  })
+
+
+});
+
+
 //canvas animation
 var canvas = document.getElementById("canvas_1");
 

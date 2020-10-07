@@ -80,7 +80,7 @@
 
   li {
     display: inline;
-    color: fuchsia;
+    color: #e9e2fb;
     letter-spacing: 0.0625em;
   }
 
@@ -101,6 +101,15 @@
     position: relative;
     margin-top: 0;
     text-transform: uppercase;
+  }
+
+  h3{
+    font-size: 1rem;
+    color: black;
+    font-family: 'IBM Plex Mono', monospace;
+    position: relative;
+    top:30%;
+
   }
 
   /*----- coming soon section ----*/
