@@ -5,9 +5,6 @@ webBtn.addEventListener("click", (e) => {
   window.location.replace("./projects.html");
 });
 
-
-
-
 //canvas animation
 var canvas = document.getElementById("canvas_1");
 

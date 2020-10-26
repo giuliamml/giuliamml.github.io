@@ -112,6 +112,9 @@
 
   }
 
+  sup{
+    text-transform: uppercase;
+  }
 
   #name {
     margin-bottom: 0;
