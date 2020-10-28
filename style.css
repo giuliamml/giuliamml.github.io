@@ -1,4 +1,3 @@
-
 * {
   box-sizing: border-box;
 }
@@ -35,7 +34,7 @@
   p {
     font-size: 50px;
     text-align: center;
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: "IBM Plex Mono", monospace;
     color: black;
     font-weight: bolder;
     position: relative;
@@ -45,7 +44,7 @@
   }
 
   h1 {
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: "IBM Plex Mono", monospace;
   }
 
   ul {
@@ -55,7 +54,7 @@
     overflow: hidden;
     background-color: none;
     position: absolute;
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: "IBM Plex Mono", monospace;
     display: inline;
     font-weight: 400;
     font-style: normal;
@@ -92,7 +91,7 @@
   }
 
   h2 {
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: "IBM Plex Mono", monospace;
     font-size: 80px;
     text-align: center;
     -webkit-text-stroke: 0.1px #f9d6d6;
@@ -103,16 +102,15 @@
     text-transform: uppercase;
   }
 
-  h3{
+  h3 {
     font-size: 1rem;
     color: black;
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: "IBM Plex Mono", monospace;
     position: relative;
-    top:30%;
-
+    top: 30%;
   }
 
-  sup{
+  sup {
     text-transform: uppercase;
   }
 
@@ -135,7 +133,7 @@
   .name_container li {
     display: inline;
     color: fuchsia;
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: "IBM Plex Mono", monospace;
     font-weight: 350;
   }
 
@@ -154,7 +152,7 @@
     font-size: 1rem;
   }
 
-  .navigation_container li:nth-last-of-type(1){
+  .navigation_container li:nth-last-of-type(1) {
     text-align: left;
   }
 
@@ -178,7 +176,7 @@
 
   section h1 {
     color: #fbf5e2;
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: "IBM Plex Mono", monospace;
     font-size: 10rem;
   }
 
@@ -228,7 +226,7 @@
   .pages h1 {
     font-size: 10rem;
     margin: 0;
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: "IBM Plex Mono", monospace;
     float: right;
     text-transform: uppercase;
     font-weight: 300;
@@ -329,7 +327,8 @@
 
   /*---WEB DEV---*/
 
-  button#web, button#journal {
+  button#web,
+  button#journal {
     position: absolute;
     border: 1px solid #f9f9f9;
     width: 100px;
@@ -338,7 +337,7 @@
     cursor: pointer;
     background-color: transparent;
     color: #e9e2fb;
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: "IBM Plex Mono", monospace;
     font-size: 1rem;
     transform: translateY(250%);
     -ms-transform: translateY(-20%);
@@ -372,7 +371,7 @@
 
   /*---CONTACTS---*/
 
-  #home-contacts{
+  #home-contacts {
     width: 100%;
     position: relative;
     top: 30%;
@@ -384,16 +383,14 @@
     position: relative;
     text-align: right;
     margin-top: 50%;
-    
   }
-
 
   section#contacts li {
     margin: 1%;
     color: #e9e2fb;
     font-size: 1rem;
     text-transform: uppercase;
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: "IBM Plex Mono", monospace;
     font-weight: 500;
   }
 
@@ -401,7 +398,7 @@
     margin: 1%;
     color: #e9e2fb;
     font-size: 1rem;
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: "IBM Plex Mono", monospace;
     margin: 0;
   }
 
@@ -455,15 +452,12 @@
     position: relative;
     background-color: black;
     padding: 2%;
-
   }
-  
 
   .copyright p {
     color: fuchsia;
     font-size: 0.8rem;
     margin-top: 0;
-
   }
 
   #fashion {
@@ -543,7 +537,7 @@
   .nav > a {
     color: #fbf5e2;
     font-size: 1.5rem;
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: "IBM Plex Mono", monospace;
     margin-top: 0;
     text-align: left;
     font-weight: 300;
@@ -581,7 +575,7 @@
     color: #e9e2fb;
     font-size: 8rem;
     margin: 0;
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: "IBM Plex Mono", monospace;
     float: right;
     text-transform: uppercase;
     font-weight: 300;
@@ -610,7 +604,7 @@
     color: #f5e2fb;
     text-transform: none;
     font-size: 0.8rem;
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: "IBM Plex Mono", monospace;
     margin: 0;
     text-align: right;
     z-index: 11111;
@@ -622,7 +616,7 @@
     color: #fbf5e2;
     text-transform: uppercase;
     font-size: 3rem;
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: "IBM Plex Mono", monospace;
     text-align: right;
     margin: 0;
     font-weight: normal;
@@ -635,7 +629,7 @@
     color: #f9f9f9;
     opacity: 0.5;
     font-size: 10rem;
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: "IBM Plex Mono", monospace;
     text-align: left;
     position: relative;
     left: 2%;
@@ -650,7 +644,7 @@
     cursor: pointer;
     background-color: transparent;
     color: #e9e2fb;
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: "IBM Plex Mono", monospace;
     float: right;
     margin: 2%;
     padding: 1%;
@@ -675,7 +669,7 @@
   }
 
   div#project-contacts > h1 {
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: "IBM Plex Mono", monospace;
   }
 
   div#project-contacts {
@@ -694,7 +688,7 @@
 
   div#project-contacts li {
     font-size: 2rem;
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: "IBM Plex Mono", monospace;
     text-transform: uppercase;
     color: #e9e2fb;
   }
@@ -706,7 +700,7 @@
   a {
     cursor: pointer;
     text-transform: lowercase;
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: "IBM Plex Mono", monospace;
   }
 
   /*project page*/
@@ -740,7 +734,7 @@
   }
 
   .single-project-text > p {
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: "IBM Plex Mono", monospace;
     font-size: 1.5rem;
     color: #e9e2fb;
     margin-top: 0;
@@ -760,91 +754,211 @@
   .project-content > h3 {
     color: #f5e2fb;
     font-size: 0.8rem;
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: "IBM Plex Mono", monospace;
     margin: 0;
+  }
+
+  #burger-menu-container,
+  .mobile-name,
+  .burger-menu-items,
+  .mobile-project-text {
+    display: none;
   }
 }
 
 @media only screen and (max-width: 1199px) {
   body {
-    background-color: black;
     height: 100vh;
-    overflow: hidden;
+    width: 100vw;
+    background-color: black;
+    margin: 0;
+  }
+  h1 {
+    font-size: 2rem;
+    font-family: "IBM Plex Mono", monospace;
+    color: #fbf5e2;
+    text-transform: lowercase;
+    margin: 0;
+    position: relative;
+    text-align: center;
+  }
+  h3 {
+    font-size: 1rem;
+    font-family: "IBM Plex Mono", monospace;
+    color: #f9f9f9;
+    text-transform: uppercase;
+    margin: 0;
+    position: relative;
+    text-align: center;
+    padding-bottom: 2%;
+  }
+  a {
+    text-decoration: none;
+    color: #f9d6d6;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .mobile-name {
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    background-color: rgb(0, 0, 0, 0.9);
+    top: 10%;
+    left: 10%;
   }
   canvas {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
-    top: 0;
-    position: absolute;
-  }
-  .wrapper {
-    position: none;
-  }
-  .mobile {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
   }
 
-  .mobile h1 {
-    color: black;
-    position: absolute;
-    z-index: 111111;
-    position: relative;
-    padding-top: 30%;
-    font-family: 'IBM Plex Mono', monospace;
-    text-transform: uppercase;
-    font-size: 2rem;
-    text-align: center;
-    font-weight: 350;
-    font-size: 4rem;
+  .wrapper,
+  .mobile,
+  .pages,
+  .contacts,
+  .copyright,
+  .nav,
+  .project-text {
+    display: none;
   }
-  .mobile p {
-    color: black;
-    z-index: 111111;
-    top: 35%;
-    position: relative;
-    font-family: 'IBM Plex Mono', monospace;
+
+  #burger-menu-container {
+    display: inline-block;
+    cursor: pointer;
+    left: 5%;
+    top: 5%;
+    position: absolute;
+    z-index: 119;
+  }
+
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 35px;
+    height: 1px;
+    background-color: #fbf5e2;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-3px, 2px);
+  }
+
+  .change .bar2 {
+    opacity: 0;
+  }
+
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+
+  .burger-menu-items,
+  .burger-menu-items-projects {
+    display: none;
+  }
+  .burger-menu-items li {
+    margin: 0;
+    padding: 10%;
+  }
+  .burger-menu-items ul {
     margin: 0;
     padding: 0;
-    text-align: center;
-    font-size: 1rem;
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+  }
+  .burger-menu-items a {
+    left: 0;
+    display: inline;
   }
 
-  .pages {
-    display: none;
+  .mobile-contacts ul {
+    margin: 0;
+    padding: 0;
+    padding-top: 20%;
   }
-  .navigation {
-    display: none;
-  }
-  .mobile > div {
-    width: 100%;
+
+  .mobile-contacts li,
+  a,
+  img {
+    width: 50px;
+    height: 50px;
+    margin: 5% 0;
+    display: block;
     position: relative;
-    top: 30%;
-    padding: 2% 0%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .mobile-about-container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./images/photo-min.jpg);
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: 50% 20%;
+    padding-top: 5%;
+  }
+  .mobile-about-container a {
+    left: 0;
+    display: inline;
+  }
+  p {
+    margin: 0 5%;
+    text-align: center;
+    color: #fbf5e2;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.0625em;
+    position: relative;
+    top: 60%;
+    transform: translateY(-50%);
   }
 
   .projects-wrapper,
-  #project-contacts {
+  .mobile-contacts {
+    width: 100vw;
+    padding: 5% 0;
+  }
+  .projects-wrapper p {
+    top: 0;
+    transform: none;
+  }
+  .project h1,
+  button {
     display: none;
   }
-
-  #mobile-projects h1,
-  #mobile-projects p {
-    color: #f9f9f9;
-    font-size: 12px;
+  .project img {
+    width: 300px;
+    height: auto;
+    margin: 0;
   }
-}
-
-@media only screen and (min-width: 700px) {
-  .mobile p,
-  .mobile h1 {
-    color: #f9f9f9;
-    font-weight: 350;
-    font-size: 1rem;
+  .mobile-project-text img {
+    width: 50px;
+  }
+  .mobile-project-text ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    padding: 1% 0;
+    border-top: 1px solid #f5e2fb;
+    border-bottom: 1px solid #f5e2fb;
+  }
+  .mobile-project-text li {
+    display: inline-block;
+  }
+  .mobile-project-text a {
+    left: 0;
+    display: inline;
+  }
+  .mobile-project-text img {
+    left: 60%;
+    transform: none;
   }
 
-  .mobile h1 {
-    font-size: 6rem;
+  .project {
+    padding-top: 10%;
   }
 }

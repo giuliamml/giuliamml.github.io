@@ -7,31 +7,36 @@
       href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;400&display=swap"
       rel="stylesheet"
     />
+    <script src="./index.js"></script>
 
     <link
       href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Work+Sans:wght@100;400&display=swap"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="style.css" />
-    <title>GIULIA MUMMOLO</title>
+    <title>PROJECTS</title>
   </head>
   <body>
-    <div class="mobile" id="mobile-projects">
-      <h1>Giulia Mummolo</h1>
-      <div>
-        <p>
-          oh no! your screen is too tiny, please view my website on desktop!
-        </p>
-      </div>
-      <p>• • •</p>
-      <div>
-        <p>
-          oh no! lo schermo che stai utilizzando sembra essere troppo piccolo,
-          visita questo sito con un computer!
-        </p>
-      </div>
+    <div id="burger-menu-container" onclick="menuOpen()">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
     </div>
+    <div class="burger-menu-items">
+      <ul>
+        <li>
+          <a href="http://journal.giuliamummolo.com/journal/"
+            >journal<sup>NEW</sup></a
+          >
+        </li>
+        <li><a href="./projects.html">web development</a></li>
+        <li><a href="./contacts.html">contacts</a></li>
+        <li><a href="./about.html">about</a></li>
+        <li><a href="http://giuliamummolo.com/">home</a></li>
+        <li><a href="./files/giulia-mummolo-cv.pdf" target="_blank">cv</a></li>
+      </ul>
+    </div>
+
     <div class="projects-wrapper">
       <div class="nav">
         <a href="./index.html">giulia mummolo</a>
@@ -41,7 +46,28 @@
       <p>a collection of web development projects</p>
       <div class="project" id="1">
         <h1>01</h1>
+
         <img src="./videos/restaurant-app-2.gif" />
+        <div class="mobile-project-text">
+          <h3>react recipes application</h3>
+          <ul>
+            <li>
+              <a
+                href="https://github.com/giuliamml/React-recipes-book"
+                target="_blank"
+                >github .</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.figma.com/file/VQz2NrvK8lPykD91kedoKJ/e-commerce_2?node-id=43%3A2"
+                target="_blank"
+              >
+                design</a
+              >
+            </li>
+          </ul>
+        </div>
 
         <div class="project-text">
           <h3>react recipes app</h3>
@@ -75,6 +101,25 @@
         <h1>02</h1>
 
         <img src="./videos/bank-app-2.gif" />
+        <div class="mobile-project-text">
+          <h3>react banking application</h3>
+          <ul>
+            <li>
+              <a
+                href="https://github.com/giuliamml/React-banking-app"
+                target="_blank"
+                >github .</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.figma.com/file/hPxZJx1pfv8uiOdB83kAVT/Banking-App?node-id=0%3A1"
+                target="_blank"
+                >design</a
+              >
+            </li>
+          </ul>
+        </div>
         <div class="project-text">
           <h3>react banking app</h3>
           <ul>
@@ -103,6 +148,25 @@
       <div class="project" id="3">
         <h1>03</h1>
         <img src="./videos/ecommerce-app-2.gif" />
+        <div class="mobile-project-text">
+          <h3>javascript e-commerce website</h3>
+          <ul>
+            <li>
+              <a
+                href="https://github.com/giuliamml/e-commerce-project-london-pt-fe-030320"
+                target="_blank"
+                >github .</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.figma.com/file/P6jTYHEAFjm7Dm6d0E9oMr/E_COM"
+                target="_blank"
+                >design</a
+              >
+            </li>
+          </ul>
+        </div>
         <div class="project-text">
           <h3>ecommerce design</h3>
           <ul>
@@ -132,6 +196,25 @@
       <div class="project" id="4">
         <h1>04</h1>
         <img src="./videos/twitter-app-2.gif" id="mobile" />
+        <div class="mobile-project-text">
+          <h3>javascript twitter prototype</h3>
+          <ul>
+            <li>
+              <a
+                href="https://github.com/giuliamml/twitter-project-london-pt-fe-030320"
+                target="_blank"
+                >github .</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.figma.com/file/XZaHZskW8etyyJsdmcmlR5/Twitter-app"
+                target="_blank"
+                >design</a
+              >
+            </li>
+          </ul>
+        </div>
         <div class="project-text">
           <h3>twitter prototype</h3>
           <ul>
@@ -164,31 +247,33 @@
       <ul>
         <li>
           <a id="email_link" href="mailto:mail@giuliamummolo.com"
-            ><img src="./images/icons/email.png"></a
-          >
+            ><img src="./images/icons/email.png"
+          /></a>
         </li>
         <li>
           <a
             id="social_link"
             href="https://www.linkedin.com/in/giulia-mummolo-1042b798/"
-            ><img src="./images/icons/linkedin.png"></a
-          >
+            ><img src="./images/icons/linkedin.png"
+          /></a>
         </li>
         <li>
           <a id="social_link" href="https://www.instagram.com/giuliamml/"
-            ><img src="./images/icons/instagraml.png"></a
-          >
+            ><img src="./images/icons/instagraml.png"
+          /></a>
         </li>
         <li>
-          <a id="social_link" href="https://github.com/giuliamml"><img src="./images/icons/github.png"> </a>
+          <a id="social_link" href="https://github.com/giuliamml"
+            ><img src="./images/icons/github.png" />
+          </a>
         </li>
       </ul>
     </div>
     <div class="copyright">
       <p>&#169; copyright 2020 - all right reserved Giulia Mummolo</p>
     </div>
-     <script src="projectsList.js"></script>
-    <script src="projects.js"></script>
+    <script src="./index.js"></script>
+
     <script
       async
       defer

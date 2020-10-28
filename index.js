@@ -5,6 +5,31 @@ webBtn.addEventListener("click", (e) => {
   window.location.replace("./projects.html");
 });
 
+//burger-menu-logic
+
+function menuOpen() {
+
+  let burgerMenu = document.querySelector("div#burger-menu-container");
+  let burgerMenuItems = document.querySelector("div.burger-menu-items");
+  
+  burgerMenu.classList.toggle("change");
+
+  if (burgerMenu.className === "") {
+    burgerMenuItems.style.display = "none";
+  } else if (burgerMenu.className === "change") {
+    burgerMenuItems.style.display = 'flex';
+    burgerMenuItems.style.flexDirection = 'column';
+    burgerMenuItems.style.width = '50vw';
+    burgerMenuItems.style.height = '100vh';
+    burgerMenuItems.style.position = 'absolute';
+    burgerMenuItems.style.zIndex = "1";
+    burgerMenuItems.style.background = 'black';
+  }
+}
+
+
+
+
 //canvas animation
 var canvas = document.getElementById("canvas_1");
 
