@@ -807,6 +807,13 @@
     top: 10%;
     left: 10%;
   }
+
+  .mobile-name h1{
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: 100;
+  }
+
   canvas {
     width: 100vw;
     height: 100vh;
