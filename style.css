@@ -761,7 +761,7 @@
   #burger-menu-container,
   .mobile-name,
   .burger-menu-items,
-  .mobile-project-text {
+  .mobile-project-text, #mobile-name {
     display: none;
   }
 }
