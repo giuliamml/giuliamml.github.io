@@ -87,7 +87,7 @@
     text-decoration: none;
     color: #e9e2fb;
     letter-spacing: 0.0625em;
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   h2 {
@@ -484,7 +484,8 @@
 
   section#about > p {
     color: #f5e2fb;
-    font-size: 0.8rem;
+    font-size: 1rem;
+    font-weight: lighter;
     margin-left: 46%;
     margin-top: 1%;
     text-align: left;
@@ -541,14 +542,13 @@
     margin-top: 0;
     text-align: left;
     font-weight: 300;
-    text-transform: uppercase;
     border: none;
     position: relative;
     left: 1;
   }
 
   .projects-wrapper > p {
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: #e9e2fb;
     margin-top: 0;
     text-align: right;
@@ -935,7 +935,7 @@
     text-align: center;
     color: #fbf5e2;
     font-family: "IBM Plex Mono", monospace;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     letter-spacing: 0.0625em;
     position: relative;
     top: 60%;
