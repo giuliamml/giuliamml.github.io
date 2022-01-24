@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./index.js"></script>
+
+    <title>The Clothing Loop</title>
+  </head>
+  <body>
+    <div class="single-project-container">
+      <div class="header" id="single-project">
+        <div id="burger-menu-container" onclick="menuOpen()">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+
+        <div class="burger-menu-items" id="homepage">
+          <ul>
+            <li><span>00</span><a href="./index.html">Home </a></li>
+            <li><span>01</span><a href="./about.html">About </a></li>
+            <li><span>02</span><a href="./journal.html">Journal </a></li>
+            <li><span>03</span><a href="./projects.html">Projects </a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="template">
+        <div class="intro-text">
+          <h1>The Clothing Loop app development</h1>
+
+          <div class="subtitle">
+            <h3>
+              How I built and managed a fully customized digital solution for
+              the global expansion of a clothing swap initiative.
+            </h3>
+          </div>
+
+          <button class="view-more">
+            <a
+              href="./projects.html"
+              class="ca3-scroll-down-link ca3-scroll-down-arrow"
+              data-ca3_iconfont="ETmodules"
+              data-ca3_icon=""
+            ></a>
+          </button>
+          <!-- <img src="./images/icons/arrowIcondown.png" alt="" /> -->
+        </div>
+
+        <div class="intro-img">
+          <div class="img-wrapper">
+            <img src="./images/intro-img-tcl.png" alt="" />
+          </div>
+        </div>
+
+        <div class="overview">
+          <div class="intro">
+            <h5>Project Overview</h5>
+            <p>
+              The Clothing Loop is a clothing swap system that lets you share
+              pre-loved clothes by connecting people in local communities that
+              share a bag of clothes. <br />
+              <mark
+                >The Clothing Loop won the What Design Can Do competition set up
+                by Impact Hub.</mark
+              >
+              <br />
+              The initiative started in The Netherlands in early 2020 as a local
+              alternative for clothing swap events during lockdown. <br />
+              <br />
+              The initiative tackles the growing problem of overconsumption. It
+              aims to change consumers habits and reduce waste, providing a fun
+              and sustainable alternative to fast fashion. Currently, there are
+              300 actively circulating bags and over <mark>12,000 users.</mark>
+            </p>
+          </div>
+
+          <div class="specs">
+            <div class="single-spec">
+              <h5>Role</h5>
+              <p>Front-End developer & team coordinator</p>
+            </div>
+            <div class="single-spec">
+              <h5>Tech Stack</h5>
+              <div class="tech-stack">
+                <div><img src="./images/icons/react.svg" alt="" /></div>
+                <div><img src="./images/icons/typescript.png" alt="" /></div>
+                <div><img src="./images/icons/firebase.png" alt="" /></div>
+              </div>
+            </div>
+            <div class="single-spec">
+              <h5>Period</h5>
+              <p>April 2021 - ongoing</p>
+            </div>
+            <div class="single-spec">
+              <h5>Launched</h5>
+              <p>January 2022</p>
+            </div>
+            <div class="single-spec">
+              <h5>Website</h5>
+              <a class="project-link" href="https://www.clothingloop.org/"
+                >clothingloop.org</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h1>Role</h1>
+          <p>
+            I joined the project in April 2020 as a volunteer Front-end
+            developer, as I really value the initiative's goal but also to
+            challenge my coding skills. At the beginning, we were a team of 4
+            contributors. During that time, I mainly contributed with some
+            front-end implementations. <br />
+            In July 2020, as the project started to grow, I was hired as
+            technical consultant for the project. Under this role, my
+            contribution extended to design and project management (more on a
+            separate page).
+          </p>
+          <div class="section-img">
+            <img src="./images/contribuiton.png" alt="" />
+          </div>
+          <p>
+            As a technical consultant, I am responsible for implementing
+            features, design decision-making as well as team management and
+            building. During the first development phase, I put together a team
+            of 5 volunteer web developers which I have scouted via
+            socialcoder.co.uk.
+          </p>
+          <div class="section-img">
+            <img src="./images/contribuitors.png" alt="" />
+          </div>
+        </div>
+
+        <div class="section">
+          <h1>Requirements</h1>
+          <p>
+            The web app was developed to easily automate the process of user
+            onboarding (which previously was manually done using a google form),
+            securely store and manage user data via a fully customized
+            back-office.<br />
+            From the above requirements, the main functionalities designed
+            include:
+          </p>
+
+          <ul>
+            <li>Automated user signup flow</li>
+            <li>Interactive data visualization through a map view</li>
+            <li>Data management through a corresponding backoffice</li>
+          </ul>
+
+          <div class="section-img">
+            <img src="./images/diagram-flow.png" alt="" />
+            <a
+              href="https://www.figma.com/file/V9Jo717A2Pxr3Xl3EUloX5/The-Clothing-Loop---website-flow?node-id=0%3A1"
+              ><p>- view full diagram flow -</p></a
+            >
+          </div>
+        </div>
+
+        <div class="section">
+          <h1>Development</h1>
+          <p>
+            For the first iteration of the web application, despite having
+            designed the full application (see more about the design process
+            here and the full design here), the core components I have developed
+            are:
+          </p>
+          <ul>
+            <li>
+              Front-end part of signup form used for two flow: 1. for users to
+              join an existing entry (aka bag of clothes) and 2. to start a new
+              one. It includes components from Material UI library, Mapbox
+              geolocation search. The form also has validation which has been
+              built using Formik and Yup libraries. The Front-end communicates
+              to Firebase via an end-point which has been built using using
+              custom made Firebase functions.
+
+              <div class="img-wrapper">
+                <img src="./images/gifs/form.gif" alt="" />
+              </div>
+            </li>
+
+            <li>
+              On of core functionalities of the web app, and the first users
+              interact with, is the map visualization which lets the user find a
+              bag of clothes circulating around their preferred location. The
+              bags are displayed via an interactive Mapbox map UI, users can
+              search for a specific location, filter entries by categories and
+              sizes.
+
+              <div class="img-wrapper">
+                <img src="./images/gifs/map.gif" alt="" />
+              </div>
+            </li>
+
+            <li>
+              The landing page was designed by a professional designer as a
+              volunteer contribution to the project. My work on this component
+              extended to the coding implementation which includes a combination
+              of CSS and JS animations.
+
+              <div class="img-wrapper">
+                <video width="400" autoplay muted loop>
+                  <source
+                    src="./images/videos/landingpage.mov"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h1>Project management</h1>
+
+          <p>
+            To manage the project's work flow and accordingly coordinate the
+            work load through the team members, I use a spreadsheet which breaks
+            down overall features that need to be implemented and their status:
+            <span class="underline">planning/shaping</span> for features that
+            are still at the design phase and not yet agreed one or outlined;
+            <span class="underline">building</span> for features that in the
+            process of being coded; <span class="underline">completed</span> for
+            features built and approved.
+          </p>
+
+          <div class="section-img">
+            <img src="./images/sheet.png" alt="" />
+          </div>
+
+          <p>
+            In order to keep a constant work flow, I create Github issues for
+            each feature that requires implementation. Then, team members
+            self-assign issues based on their preference. I found this strategy
+            works quite well for this project's circumstances; it keeps the work
+            flowing, even when contributors work on different time
+            zones/availability and keeps them motivated to manage their work
+            independently. <br /><br />
+            The majority of the communications across the team is asynchronous
+            as the contributors are based across several countries in Europe and
+            Asia. However, we check-in on a weekly basis via video call and
+            discuss implementations on Slack.
+          </p>
+        </div>
+
+        <div class="section">
+          <h1>Technologies</h1>
+          <p>
+            The decision-making process for the technology used to develop the
+            web application was done by the initiator of the the project and a
+            senior developer who was part of the team. The technologies stack
+            includes:
+          </p>
+
+          <div class="tech-stack">
+            <div class="frontend">
+              <h3>Frontend</h3>
+              <p>
+                It is built using <mark>React</mark> and
+                <mark>Typescript</mark>. We are using several libraries
+                including <span class="underline">Mapbox</span> - for the map
+                visualization; <span class="underline">Material UI</span> - for
+                UI components; <span class="underline">i18Next</span> - for
+                internationalization; <span class="underline">Helmet</span> - to
+                generate meta tags; <span class="underline">Formik</span> - for
+                forms validation
+              </p>
+            </div>
+
+            <div class="backend">
+              <h3>Backend</h3>
+              <p>
+                It is built using <mark>Firebase - Firestore Databse</mark>,
+                which is fully customized using Firebase Functions
+              </p>
+            </div>
+          </div>
+
+          <h1>Project links</h1>
+          <div class="links">
+            <div class="link-icon">
+              <a href="https://www.clothingloop.org/"
+                ><img src="./images/icons/link.png" alt=""
+              /></a>
+            </div>
+            <div class="link-icon">
+              <a
+                href="https://www.figma.com/file/IyRXwabKQqCUEqBPCd4Zlh/The-Clothing-Loop---web-app-design?node-id=0%3A1"
+              >
+                <img src="./images/icons/figma.png" alt="" />
+              </a>
+            </div>
+
+            <div class="link-icon">
+              <a href="https://github.com/CollActionteam/clothing-loop/"
+                ><img src="./images/icons/github.png" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="breadcrumbs">
+          <p>
+            < back to
+            <a href="./projects.html">projects</a>/
+            <a href="./index.html">home</a>
+          </p>
+        </div>
+
+        <section id="contacts-single-project">
+          <div class="contacts" id="home-contacts">
+            <div class="stream_text">
+              <h1>Let's Keep in touch</h1>
+            </div>
+            <div class="contacts-txt">
+              <h1 id="sub-text">
+                Want to build a project together?
+                <span
+                  >Contact me via
+                  <a id="email_link" href="mailto:mail@giuliamummolo.com"
+                    >email</a
+                  ></span
+                >
+              </h1>
+              <h1 id="sub-text">
+                Let's connect on
+                <a
+                  id="social_link"
+                  href="https://www.linkedin.com/in/giulia-mummolo-1042b798/"
+                  >Linkedin</a
+                >
+              </h1>
+            </div>
+          </div>
+
+          <div class="copyright">
+            <p>
+              <a href="https://github.com/giuliamml/giuliamml.github.io"
+                >theme</a
+              >
+              designed and built by Giulia Mummolo
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

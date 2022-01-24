@@ -1,16 +1,38 @@
-<head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta property="og:title" content="Giulia Mummolo"/>
-    <meta property="og:description" content="A collection of personal projects."/>
-    <meta property="og:image:url" content="http://giuliamummolo.com/images/photo.jpg"/>
-    <meta property="og:image:secure_url" content="http://giuliamummolo.com/images/photo.jpg"/>
-    <meta property="og:url" content="http://giuliamummolo.com"/>   
+    <meta property="og:title" content="Giulia Mummolo" />
+    <meta
+      property="og:description"
+      content="A collection of personal projects."
+    />
+    <meta
+      property="og:image:url"
+      content="http://giuliamummolo.com/images/photo.jpg"
+    />
+    <meta
+      property="og:image:secure_url"
+      content="http://giuliamummolo.com/images/photo.jpg"
+    />
+    <meta property="og:url" content="http://giuliamummolo.com" />
     <meta property="og:type" content="website" />
     <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400&display=swap" rel="stylesheet">    <link
+    <link rel="stylesheet" href="./style.scss" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Work+Sans:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Montserrat&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://use.typekit.net/rjn8jif.css" />
@@ -18,141 +40,198 @@
   </head>
   <body>
     <div class="container">
-        <div class="landing_page">
-        <div class="wrapper">
-          <ul class="text hidden">
-            <div class="name_container">
-              <li>g</li>
-              <li class="ghost">i</li>
-              <li class="ghost">u</li>
-              <li class="ghost">l</li>
-              <li class="ghost">i</li>
-              <li class="ghost">a</li>
-              <li class="spaced">m</li>
-              <li class="ghost">u</li>
-              <li class="ghost">m</li>
-              <li class="ghost">m</li>
-              <li class="ghost">o</li>
-              <li class="ghost">l</li>
-              <li class="ghost">o</li>
-            </div>
-          </ul>
+      <div id="burger-menu-container" onclick="menuOpen()">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
 
-          <ul class="navigation">
-            <div class="navigation_container">
-                <li><a href='https://decoraedit.com/'>Decora Edit<sup>NEW</sup></a></li>
-                <li><a href="#about">. about </a></li>
-                <li><a href="./projects.html">. web development</a></li>
-                <li><a href="./fashion.html">. fashion</a></li>
-                <li><a href="#contacts">. contacts</a></li>
-                <li><a href="./files/giulia-mummolo-cv.pdf" target="_blank">. CV</a></li>
-              </div>
-            </ul>
+      <div class="burger-menu-items" id="homepage">
+        <ul>
+          <li><span>01</span><a href="./index.html">Home </a></li>
+          <li><span>02</span><a href="./about-mobile.html">About </a></li>
+        </ul>
+      </div>
+      <div class="landing_page">
+        <div class="main">
+          <div class="landing-page-text" id="myHeader">
+            <h1>giulia mummolo</h1>
           </div>
-          <h1 id='mobile-name'>Giulia Mummolo</h1>
-          <div class="burger-menu-items" id='homepage'>
-            <ul>
-              <li>
-                <a href='https://decoraedit.com/'
-                >Decora Edit<sup>NEW</sup></a
-              >
-            </li>
-            <li><a href="./about.html">about</a></li>
-            <li><a href="./projects.html">web development</a></li>
-            <li><a href="./contacts.html">contacts</a></li>
-            <li><a href="http://giuliamummolo.com/">home</a></li>
-            <li><a href="./files/giulia-mummolo-cv.pdf" target="_blank">cv</a></li>
-          </ul>
+
+          <div class="landing-page-description">
+            <p>
+              I am a <span>UI designer</span> and
+              <span>front-end developer</span>.
+            </p>
+
+            <br />
+
+            <p>
+              I design and build end-to-end digital solutions and interactive
+              user interfaces in the web.
+            </p>
+          </div>
+
+          <button>
+            <a href="./projects.html" class="underline">View my work ></a>
+          </button>
         </div>
-        
-        <canvas id="canvas_1"></canvas>
+
+        <script>
+          window.onscroll = function () {
+            myFunction();
+          };
+
+          var header = document.getElementById("myHeader");
+          var sticky = header.offsetTop;
+
+          function myFunction() {
+            if (window.pageYOffset > sticky) {
+              header.classList.add("sticky");
+            } else {
+              header.classList.remove("sticky");
+            }
+          }
+        </script>
+
+        <!-- <canvas id="canvas_1"></canvas> -->
         <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
         <!-- <script src="index.js"></script> -->
         <div class="pages">
-
           <section id="about">
-            <div class="section-heading-about">
-              <span></span>
-              <h1>ABOUT</h1>
+            <div class="stream_text" id="loading">
+              <h1>About</h1>
             </div>
-
-            <div class='section-about-content'>
-              <img class='about-img' src='./images/photo.jpg'/>
-              <p>
-                Hi, I am Giulia, a design professional with strong analytical skills, I have a passion for Front-End web development and interactive interfaces. <br>
-                In the past year, I started my online project, <a href='https://decoraedit.com/'>Decora Edit</a> - a space for sustainable fashion content. <br>
-                At the same time, I’ve been working with a remote team in Amsterdam, implementing and managing a web app in React that will help a group of volunteers in a secondhand-clothes exchange program around the world.
-                I’ve studied fashion design at Istituto Marangoni in London while working part-time in retail, for stores including Harrods where I was brand manager. <br>
-                Also, I briefly worked as an e-commerce executive, an experience which fueled my interest for Front-End development.
-                 <br/></br/>
-                 <a href="https://docs.google.com/document/d/1WsSEyMQGzF7NmWqZGS3l7oKej6FTPjJZBA-rQuKjsms/edit?usp=sharing" target="_blank">> Here's my full CV.</a>
-              
-              </p>
-
+            <div class="section-about-content">
+              <div class="img-wrapper">
+                <img src="./images/photo.jpg" />
+              </div>
+              <div class="text-wrapper">
+                <p>
+                  I'm Giulia, a professional digital designer with a background
+                  in fashion design. <br />
+                  I have a passion for Front-End web development and interactive
+                  user interfaces.
+                  <br />
+                  <br />
+                  Currently, I work as a freelance UI designer and Front-End
+                  developer.
+                  <br />
+                  <br />
+                  <a class="underline" href="./about.html"> more about me ></a>
+                </p>
+              </div>
             </div>
-  
-          
-          </section>
-        
-          <section id="web_development">
-            <div class="section-heading">
-              <span></span>
-              <h1>
-                web <br/> development
-              </h1>
-            </div>
-            <button id="web">more ></button>
           </section>
 
           <section id="web_development">
             <div class="section-heading-fashion">
               <span></span>
-              <h1>
-                fashion
-              </h1>
+              <h1>fashion</h1>
             </div>
             <button id="web">more ></button>
           </section>
 
-
-              <section id="contacts">
-                <div class="contacts" id="home-contacts">
-                  <ul>
-                    <li>
-                      <a id="email_link" href="mailto:mail@giuliamummolo.com"
-                        ><img src="./images/icons/email.png"></a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        id="social_link"
-                        href="https://www.linkedin.com/in/giulia-mummolo-1042b798/" ><img src="./images/icons/linkedin.png"></a
-                        >
-                      </li>
-                      <li>
-                        <a id="social_link" href="https://www.instagram.com/giulia.mummolo/"
-                          ><img src="./images/icons/instagraml.png"></a
-                        >
-                      </li>
-                      <li>
-                        <a id="social_link" href="https://github.com/giuliamml"><img src="./images/icons/github.png"> </a>
-                      </li>
-                    </ul>
-                  </div>
-                </section>
-                <div class="copyright">
-                  <p><a href="https://github.com/giuliamml/giuliamml.github.io">theme</a> designed and built by Giulia Mummolo</p>
+          <section id="projects-home">
+            <div class="stream_text">
+              <h1>Projects</h1>
+            </div>
+            <div class="projects-wrapper">
+              <div class="project">
+                <img src="./images/intro-img-tcl.svg" />
+                <div class="project-txt">
+                  <h1>Developing a web app for The Clothing Loop</h1>
                 </div>
+                <a class="underline" href="./project-one.html">view more ></a>
+              </div>
+              <div class="project">
+                <img id='design' src="./images/TCL-design.svg" />
+                <div class="project-txt">
+                  <h1>UI redesign for The Clothing Loop</h1>
+                </div>
+                <a class="underline" href="./project-three.html">view more ></a>
+              </div>
+
+              <div class="project">
+                <img id='design' src="./images/rest app.png" />
+                <div class="project-txt">
+                  <h1>A collection of app prototypes</h1>
+                </div>
+                <a class="underline" href="./project-five.html">view more ></a>
               </div>
             </div>
+
+            <a href="./projects.html" class="underline"
+              >- view all projects -</a
+            >
+          </section>
+          <!-- JOURNAL TO ADD WHEN READY -->
+          <!-- <section id="journal">
+            <div class="stream_text">
+              <h1>journal</h1>
+            </div>
+            <div id="medium-widget"></div>
+            <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
+            <script>
+              MediumWidget.Init({
+                renderTo: "#medium-widget",
+                params: {
+                  resource: "https://medium.com/@giulia_mummolo/",
+                  postsPerLine: 3,
+                  limit: 3,
+                  picture: "big",
+                  fields: ["description"],
+                  ratio: "square",
+                },
+              });
+            </script>
+          </section> -->
+
+          <section id="contacts">
+            <div class="contacts" id="home-contacts">
+              <div class="stream_text">
+                <h1>Let's Keep in touch</h1>
+              </div>
+              <div class="contacts-txt">
+                <h1 id="sub-text">
+                  Want to build a project together?
+                  <span
+                    >Contact me via
+                    <a id="email_link" href="mailto:mail@giuliamummolo.com"
+                      >email</a
+                    ></span
+                  >
+                </h1>
+                <h1 id="sub-text">
+                  Let's connect on
+                  <a
+                    id="social_link"
+                    href="https://www.linkedin.com/in/giulia-mummolo-1042b798/"
+                    >Linkedin</a
+                  >
+                </h1>
+              </div>
+            </div>
+
+            <div class="copyright">
+              <p>
+                <a href="https://github.com/giuliamml/giuliamml.github.io"
+                  >theme</a
+                >
+                designed and built by Giulia Mummolo
+              </p>
+            </div>
+          </section>
         </div>
-        <script src="index.js"></script>
-        <script src="carousel.js"></script>
-        <script
-          async
-          defer
-          data-domain="giuliamummolo.com"
-          src="https://plausible.io/js/plausible.js"
-        ></script>
-      </body>
-    </html>  
+      </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="carousel.js"></script>
+    <script
+      async
+      defer
+      data-domain="giuliamummolo.com"
+      src="https://plausible.io/js/plausible.js"
+    ></script>
+  </body>
+</html>
