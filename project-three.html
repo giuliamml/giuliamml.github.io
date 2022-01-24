@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./index.js"></script>
+
+    <title>The Clothing Loop - web app design</title>
+  </head>
+  <body>
+    <div class="single-project-container">
+      <div class="header" id="single-project">
+        <div id="burger-menu-container" onclick="menuOpen()">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+
+        <div class="burger-menu-items" id="homepage">
+          <ul>
+            <li><span>00</span><a href="./index.html">Home </a></li>
+            <li><span>01</span><a href="./about.html">About </a></li>
+            <!-- <li><span>02</span><a href="./journal.html">Journal </a></li> -->
+            <li><span>02</span><a href="./projects.html">Projects </a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="template">
+        <div class="intro-text">
+          <h1>The Clothing Loop app design</h1>
+
+          <div class="subtitle">
+            <h3>
+              Design thinking process behind a digital solution for the global
+              expansion of a clothing swap initiative.
+            </h3>
+          </div>
+
+          <button class="view-more">
+            <a
+              href="./projects.html"
+              class="ca3-scroll-down-link ca3-scroll-down-arrow"
+              data-ca3_iconfont="ETmodules"
+              data-ca3_icon=""
+            ></a>
+          </button>
+          <!-- <img src="./images/icons/arrowIcondown.png" alt="" /> -->
+        </div>
+
+        <div class="intro-img">
+          <div class="img-wrapper">
+            <img src="./images/TCL-design.svg" alt="" />
+          </div>
+        </div>
+
+        <div class="overview">
+          <div class="intro">
+            <h5>Project Overview</h5>
+            <p>
+              The Clothing Loop is a clothing swap system that lets you share
+              pre-loved clothes by connecting people in local communities that
+              share a bag of clothes. <br />
+              <mark
+                >The Clothing Loop won the What Design Can Do competition set up
+                by Impact Hub.</mark
+              >
+              <br />
+              The initiative started in The Netherlands in early 2020 as a local
+              alternative for clothing swap events during lockdown. <br />
+              <br />
+              The initiative tackles the growing problem of overconsumption. It
+              aims to change consumers habits and reduce waste, providing a fun
+              and sustainable alternative to fast fashion. Currently, there are
+              300 actively circulating bags and over <mark>12,000 users.</mark>
+            </p>
+          </div>
+
+          <div class="specs">
+            <div class="single-spec">
+              <h5>Role</h5>
+              <p>UI Designer, Front-End developer & team coordinator</p>
+            </div>
+            <div class="single-spec">
+              <h5>Tools used</h5>
+              <div class="tech-stack">
+                <div><img src="./images/icons/figma.png" alt="" /></div>
+              </div>
+            </div>
+            <div class="single-spec">
+              <h5>Period</h5>
+              <p>April 2021 - ongoing</p>
+            </div>
+            <div class="single-spec">
+              <h5>Launched</h5>
+              <p>January 2022</p>
+            </div>
+            <div class="single-spec">
+              <h5>Website</h5>
+              <a class="project-link" href="https://www.clothingloop.org/"
+                >clothingloop.org</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h1>Role</h1>
+          <p>
+            As part of my role as a UI designer for The Clothing Loop, I lead
+            the design process and production of the web application.<br />
+            Alongside my contribution, I teamed up with a professional UX/UI
+            designer, to enrich the user-onboarding experience and automate the
+            initiative's global expansion. <br />
+            I conducted user testing, outlined user journeys and designed
+            features.
+          </p>
+        </div>
+
+        <div class="section">
+          <h1>Initial product</h1>
+          <p>
+            The initial phase of the platform development included a very basic
+            UI with the following functionalities:
+          </p>
+
+          <ul>
+            <li>
+              Automated user signup flow
+              <div class="img-wrapper">
+                <img src="./images/old-form.png" alt="" />
+              </div>
+            </li>
+            <li>
+              Interactive data visualization through a map view
+
+              <div class="img-wrapper">
+                <img src="./images/old-map.png" alt="" />
+              </div>
+            </li>
+            <li>Data management through a corresponding backoffice</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h1>Design thinking approach</h1>
+          <p>
+            The initial part involved outlining the key challenges, which I
+            summarized as follows:
+          </p>
+          <ul>
+            <li>
+              help users to find an existing loop in a convenient location
+            </li>
+            <li>help users to initiate a loop</li>
+            <li>help volunteers to manage and securely store user data</li>
+          </ul>
+
+          <p>
+            I began structuring the design process by leading a user-centered
+            research with the aim to pin-point strength and weaknesses of the
+            essential features. As no data was available to identify problems, I
+            conducted an early stage user interview. This helped me to gather
+            qualitative data on features that were already built. I was able to
+            interview a variety of different user types - some familiar with the
+            initiative and others not. Early stage user interviews, were a
+            fundamental step to test features and quickly reiterate over them
+            before globally launch the platform. Some of the most significant
+            insights were:
+          </p>
+
+          <ul>
+            <li>
+              "steps to initiate a new bag of clothes to share are not clear"
+            </li>
+
+            <li>
+              "search and filter functionalities are not intuitive and well
+              designed"
+            </li>
+            <li>
+              "display a the shared bag of clothes as a marker in the map is not
+              intuitive"
+            </li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h1>Redesign process: wireframes</h1>
+
+          <p>
+            After having reviewed all qualitative data gathered during users
+            interviews, I started to prioritize the features to implement. And
+            then moving onto the first wireframes iteration.
+          </p>
+          <p>
+            The first feature to be tackled was the 'new loop' sign up form,
+            which breaks down into two forms: 1. new user signup form, 2. form
+            to select the area in which a new bar circulates in.<br />
+            For this feature reiteration, was introduced a progress bar to track
+            the signup process, an interactive map in which the user can select
+            the approximate area in which the bag of clothes circulates and
+            implemented a cleaner UI.
+          </p>
+          <div class="img-wrapper">
+            <img src="./images/wireframes-two.svg" alt="" />
+          </div>
+          <p>
+            Followed by search and filter functionalities of the map
+            visualization. Below, some of the wireframes of the above features
+            that were produced as part of the redesigning process. For this
+            feature reiteration, was introduced the option to search by location
+            which on submit sets the map's viewport to the searched location.
+            Also, the filters by categories and sizes was implemented by
+            refining size ranges and programmatically giving filter parameters
+            based on user selection. <br />
+            The UI for these functionalities was also implemented and included
+            within a unique search bar, just above the map.
+          </p>
+
+          <div class="img-wrapper">
+            <img src="./images/wireframes-one.svg" alt="" />
+          </div>
+
+          <p>
+            Next, was tackled the issue of consistently display the various
+            active bags of clothes on the map. Markers were replaced by blurred
+            circles with mutable radius values based on the user input (when
+            initiating a new entry). The circles represent the area in which a
+            bag of clothes circulates; the idea was to display an approximate
+            location and also let the user decide its extension.
+          </p>
+        </div>
+
+        <div class="section">
+          <h1>Final product</h1>
+
+          <div class="img-wrapper">
+            <img src="./images/TCL-design.svg" alt="" />
+          </div>
+
+          <div class="img-wrapper">
+            <img src="./images/full-redesign.svg" alt="" />
+          </div>
+
+          <div class="img-wrapper">
+            <img src="./images/full-redesign-2.svg" alt="" />
+          </div>
+
+          <div class="img-wrapper">
+            <img src="./images/redesign-form.png" alt="" />
+          </div>
+        </div>
+
+        <div class="breadcrumbs">
+          <p>
+            < back to
+            <a href="./projects.html">projects</a>/
+            <a href="./index.html">home</a>
+          </p>
+        </div>
+
+        <section id="contacts-single-project">
+          <div class="contacts" id="home-contacts">
+            <div class="stream_text">
+              <h1>Let's Keep in touch</h1>
+            </div>
+            <div class="contacts-txt">
+              <h1 id="sub-text">
+                Want to build a project together?
+                <span
+                  >Contact me via
+                  <a id="email_link" href="mailto:mail@giuliamummolo.com"
+                    >email</a
+                  ></span
+                >
+              </h1>
+              <h1 id="sub-text">
+                Let's connect on
+                <a
+                  id="social_link"
+                  href="https://www.linkedin.com/in/giulia-mummolo-1042b798/"
+                  >Linkedin</a
+                >
+              </h1>
+            </div>
+          </div>
+
+          <div class="copyright">
+            <p>
+              <a href="https://github.com/giuliamml/giuliamml.github.io"
+                >theme</a
+              >
+              designed and built by Giulia Mummolo
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
