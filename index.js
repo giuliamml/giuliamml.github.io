@@ -6,29 +6,28 @@ webBtn.addEventListener("click", (e) => {
 });
 
 //burger-menu-logic
-
 function menuOpen() {
-
   let burgerMenu = document.querySelector("div#burger-menu-container");
   let burgerMenuItems = document.querySelector("div.burger-menu-items");
-  
+
   burgerMenu.classList.toggle("change");
 
   if (burgerMenu.className === "") {
     burgerMenuItems.style.display = "none";
   } else if (burgerMenu.className === "change") {
-    burgerMenuItems.style.display = 'flex';
-    burgerMenuItems.style.flexDirection = 'column';
-    burgerMenuItems.style.width = '50vw';
-    burgerMenuItems.style.height = '100vh';
-    burgerMenuItems.style.position = 'absolute';
-    burgerMenuItems.style.zIndex = "1";
-    burgerMenuItems.style.background = 'black';
+    burgerMenuItems.style.display = "flex";
+    burgerMenuItems.style.flexDirection = "column";
+    burgerMenuItems.style.width = "100vw";
+    burgerMenuItems.style.height = "100vh";
+    burgerMenuItems.style.position = "absolute";
+    burgerMenuItems.style.zIndex = "111111111";
+    burgerMenuItems.style.background = "#ff4f8e";
+    burgerMenuItems.style.boxShadow = "7px 0px 15px 0px #00000036";
+    burgerMenuItems.style.borderRight = "1px solid #ffb2d1";
+    burgerMenuItems.style.top = "0";
+    burgerMenuItems.style.left = "0";
   }
 }
-
-
-
 
 //canvas animation
 var canvas = document.getElementById("canvas_1");
@@ -37,9 +36,9 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 var c = canvas.getContext("2d");
 
-$(function() {
+$(function () {
   var text = $(".text");
-  $(window).scroll(function() {
+  $(window).scroll(function () {
     var scroll = $(window).scrollTop();
 
     if (scroll >= 100) {
@@ -58,7 +57,7 @@ function Circle(x, y, dx, dy, radius, color) {
   this.dy = dy;
   this.radius = radius;
 
-  this.draw = function() {
+  this.draw = function () {
     c.fillStyle = "black";
     c.beginPath();
     c.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
@@ -67,7 +66,7 @@ function Circle(x, y, dx, dy, radius, color) {
     c.fillStyle = color;
     c.fill();
   };
-  this.update = function() {
+  this.update = function () {
     if (this.x + this.radius > innerWidth || this.x - this.radius < 0) {
       this.dx = -this.dx;
     }
@@ -89,20 +88,11 @@ function getRandomColor(colorArray) {
   var i = Math.floor(Math.random() * Math.floor(colorArray.length));
   return colorArray[i];
 }
-var colorArray = [
-  // "#090909",
-  // "#ED07B5",
-  //  "#F9DBBD",
-  // "#F9D6D6",
-  // "#CEC2FF"
-  "#e9e2fb",
-  "#fbf5e2",
-  "#f5e2fb",
-];
+var colorArray = [" #ffb2d1", "#ff4f8e"];
 
 var circleArray = [];
-for (var i = 0; i < 100; i++) {
-  var radius = Math.random() * 65;
+for (var i = 0; i < 200; i++) {
+  var radius = Math.random() * 100;
   var x = Math.random() * (innerWidth - radius * 2) + radius;
   var y = Math.random() * (innerHeight - radius * 2) + radius;
   var dx = (Math.random() - 0.5) * 3;
@@ -123,10 +113,5 @@ function animate() {
 }
 
 animate();
-
-// //home button navigation
-// let btn = document.querySelector("button#web");
-// btn.addEventListener("click", (e) => {
-//   window.location.replace("/projects.html");
-// });
+draw();
 
