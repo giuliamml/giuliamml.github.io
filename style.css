@@ -1437,7 +1437,7 @@ body .single-project-container .template .section .tech-stack .backend .tech-ico
     color: #ff4f8e;
     font-family: "IBM Plex Mono", monospace;
   }
-  .container .landing_page .main .landing-page-description button {
+  .container .landing_page .main button {
     display: none;
   }
 
