@@ -1499,6 +1499,7 @@ body .single-project-container .template .section .tech-stack .backend .tech-ico
     font-weight: lighter;
     font-size: 3rem;
     line-height: 1;
+    text-decoration: none;
   }
   .container .landing_page {
     position: relative;
@@ -1605,6 +1606,7 @@ body .single-project-container .template .section .tech-stack .backend .tech-ico
     display: flex;
     flex-direction: column;
     background-color: #ffb2d1;
+    padding-bottom: 5%;
   }
   .projects-container .header {
     display: flex;
@@ -1687,6 +1689,7 @@ body .single-project-container .template .section .tech-stack .backend .tech-ico
     font-weight: lighter;
     font-size: 3rem;
     line-height: 1;
+    text-decoration: none;
   }
   .projects-container .mobile-static-text {
     background-color: blue;
@@ -1757,7 +1760,9 @@ body .single-project-container .template .section .tech-stack .backend .tech-ico
     color: #4400ff;
     opacity: 0.8;
   }
-  .projects-container .project .project-text button {
+  .projects-container .project .project-text a#button {
+    color: #ff4f8e;
+    font-size: 1rem;
     border: none;
     background-color: transparent;
     justify-content: end;
@@ -1768,60 +1773,11 @@ body .single-project-container .template .section .tech-stack .backend .tech-ico
     position: relative;
     display: flex;
     align-self: end;
-  }
-  .projects-container .project .project-text button a {
-    color: #ff4f8e;
-    font-size: 1rem;
+    font-family: "Mattone";
+    text-transform: uppercase;
   }
   .projects-container section#contacts {
-    width: 100vw;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    background-color: #4400ff;
-    height: 100vh;
-    border-top: 1px solid #ff4f8e;
-    height: 30vh;
-  }
-  .projects-container section#contacts .contacts-txt {
-    position: relative;
-    top: 50%;
-    padding: 0 5%;
-  }
-  .projects-container section#contacts .contacts-txt h1#sub-text {
-    font-size: 3rem;
-    text-transform: capitalize;
-    text-align: left;
-    color: #ffb2d1;
-    font-family: "Mattone";
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    padding: 2% 0;
-  }
-  .projects-container section#contacts .contacts-txt h1#sub-text a {
-    color: #ff4f8e;
-  }
-  .projects-container section#contacts .contacts-txt h1#sub-text span {
-    display: inherit;
-  }
-  .projects-container section#contacts .contacts-txt h1#sub-text span a {
-    color: #ff4f8e;
-    font-weight: lighter;
-  }
-  .projects-container section#contacts .copyright {
-    height: max-content;
-    bottom: 0;
-    position: absolute;
-    width: 100%;
-  }
-  .projects-container section#contacts .copyright p {
-    font-family: "IBM Plex Mono", monospace;
-    color: #f7eeed;
-    font-size: 0.8rem;
-    text-align: center;
-  }
-  .projects-container section#contacts .copyright p a {
-    color: #f7eeed;
+    display: none;
   }
 
   .single-project-container .header {
@@ -1898,6 +1854,7 @@ body .single-project-container .template .section .tech-stack .backend .tech-ico
     font-weight: lighter;
     font-size: 3rem;
     line-height: 1;
+    text-decoration: none;
   }
   .single-project-container .template {
     background-color: #ffff;
@@ -1914,7 +1871,7 @@ body .single-project-container .template .section .tech-stack .backend .tech-ico
   }
   .single-project-container .template .intro-text {
     padding: 5% 5%;
-    min-height: 50vh;
+    min-height: 100vh;
     position: relative;
   }
   .single-project-container .template .intro-text h1 {
