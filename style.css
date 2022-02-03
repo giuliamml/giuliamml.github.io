@@ -333,7 +333,7 @@ body .container section#about .section-about-content .text-wrapper p .underline:
   body .container section#projects-home .projects-wrapper .project {
     position: relative;
     display: grid;
-    grid-template-rows: 70% 20% 10%;
+    grid-template-rows: 60% auto auto;
     padding: 2%;
   }
   body .container section#projects-home .projects-wrapper .project div {
@@ -341,7 +341,7 @@ body .container section#about .section-about-content .text-wrapper p .underline:
   }
   body .container section#projects-home .projects-wrapper .project div img {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
   }
   body .container section#projects-home .projects-wrapper .project div img#design {
@@ -358,14 +358,33 @@ body .container section#about .section-about-content .text-wrapper p .underline:
     font-size: 2rem;
     padding: 2% 0;
   }
-  body .container section#projects-home .projects-wrapper .project a {
+  body .container section#projects-home .projects-wrapper .project p {
     font-family: "IBM Plex Mono", monospace;
-    color: #4400ff;
-    text-decoration: none;
+    color: #32312f;
+    font-size: 1rem;
+    text-align: left;
+    margin-bottom: 2%;
+  }
+  body .container section#projects-home .projects-wrapper .project a#button {
     text-align: end;
+    justify-self: flex-end;
+    color: #4400ff;
     font-size: 1.2rem;
-    text-transform: lowercase;
-    padding-top: 5%;
+    border: 1px solid #4400ff;
+    width: max-content;
+    font-family: "Mattone";
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1%;
+    display: flex;
+    align-self: end;
+    cursor: pointer;
+    margin-right: 5%;
+  }
+  body .container section#projects-home .projects-wrapper .project a#button:hover {
+    background-color: #ff4f8e;
+    color: #ffb2d1;
+    border: 1px solid #ff4f8e;
   }
   body .container section#projects-home .underline {
     display: inline;
@@ -458,6 +477,9 @@ body .container section#projects-home .underline:active:after {
     position: relative;
     top: 50%;
     padding: 0 5%;
+    max-width: 1440px;
+    left: 50%;
+    transform: translateX(-50%);
   }
   body .container section#contacts .contacts-txt h1#sub-text {
     font-size: 3rem;
@@ -743,13 +765,16 @@ body .projects-container .header #burger-menu-container .bar3 {
     padding-bottom: 5%;
   }
   body .projects-container .project {
+    max-width: 1440px;
+    left: 50%;
+    transform: translateX(-50%);
     width: 100%;
     margin: 5% 0;
     position: relative;
     padding: 1%;
     height: max-content;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50% auto;
   }
   body .projects-container .project h1 {
     color: #f7eeed;
@@ -760,19 +785,19 @@ body .projects-container .header #burger-menu-container .bar3 {
     text-align: justify;
     position: absolute;
     transform: rotate(-90deg);
-    left: 2%;
   }
   body .projects-container .project a {
     width: 100%;
   }
   body .projects-container .project a img {
-    width: 100%;
-    max-width: 600px;
+    width: 80%;
     height: auto;
     z-index: 11112;
     margin-left: 12%;
     position: relative;
     object-fit: cover;
+    float: right;
+    max-width: 700px;
   }
   body .projects-container .project .project-text {
     width: 100%;
@@ -780,11 +805,14 @@ body .projects-container .header #burger-menu-container .bar3 {
     flex-direction: column;
     justify-content: center;
   }
-  body .projects-container .project .project-text h3 {
+  body .projects-container .project .project-text a {
+    text-decoration: none;
+  }
+  body .projects-container .project .project-text a h3 {
     color: #4400ff;
     text-transform: capitalize;
     font-weight: lighter;
-    font-size: 3rem;
+    font-size: 2rem;
     font-family: "Mattone";
     text-align: right;
     margin: 0;
@@ -792,31 +820,32 @@ body .projects-container .header #burger-menu-container .bar3 {
     text-align: left;
     margin: 0 5%;
   }
-  body .projects-container .project .project-text hr {
-    background-color: #f7eeed;
-    height: 1px;
-    margin: 2% 0;
-    border: none;
-    width: 100%;
-  }
-  body .projects-container .project .project-text p {
+  body .projects-container .project .project-text a p {
     font-family: "IBM Plex Mono", monospace;
     color: #4400ff;
     font-size: 1rem;
     text-align: left;
-    margin: 0 5%;
+    margin: 2% 5%;
+    opacity: 0.8;
   }
-  body .projects-container .project .project-text button {
-    position: absolute;
-    right: 5%;
-    top: 50%;
-    border: none;
-    background-color: transparent;
-    justify-content: end;
-  }
-  body .projects-container .project .project-text button a {
+  body .projects-container .project .project-text a#button {
     color: #ff4f8e;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    border: 1px solid #ff4f8e;
+    width: max-content;
+    font-family: "Mattone";
+    text-transform: uppercase;
+    float: right;
+    padding: 1%;
+    display: flex;
+    align-self: end;
+    cursor: pointer;
+    margin-right: 10%;
+  }
+  body .projects-container .project .project-text a#button:hover {
+    background-color: #ff4f8e;
+    color: #ffb2d1;
+    border: 1px solid #ff4f8e;
   }
   body .projects-container section#contacts {
     width: 100vw;
@@ -832,6 +861,9 @@ body .projects-container .header #burger-menu-container .bar3 {
     position: relative;
     top: 50%;
     padding: 0 5%;
+    max-width: 1440px;
+    left: 50%;
+    transform: translateX(-50%);
   }
   body .projects-container section#contacts .contacts-txt h1#sub-text {
     font-size: 3rem;
@@ -1334,6 +1366,9 @@ body .single-project-container .template .section .tech-stack .backend .tech-ico
     position: relative;
     top: 50%;
     padding: 0 5%;
+    max-width: 1440px;
+    left: 50%;
+    transform: translateX(-50%);
   }
   body .single-project-container section#contacts-single-project .contacts-txt h1#sub-text {
     font-size: 3rem;
