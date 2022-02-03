@@ -461,6 +461,10 @@ $large-font-size: 5rem;
                 font-size: 3.2rem;
               }
             }
+
+            a#button {
+              display: none;
+            }
           }
 
           .scrolldown {
@@ -577,6 +581,10 @@ $large-font-size: 5rem;
 
               @include underlinedLink($hot-pink);
             }
+
+            a#button {
+              display: none;
+            }
           }
         }
       }
@@ -643,7 +651,6 @@ $large-font-size: 5rem;
               align-self: end;
               cursor: pointer;
               margin-right: 5%;
-
 
               &:hover {
                 background-color: $hot-pink;
@@ -1483,6 +1490,7 @@ $large-font-size: 5rem;
     width: 100vw;
     height: 100vh;
     background-color: $blue;
+    overflow: hidden;
 
     #burger-menu-container {
       display: inline-block;
@@ -1582,6 +1590,19 @@ $large-font-size: 5rem;
           p {
             color: $hot-pink;
             font-family: $text-font;
+          }
+          a#button {
+            font-family: $text-other;
+            text-transform: uppercase;
+            font-size: 1rem;
+            color: $light-pink;
+            text-decoration: none;
+            padding-top: 10%;
+            position: absolute;
+            display: flex;
+            text-align: right;
+            float: right;
+            right: 10%;
           }
         }
 
@@ -1686,7 +1707,6 @@ $large-font-size: 5rem;
     background-color: $light-pink;
     padding-bottom: 5%;
 
-
     .header {
       display: flex;
       flex-direction: row;
@@ -1777,7 +1797,6 @@ $large-font-size: 5rem;
             font-size: 3rem;
             line-height: 1;
             text-decoration: none;
-
           }
         }
       }
@@ -1861,7 +1880,6 @@ $large-font-size: 5rem;
           opacity: 0.8;
         }
 
-
         a#button {
           color: $hot-pink;
           font-size: 1rem;
@@ -1878,14 +1896,12 @@ $large-font-size: 5rem;
           align-self: end;
           font-family: $text-other;
           text-transform: uppercase;
-
         }
       }
     }
 
     section#contacts {
       display: none;
-
     }
   }
 
@@ -1972,7 +1988,6 @@ $large-font-size: 5rem;
             font-size: 3rem;
             line-height: 1;
             text-decoration: none;
-
           }
         }
       }
@@ -2023,6 +2038,18 @@ $large-font-size: 5rem;
           font-size: 1rem;
           width: 100%;
           left: 0;
+        }
+
+        a {
+          font-family: "Mattone";
+          text-transform: uppercase;
+          font-size: 1rem;
+          color: $hot-pink;
+          text-decoration: none;
+          padding-top: 10%;
+          display: flex;
+          text-align: left;
+         
         }
 
         .view-more {
