@@ -644,6 +644,7 @@ $large-font-size: 5rem;
               cursor: pointer;
               margin-right: 5%;
 
+
               &:hover {
                 background-color: $hot-pink;
                 color: $light-pink;
@@ -1685,6 +1686,7 @@ $large-font-size: 5rem;
     background-color: $light-pink;
     padding-bottom: 5%;
 
+
     .header {
       display: flex;
       flex-direction: row;
@@ -1775,6 +1777,7 @@ $large-font-size: 5rem;
             font-size: 3rem;
             line-height: 1;
             text-decoration: none;
+
           }
         }
       }
@@ -1858,9 +1861,11 @@ $large-font-size: 5rem;
           opacity: 0.8;
         }
 
+
         a#button {
           color: $hot-pink;
           font-size: 1rem;
+
           border: none;
           background-color: transparent;
           justify-content: end;
@@ -1873,12 +1878,14 @@ $large-font-size: 5rem;
           align-self: end;
           font-family: $text-other;
           text-transform: uppercase;
+
         }
       }
     }
 
     section#contacts {
       display: none;
+
     }
   }
 
@@ -1965,6 +1972,7 @@ $large-font-size: 5rem;
             font-size: 3rem;
             line-height: 1;
             text-decoration: none;
+
           }
         }
       }
@@ -1987,6 +1995,7 @@ $large-font-size: 5rem;
       .intro-text {
         padding: 5% 5%;
         min-height: 100vh;
+
         position: relative;
 
         h1 {

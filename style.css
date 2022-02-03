@@ -1606,7 +1606,9 @@ body .single-project-container .template .section .tech-stack .backend .tech-ico
     display: flex;
     flex-direction: column;
     background-color: #ffb2d1;
+
     padding-bottom: 5%;
+
   }
   .projects-container .header {
     display: flex;
@@ -1689,7 +1691,9 @@ body .single-project-container .template .section .tech-stack .backend .tech-ico
     font-weight: lighter;
     font-size: 3rem;
     line-height: 1;
+
     text-decoration: none;
+
   }
   .projects-container .mobile-static-text {
     background-color: blue;
@@ -1760,9 +1764,11 @@ body .single-project-container .template .section .tech-stack .backend .tech-ico
     color: #4400ff;
     opacity: 0.8;
   }
+
   .projects-container .project .project-text a#button {
     color: #ff4f8e;
     font-size: 1rem;
+
     border: none;
     background-color: transparent;
     justify-content: end;
@@ -1773,11 +1779,13 @@ body .single-project-container .template .section .tech-stack .backend .tech-ico
     position: relative;
     display: flex;
     align-self: end;
+
     font-family: "Mattone";
     text-transform: uppercase;
   }
   .projects-container section#contacts {
     display: none;
+
   }
 
   .single-project-container .header {
@@ -1854,7 +1862,9 @@ body .single-project-container .template .section .tech-stack .backend .tech-ico
     font-weight: lighter;
     font-size: 3rem;
     line-height: 1;
+
     text-decoration: none;
+
   }
   .single-project-container .template {
     background-color: #ffff;
@@ -1871,7 +1881,9 @@ body .single-project-container .template .section .tech-stack .backend .tech-ico
   }
   .single-project-container .template .intro-text {
     padding: 5% 5%;
+
     min-height: 100vh;
+
     position: relative;
   }
   .single-project-container .template .intro-text h1 {
