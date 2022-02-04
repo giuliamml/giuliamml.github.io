@@ -2,7 +2,7 @@
 let webBtn = document.querySelector("button#web");
 console.log(webBtn);
 webBtn.addEventListener("click", (e) => {
-  window.location.replace("./projects.html");
+  window.location.replace("./projects");
 });
 
 //burger-menu-logic
