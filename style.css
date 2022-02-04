@@ -1792,7 +1792,7 @@ body .single-project-container .template .section .tech-stack .backend .tech-ico
     margin: 0 1%;
     position: relative;
     display: flex;
-    align-self: end;
+    align-self: flex-end;
     font-family: "Mattone";
     text-transform: uppercase;
   }
@@ -2077,7 +2077,7 @@ body .single-project-container .template .section .tech-stack .backend .tech-ico
   }
   .single-project-container .template .overview .specs .single-spec .tech-stack div {
     width: 50px;
-    height: auto;
+    height: 50px;
     display: flex;
     justify-content: center;
     object-fit: fill;
