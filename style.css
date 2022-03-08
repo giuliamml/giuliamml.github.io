@@ -51,6 +51,7 @@
   body .container #burger-menu-container,
 body .container .burger-menu-items {
     display: none;
+    padding-left: 30px;
   }
   body .container .landing_page {
     width: 100%;
@@ -611,15 +612,13 @@ body .single-project-container #single-project #burger-menu-container .bar3 {
     color: #ffb2d1;
   }
   body .single-project-container #single-project .burger-menu-items#homepage ul li span {
-    display: inherit;
+    display: block;
     color: #ffb2d1;
     font-family: "Mak";
     position: relative;
     text-align: left;
-    left: 10%;
   }
   body .single-project-container #single-project .burger-menu-items#homepage ul li a {
-    left: 10%;
     position: relative;
     display: inline;
     color: #4400ff;
@@ -703,15 +702,13 @@ body .projects-container .header #burger-menu-container .bar3 {
     color: #ffb2d1;
   }
   body .projects-container .header .burger-menu-items#homepage ul li span {
-    display: inherit;
+    display: block;
     color: #ffb2d1;
     font-family: "Mak";
     position: relative;
     text-align: left;
-    left: 10%;
   }
   body .projects-container .header .burger-menu-items#homepage ul li a {
-    left: 10%;
     position: relative;
     display: inline;
     color: #4400ff;
@@ -971,15 +968,13 @@ body .single-project-container .header #burger-menu-container .bar3 {
     color: #ffb2d1;
   }
   body .single-project-container .header .burger-menu-items#homepage ul li span {
-    display: inherit;
+    display: block;
     color: #ffb2d1;
     font-family: "Mak";
     position: relative;
     text-align: left;
-    left: 10%;
   }
   body .single-project-container .header .burger-menu-items#homepage ul li a {
-    left: 10%;
     position: relative;
     display: inline;
     color: #4400ff;
@@ -1489,15 +1484,13 @@ body .single-project-container .template .section .tech-stack .backend .tech-ico
     color: #ffb2d1;
   }
   .container .burger-menu-items#homepage ul li span {
-    display: inherit;
+    display: block;
     color: #ffb2d1;
     font-family: "Mak";
     position: relative;
     text-align: left;
-    left: 10%;
   }
   .container .burger-menu-items#homepage ul li a {
-    left: 10%;
     position: relative;
     display: inline;
     color: #4400ff;
@@ -1587,15 +1580,13 @@ body .single-project-container .template .section .tech-stack .backend .tech-ico
     color: #ffb2d1;
   }
   .about-container .burger-menu-items#homepage ul li span {
-    display: inherit;
+    display: block;
     color: #ffb2d1;
     font-family: "Mak";
     position: relative;
     text-align: left;
-    left: 10%;
   }
   .about-container .burger-menu-items#homepage ul li a {
-    left: 10%;
     position: relative;
     display: inline;
     color: #4400ff;
@@ -1692,15 +1683,13 @@ body .single-project-container .template .section .tech-stack .backend .tech-ico
     color: #ffb2d1;
   }
   .projects-container .header .burger-menu-items#homepage ul li span {
-    display: inherit;
+    display: block;
     color: #ffb2d1;
     font-family: "Mak";
     position: relative;
     text-align: left;
-    left: 10%;
   }
   .projects-container .header .burger-menu-items#homepage ul li a {
-    left: 10%;
     position: relative;
     display: inline;
     color: #4400ff;
@@ -1857,15 +1846,13 @@ body .single-project-container .template .section .tech-stack .backend .tech-ico
     color: #ffb2d1;
   }
   .single-project-container .header .burger-menu-items#homepage ul li span {
-    display: inherit;
+    display: block;
     color: #ffb2d1;
     font-family: "Mak";
     position: relative;
     text-align: left;
-    left: 10%;
   }
   .single-project-container .header .burger-menu-items#homepage ul li a {
-    left: 10%;
     position: relative;
     display: inline;
     color: #4400ff;
