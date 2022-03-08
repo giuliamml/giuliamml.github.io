@@ -368,6 +368,7 @@ $large-font-size: 5rem;
       #burger-menu-container,
       .burger-menu-items {
         display: none;
+        padding-left: 30px;
       }
       .landing_page {
         width: 100%;
@@ -782,16 +783,14 @@ $large-font-size: 5rem;
             }
 
             span {
-              display: inherit;
+              display: block;
               color: $light-pink;
               font-family: $text-heading;
               position: relative;
               text-align: left;
-              left: 10%;
             }
 
             a {
-              left: 10%;
               position: relative;
               display: inline;
               color: $blue;
@@ -887,16 +886,14 @@ $large-font-size: 5rem;
             }
 
             span {
-              display: inherit;
+              display: block;
               color: $light-pink;
               font-family: $text-heading;
               position: relative;
               text-align: left;
-              left: 10%;
             }
 
             a {
-              left: 10%;
               position: relative;
               display: inline;
               color: $blue;
@@ -1116,16 +1113,14 @@ $large-font-size: 5rem;
             }
 
             span {
-              display: inherit;
+              display: block;
               color: $light-pink;
               font-family: $text-heading;
               position: relative;
               text-align: left;
-              left: 10%;
             }
 
             a {
-              left: 10%;
               position: relative;
               display: inline;
               color: $blue;
@@ -1545,16 +1540,14 @@ $large-font-size: 5rem;
         }
 
         span {
-          display: inherit;
+          display: block;
           color: $light-pink;
           font-family: $text-heading;
           position: relative;
           text-align: left;
-          left: 10%;
         }
 
         a {
-          left: 10%;
           position: relative;
           display: inline;
           color: $blue;
@@ -1660,16 +1653,14 @@ $large-font-size: 5rem;
         }
 
         span {
-          display: inherit;
+          display: block;
           color: $light-pink;
           font-family: $text-heading;
           position: relative;
           text-align: left;
-          left: 10%;
         }
 
         a {
-          left: 10%;
           position: relative;
           display: inline;
           color: $blue;
@@ -1778,16 +1769,14 @@ $large-font-size: 5rem;
           }
 
           span {
-            display: inherit;
+            display: block;
             color: $light-pink;
             font-family: $text-heading;
             position: relative;
             text-align: left;
-            left: 10%;
           }
 
           a {
-            left: 10%;
             position: relative;
             display: inline;
             color: $blue;
@@ -1969,16 +1958,14 @@ $large-font-size: 5rem;
           }
 
           span {
-            display: inherit;
+            display: block;
             color: $light-pink;
             font-family: $text-heading;
             position: relative;
             text-align: left;
-            left: 10%;
           }
 
           a {
-            left: 10%;
             position: relative;
             display: inline;
             color: $blue;
