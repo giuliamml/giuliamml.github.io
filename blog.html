@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+  </head>
+  <body>
+    <div id="medium-widget"></div>
+    <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
+    <script>
+      MediumWidget.Init({
+        renderTo: "#medium-widget",
+        params: {
+          resource: "https://medium.com/@giulia_mummolo",
+          postsPerLine: 2,
+          limit: 4,
+          picture: "big",
+          fields: ["description", "author", "claps", "publishAt"],
+          ratio: "landscape",
+        },
+      });
+    </script>
+
+    <div></div>
+  </body>
+</html>
