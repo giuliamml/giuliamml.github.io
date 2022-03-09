@@ -51,7 +51,6 @@
   body .container #burger-menu-container,
 body .container .burger-menu-items {
     display: none;
-    padding-left: 30px;
   }
   body .container .landing_page {
     width: 100%;
@@ -603,10 +602,12 @@ body .single-project-container #single-project #burger-menu-container .bar3 {
     position: relative;
     transform: translateY(-50%);
     list-style-type: none;
+    padding-left: 50px;
   }
   body .single-project-container #single-project .burger-menu-items#homepage ul li {
     padding: 1%;
     text-align: left;
+    margin-bottom: 40px;
   }
   body .single-project-container #single-project .burger-menu-items#homepage ul li :hover {
     color: #ffb2d1;
@@ -693,10 +694,12 @@ body .projects-container .header #burger-menu-container .bar3 {
     position: relative;
     transform: translateY(-50%);
     list-style-type: none;
+    padding-left: 50px;
   }
   body .projects-container .header .burger-menu-items#homepage ul li {
     padding: 1%;
     text-align: left;
+    margin-bottom: 40px;
   }
   body .projects-container .header .burger-menu-items#homepage ul li :hover {
     color: #ffb2d1;
@@ -959,10 +962,12 @@ body .single-project-container .header #burger-menu-container .bar3 {
     position: relative;
     transform: translateY(-50%);
     list-style-type: none;
+    padding-left: 50px;
   }
   body .single-project-container .header .burger-menu-items#homepage ul li {
     padding: 1%;
     text-align: left;
+    margin-bottom: 40px;
   }
   body .single-project-container .header .burger-menu-items#homepage ul li :hover {
     color: #ffb2d1;
@@ -1475,10 +1480,12 @@ body .single-project-container .template .section .tech-stack .backend .tech-ico
     position: relative;
     transform: translateY(-50%);
     list-style-type: none;
+    padding-left: 50px;
   }
   .container .burger-menu-items#homepage ul li {
     padding: 1%;
     text-align: left;
+    margin-bottom: 40px;
   }
   .container .burger-menu-items#homepage ul li :hover {
     color: #ffb2d1;
@@ -1571,10 +1578,12 @@ body .single-project-container .template .section .tech-stack .backend .tech-ico
     position: relative;
     transform: translateY(-50%);
     list-style-type: none;
+    padding-left: 50px;
   }
   .about-container .burger-menu-items#homepage ul li {
     padding: 1%;
     text-align: left;
+    margin-bottom: 40px;
   }
   .about-container .burger-menu-items#homepage ul li :hover {
     color: #ffb2d1;
@@ -1674,10 +1683,12 @@ body .single-project-container .template .section .tech-stack .backend .tech-ico
     position: relative;
     transform: translateY(-50%);
     list-style-type: none;
+    padding-left: 50px;
   }
   .projects-container .header .burger-menu-items#homepage ul li {
     padding: 1%;
     text-align: left;
+    margin-bottom: 40px;
   }
   .projects-container .header .burger-menu-items#homepage ul li :hover {
     color: #ffb2d1;
@@ -1837,10 +1848,12 @@ body .single-project-container .template .section .tech-stack .backend .tech-ico
     position: relative;
     transform: translateY(-50%);
     list-style-type: none;
+    padding-left: 50px;
   }
   .single-project-container .header .burger-menu-items#homepage ul li {
     padding: 1%;
     text-align: left;
+    margin-bottom: 40px;
   }
   .single-project-container .header .burger-menu-items#homepage ul li :hover {
     color: #ffb2d1;

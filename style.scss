@@ -368,7 +368,6 @@ $large-font-size: 5rem;
       #burger-menu-container,
       .burger-menu-items {
         display: none;
-        padding-left: 30px;
       }
       .landing_page {
         width: 100%;
@@ -774,9 +773,11 @@ $large-font-size: 5rem;
           position: relative;
           transform: translateY(-50%);
           list-style-type: none;
+          padding-left: 50px;
           li {
             padding: 1%;
             text-align: left;
+            margin-bottom: 40px;
 
             & :hover {
               color: $light-pink;
@@ -877,9 +878,12 @@ $large-font-size: 5rem;
           position: relative;
           transform: translateY(-50%);
           list-style-type: none;
+          padding-left: 50px;
+
           li {
             padding: 1%;
             text-align: left;
+            margin-bottom: 40px;
 
             & :hover {
               color: $light-pink;
@@ -1104,9 +1108,12 @@ $large-font-size: 5rem;
           position: relative;
           transform: translateY(-50%);
           list-style-type: none;
+          padding-left: 50px;
+
           li {
             padding: 1%;
             text-align: left;
+            margin-bottom: 40px;
 
             & :hover {
               color: $light-pink;
@@ -1531,9 +1538,12 @@ $large-font-size: 5rem;
       position: relative;
       transform: translateY(-50%);
       list-style-type: none;
+      padding-left: 50px;
+
       li {
         padding: 1%;
         text-align: left;
+        margin-bottom: 40px;
 
         & :hover {
           color: $light-pink;
@@ -1644,9 +1654,12 @@ $large-font-size: 5rem;
       position: relative;
       transform: translateY(-50%);
       list-style-type: none;
+      padding-left: 50px;
+
       li {
         padding: 1%;
         text-align: left;
+        margin-bottom: 40px;
 
         & :hover {
           color: $light-pink;
@@ -1760,9 +1773,12 @@ $large-font-size: 5rem;
         position: relative;
         transform: translateY(-50%);
         list-style-type: none;
+        padding-left: 50px;
+
         li {
           padding: 1%;
           text-align: left;
+          margin-bottom: 40px;
 
           & :hover {
             color: $light-pink;
@@ -1949,9 +1965,12 @@ $large-font-size: 5rem;
         position: relative;
         transform: translateY(-50%);
         list-style-type: none;
+        padding-left: 50px;
+
         li {
           padding: 1%;
           text-align: left;
+          margin-bottom: 40px;
 
           & :hover {
             color: $light-pink;
