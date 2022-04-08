@@ -1,298 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../style.css" />
-    <script src="../index.js"></script>
-    <title>A collection of app prototypes</title>
-  </head>
-  <body>
-    <div class="single-project-container">
-      <div class="header" id="single-project">
-        <div id="burger-menu-container" onclick="menuOpen()">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../style.css" />
+  <title>A collection of app prototypes</title>
+</head>
+
+<body>
+  <div class="transition transition-2 is-active"></div>
+
+  <div class="single-project-container">
+    <div class="header" id="projects">
+      <a class='name' href="../">giulia mummolo</a>
+
+      <ul class='header-nav-bar'>
+        <li><a href="../about/">ABOUT </a>
+        </li>
+        <!-- <li><span>02</span><a href="./journal.html">Journal </a></li> -->
+        <li><a href="../projects/">PROJECTS </a>
+        </li>
+        <li> <a href='mailto:mail@giuliamummolo.com?subject=🤝 Let%27s build a project'>LET'S CONNECT</a>
+        </li>
+      </ul>
+
+      <div id="burger-menu-container" onclick="menuOpen()">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+
+      <div class="burger-menu-items" id="homepage">
+        <ul>
+          <li><span>00</span><a href="../">Home </a></li>
+          <li><span>01</span><a href="../about">About </a></li>
+          <!-- <li><span>02</span><a href="./journal.html">Journal </a></li> -->
+          <li><span>02</span><a href="../projects">Projects </a></li>
+        </ul>
+      </div>
+      <div class="progress">
+        <progress id="js-progressbar" value="" max="100"></progress>
+      </div>
+    </div>
+
+    <div class="template">
+      <div class="intro-text">
+        <h1>A collection of app prototypes.</h1>
+
+        <div class="subtitle">
+          <h3>
+            Documenting how I have implemented a variety of web and mobile
+            applications as part of a Front-End bootcamp.
+          </h3>
         </div>
 
-        <div class="burger-menu-items" id="homepage">
-          <ul>
-            <li><span>00</span><a href="../">Home </a></li>
-            <li><span>01</span><a href="../about">About </a></li>
-            <!-- <li><span>02</span><a href="./journal.html">Journal </a></li> -->
-            <li><span>02</span><a href="../projects">Projects </a></li>
-          </ul>
+        <button class="view-more">
+          <a href="#content" class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules"
+            data-ca3_icon=""></a>
+        </button>
+      </div>
+
+      <div class="intro-img">
+        <div class="img-wrapper">
+          <img src="../images/intro-img-tcl.png" alt="" />
         </div>
       </div>
 
-      <div class="template">
-        <div class="intro-text">
-          <h1>A collection of app prototypes.</h1>
-
-          <div class="subtitle">
-            <h3>
-              Documenting how I have implemented a variety of web and mobile
-              applications as part of a Front-End bootcamp.
-            </h3>
-          </div>
-
-          <button class="view-more">
-            <a
-              href="#content"
-              class="ca3-scroll-down-link ca3-scroll-down-arrow"
-              data-ca3_iconfont="ETmodules"
-              data-ca3_icon=""
-            ></a>
-          </button>
+      <div class="overview" id="content">
+        <div class="intro">
+          <h5>Projects overview</h5>
+          <p>
+            This section is a collection of web and mobile applications which
+            I have built as part of a Front-End bootcamp course I took part
+            between March and May 2020. All the below prototypes were fully
+            implemented and built by me following the designs provided by the
+            instructors. After a period of self learning of basic
+            technologies, I have decided to fully commit into developing my
+            coding skills and change my career path. The projects, cover a
+            range of Front-End technologies including Javascript and React.
+          </p>
         </div>
 
-        <div class="intro-img">
-          <div class="img-wrapper">
-            <img src="../images/intro-img-tcl.png" alt="" />
+        <div class="specs">
+          <div class="single-spec">
+            <h5>Role</h5>
+            <p>Front-End developer</p>
           </div>
-        </div>
-
-        <div class="overview" id="content">
-          <div class="intro">
-            <h5>Projects overview</h5>
-            <p>
-              This section is a collection of web and mobile applications which
-              I have built as part of a Front-End bootcamp course I took part
-              between March and May 2020. All the below prototypes were fully
-              implemented and built by me following the designs provided by the
-              instructors. After a period of self learning of basic
-              technologies, I have decided to fully commit into developing my
-              coding skills and change my career path. The projects, cover a
-              range of Front-End technologies including Javascript and React.
-            </p>
-          </div>
-
-          <div class="specs">
-            <div class="single-spec">
-              <h5>Role</h5>
-              <p>Front-End developer</p>
-            </div>
-            <div class="single-spec">
-              <h5>Tech Stack</h5>
-              <div class="tech-stack">
-                <div><img src="../images/icons/react.svg" alt="" /></div>
-                <div>
-                  <img src="../images/icons/logo-javascript.svg" alt="" />
-                </div>
-                <div><img src="../images/icons/sass.png" alt="" /></div>
+          <div class="single-spec">
+            <h5>Tech Stack</h5>
+            <div class="tech-stack">
+              <div><img src="../images/icons/react.svg" alt="" /></div>
+              <div>
+                <img src="../images/icons/logo-javascript.svg" alt="" />
               </div>
+              <div><img src="../images/icons/sass.png" alt="" /></div>
             </div>
-            <div class="single-spec">
-              <h5>Period</h5>
-              <p>March 2020 - May 2020</p>
-            </div>
-            <!-- TODO: hosting? -->
-            <!-- <div class="single-spec">
+          </div>
+          <div class="single-spec">
+            <h5>Period</h5>
+            <p>March 2020 - May 2020</p>
+          </div>
+          <!-- TODO: hosting? -->
+          <!-- <div class="single-spec">
               <h5>Website</h5>
               <a class="project-link" href="https://www.clothingloop.org/"
                 >clothingloop.org</a
               >
             </div> -->
-          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-img">
+          <h1>01. Recipes book web application</h1>
+          <img src="../images/rest app.png" alt="restaurant-app" />
         </div>
 
-        <div class="section">
-          <div class="section-img">
-            <h1>01. Recipes book web application</h1>
-            <img src="../images/rest app.png" alt="restaurant-app" />
-          </div>
+        <h1>Core functionalities</h1>
 
-          <h1>Core functionalities</h1>
+        <ul>
+          <li>fetch recipes information from database</li>
 
-          <ul>
-            <li>fetch recipes information from database</li>
+          <li>store orders data and user data on database</li>
 
-            <li>store orders data and user data on database</li>
+          <li>add to basket selected quantities using local storage</li>
 
-            <li>add to basket selected quantities using local storage</li>
+          <li>user can update, remove order details</li>
+        </ul>
 
-            <li>user can update, remove order details</li>
-          </ul>
+        <h1>Technologies</h1>
 
-          <h1>Technologies</h1>
-
-          <div class="tech-stack">
-            <div class="frontend">
-              <h3>Frontend</h3>
-              <p>
-                This project was built using <mark>React</mark> and
-                <mark>Sass</mark>
-              </p>
-            </div>
-
-            <h1>Project links</h1>
-            <div class="links">
-              <div class="link-icon">
-                <a
-                  href="https://www.figma.com/file/VQz2NrvK8lPykD91kedoKJ/e-commerce_2"
-                >
-                  <img src="../images/icons/figma.png" alt="" />
-                </a>
-              </div>
-
-              <div class="link-icon">
-                <a href="https://github.com/giuliamml/React-recipes-book"
-                  ><img src="../images/icons/github.png" alt=""
-                /></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="section">
-          <div class="section-img">
-            <h1>02. A twitter-like mobile application</h1>
-            <img src="../images/twitter app.png" alt="" />
-          </div>
-
-          <h1>Core functionalities</h1>
-
-          <ul>
-            <li>post new tweet</li>
-
-            <li>like an existing tweet</li>
-
-            <li>comment an existing tweet</li>
-
-            <li>user auth with email and password</li>
-
-            <li>avatar image upload</li>
-          </ul>
-
-          <h1>Technologies</h1>
-
-          <div class="tech-stack">
-            <div class="frontend">
-              <h3>Frontend</h3>
-              <p>
-                This project was built using <mark>Javascript</mark> and
-                <mark>CSS</mark>
-              </p>
-            </div>
-
-            <h1>Project links</h1>
-            <div class="links">
-              <div class="link-icon">
-                <a
-                  href="https://www.figma.com/file/XZaHZskW8etyyJsdmcmlR5/Twitter-app?node-id=0%3A1"
-                  class="underline"
-                >
-                  <img src="../images/icons/figma.png" alt="" />
-                </a>
-              </div>
-
-              <div class="link-icon">
-                <a
-                  href="https://github.com/giuliamml/twitter-project-london-pt-fe-030320"
-                  ><img src="../images/icons/github.png" alt=""
-                /></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="section">
-          <div class="section-img">
-            <h1>03. Banking web application</h1>
-            <img src="../images/bank app.png" alt="" />
-          </div>
-
-          <h1>Core functionalities</h1>
-
-          <ul>
-            <li>create new user account</li>
-
-            <li>transfer funds between accounts</li>
-
-            <li>update account and user settings</li>
-
-            <li>Rounding pense and store to savings feature</li>
-
-            <li>Take loan</li>
-          </ul>
-
-          <h1>Technologies</h1>
-
-          <div class="tech-stack">
-            <div class="frontend">
-              <h3>Frontend</h3>
-              <p>
-                This project was built using <mark>React</mark> and
-                <mark>Sass</mark>
-              </p>
-            </div>
-
-            <h1>Project links</h1>
-            <div class="links">
-              <div class="link-icon">
-                <a
-                  href="https://www.figma.com/file/hPxZJx1pfv8uiOdB83kAVT/Banking-App?node-id=0%3A1"
-                  class="underline"
-                >
-                  <img src="../images/icons/figma.png" alt="" />
-                </a>
-              </div>
-
-              <div class="link-icon">
-                <a href="https://github.com/giuliamml/React-banking-app"
-                  ><img src="../images/icons/github.png" alt=""
-                /></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="breadcrumbs">
-          <p>
-            < back to
-            <a href="../projects">projects</a>/
-            <a href="../">home</a>
-          </p>
-        </div>
-
-        <section id="contacts-single-project">
-          <div class="contacts" id="home-contacts">
-            <div class="stream_text">
-              <h1>Let's Keep in touch</h1>
-            </div>
-            <div class="contacts-txt">
-              <h1 id="sub-text">
-                Want to build a project together?
-                <span
-                  >Contact me via
-                  <a id="email_link" href="mailto:mail@giuliamummolo.com"
-                    >email</a
-                  ></span
-                >
-              </h1>
-              <h1 id="sub-text">
-                Let's connect on
-                <a
-                  id="social_link"
-                  href="https://www.linkedin.com/in/giulia-mummolo-1042b798/"
-                  >Linkedin</a
-                >
-              </h1>
-            </div>
-          </div>
-
-          <div class="copyright">
+        <div class="tech-stack">
+          <div class="frontend">
+            <h3>Frontend</h3>
             <p>
-              <a href="https://github.com/giuliamml/giuliamml.github.io"
-                >Theme</a
-              >
-              designed and built by Giulia Mummolo
+              This project was built using <mark>React</mark> and
+              <mark>Sass</mark>
             </p>
           </div>
-        </section>
+
+          <h1>Project links</h1>
+          <div class="links">
+            <div class="link-icon">
+              <a href="https://www.figma.com/file/VQz2NrvK8lPykD91kedoKJ/e-commerce_2">
+                <img src="../images/icons/figma.png" alt="" />
+              </a>
+            </div>
+
+            <div class="link-icon">
+              <a href="https://github.com/giuliamml/React-recipes-book"><img src="../images/icons/github.png"
+                  alt="" /></a>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <div class="section">
+        <div class="section-img">
+          <h1>02. A twitter-like mobile application</h1>
+          <img src="../images/twitter app.png" alt="" />
+        </div>
+
+        <h1>Core functionalities</h1>
+
+        <ul>
+          <li>post new tweet</li>
+
+          <li>like an existing tweet</li>
+
+          <li>comment an existing tweet</li>
+
+          <li>user auth with email and password</li>
+
+          <li>avatar image upload</li>
+        </ul>
+
+        <h1>Technologies</h1>
+
+        <div class="tech-stack">
+          <div class="frontend">
+            <h3>Frontend</h3>
+            <p>
+              This project was built using <mark>Javascript</mark> and
+              <mark>CSS</mark>
+            </p>
+          </div>
+
+          <h1>Project links</h1>
+          <div class="links">
+            <div class="link-icon">
+              <a href="https://www.figma.com/file/XZaHZskW8etyyJsdmcmlR5/Twitter-app?node-id=0%3A1" class="underline">
+                <img src="../images/icons/figma.png" alt="" />
+              </a>
+            </div>
+
+            <div class="link-icon">
+              <a href="https://github.com/giuliamml/twitter-project-london-pt-fe-030320"><img
+                  src="../images/icons/github.png" alt="" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-img">
+          <h1>03. Banking web application</h1>
+          <img src="../images/bank app.png" alt="" />
+        </div>
+
+        <h1>Core functionalities</h1>
+
+        <ul>
+          <li>create new user account</li>
+
+          <li>transfer funds between accounts</li>
+
+          <li>update account and user settings</li>
+
+          <li>Rounding pense and store to savings feature</li>
+
+          <li>Take loan</li>
+        </ul>
+
+        <h1>Technologies</h1>
+
+        <div class="tech-stack">
+          <div class="frontend">
+            <h3>Frontend</h3>
+            <p>
+              This project was built using <mark>React</mark> and
+              <mark>Sass</mark>
+            </p>
+          </div>
+
+          <h1>Project links</h1>
+          <div class="links">
+            <div class="link-icon">
+              <a href="https://www.figma.com/file/hPxZJx1pfv8uiOdB83kAVT/Banking-App?node-id=0%3A1" class="underline">
+                <img src="../images/icons/figma.png" alt="" />
+              </a>
+            </div>
+
+            <div class="link-icon">
+              <a href="https://github.com/giuliamml/React-banking-app"><img src="../images/icons/github.png"
+                  alt="" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section id="contacts-single-project">
+        <div class="copyright">
+          <ul>
+            <li>
+              <a href='https://www.linkedin.com/in/giulia-mummolo-1042b798/' target="_blank">linkedin</a>
+            </li>
+            <li>
+              <a href='https://www.instagram.com/giulia.mummolo/' target="_blank">instagram</a>
+            </li>
+          </ul>
+          <hr />
+          <p>
+            Giulia Mummolo © 2022</p>
+        </div>
+      </section>
     </div>
-  </body>
+  </div>
+  <script src="../index.js"></script>
+  <script src="../progressBar.js"></script>
+  <script src="../pageTransition.js"></script>
+
+</body>
+
 </html>

@@ -1,103 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../style.css" />
-    <script src="../index.js"></script>
-    <title>ABOUT</title>
-  </head>
-  <body>
-    <div class="single-project-container">
-      <div class="header" id="single-project">
-        <div id="burger-menu-container" onclick="menuOpen()">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
-        </div>
 
-        <div class="burger-menu-items" id="homepage">
-          <ul>
-            <li><span>00</span><a href="../">Home </a></li>
-            <li><span>01</span><a href="../about">About </a></li>
-            <!-- <li><span>02</span><a href="./journal.html">Journal </a></li> -->
-            <li><span>02</span><a href="../projects">Projects </a></li>
-          </ul>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../style.css" />
+  <title>About</title>
+</head>
+
+<body>
+  <div class="transition transition-2 is-active"></div>
+
+  <div class="about-page">
+    <div class="header" id="about">
+      <a href="../">Giulia Mummolo</a>
+
+      <ul class='header-nav-bar'>
+        <li><a class='active' href="../about/">ABOUT </a>
+          <div class="dot"></div>
+        </li>
+        <!-- <li><span>02</span><a href="./journal.html">Journal </a></li> -->
+        <li><a href="../projects">PROJECTS </a>
+        </li>
+        </li>
+        <li> <a href='mailto:mail@giuliamummolo.com?subject=🤝 Let%27s build a project'>LET'S CONNECT</a>
+        </li>
+      </ul>
+
+      <div id="burger-menu-container" onclick="menuOpen()">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
       </div>
 
-      <div class="template">
-        <div class="intro-text">
-          <p>
-            Hey, I am Giulia. <br /><br />
-            For the past 8 years, I have been developing my creativity within
-            the fashion industry, graduating in BA(hons) Fashion Design at
-            Istituto Marangoni in London while working in retail for stores
-            including Harrods, where I was brand manager.
-            <br />Also, I briefly worked as an e-commerce executive, an
-            experience which fuelled my interest in Front-End development.
-            That's where my journey into coding began. I enjoy creating and
-            building ideas to make people's life easier, without compromising a
-            great aesthetic. I am currently working on different web development
-            freelance projects. <br />
-            <br />
-
-            <a
-              href="../files/Giulia Mummolo-Curriculum Vitae.pdf"
-              target="_blank"
-              id="button"
-              class="underline"
-              >View my full CV ></a
-            >
-            <a href="../projects" class="underline" id="button"
-              >View my work ></a
-            >
-          </p>
-        </div>
-
-        <div class="breadcrumbs">
-          <p>
-            < back to
-            <a href="../">home</a>
-          </p>
-        </div>
-
-        <section id="contacts-single-project">
-          <div class="contacts" id="home-contacts">
-            <div class="stream_text">
-              <h1>Let's Keep in touch</h1>
-            </div>
-            <div class="contacts-txt">
-              <h1 id="sub-text">
-                Want to build a project together?
-                <span
-                  >Contact me via
-                  <a id="email_link" href="mailto:mail@giuliamummolo.com"
-                    >email</a
-                  ></span
-                >
-              </h1>
-              <h1 id="sub-text">
-                Let's connect on
-                <a
-                  id="social_link"
-                  href="https://www.linkedin.com/in/giulia-mummolo-1042b798/"
-                  >Linkedin</a
-                >
-              </h1>
-            </div>
-          </div>
-
-          <div class="copyright">
-            <p>
-              <a href="https://github.com/giuliamml/giuliamml.github.io"
-                >Theme</a
-              >
-              designed and built by Giulia Mummolo
-            </p>
-          </div>
-        </section>
+      <div class="burger-menu-items" id="homepage">
+        <ul>
+          <li><span>00</span><a href="../">Home </a></li>
+          <li><span>01</span><a class='active' href="../about">About </a></li>
+          <!-- <li><span>02</span><a href="./journal.html">Journal </a></li> -->
+          <li><span>02</span><a href="../projects">Projects </a></li>
+        </ul>
       </div>
     </div>
-  </body>
+
+    <div class="template" id='about'>
+      <div class='intro-img'>
+        <div>
+          <img src='../images/photo.jpg' alt='' />
+        </div>
+      </div>
+      <div class="intro-text">
+        <h1>Hello. <br /> I am Giulia</h1>
+        <p>
+          a digital designer and Front-End developer. <br /><br />
+          For the past 8 years, I have been developing my creativity within
+          the fashion industry, graduating in BA(hons) Fashion Design at
+          Istituto Marangoni in London while working in retail for stores
+          including Harrods, where I was brand manager.
+          <br />Also, I briefly worked as an e-commerce executive, an
+          experience which fuelled my interest in Front-End development.
+          That's where my journey into coding began. I enjoy creating and
+          building ideas to make people's life easier, without compromising a
+          great aesthetic. I am currently working on different web development
+          freelance projects. <br />
+          <br />
+
+        </p>
+
+      </div>
+
+
+      <section id="contacts">
+        <h1>Want to build a project together?</h1>
+
+        <div class='button-wrapper'>
+          <a href='mailto:mail@giuliamummolo.com?subject=🤝 Let%27s build a project' class='button'>
+            Contact me
+          </a>
+        </div>
+
+        <h1>Let's connect</h1>
+        <ul>
+          <li>
+            <a href='https://www.linkedin.com/in/giulia-mummolo-1042b798/' target="_blank">linkedin</a>
+          </li>
+          <li>
+            <a href='https://www.instagram.com/giulia.mummolo/' target="_blank">instagram</a>
+          </li>
+          <li>
+            <a href='https://github.com/giuliamml' target="_blank">github</a>
+          </li>
+        </ul>
+
+      </section>
+    </div>
+    <div class="content">
+      <section>
+        <h1>Work experience</h1>
+        <div>
+          <div>
+            <p>January 2021 - present 🇳🇱 </p>
+            <h3>Front-End Web Developer & UI Designer</h3>
+            <p>The Clothing Loop</p>
+          </div>
+
+          <div>
+            <p>November 2020 - present 🇵🇹</p>
+            <h3>Front-End Web Developer</h3>
+            <p>Freelancing</p>
+          </div>
+
+          <div>
+            <p>February 2019 - October 2020 🇬🇧</p>
+            <h3>E-Commerce Executive</h3>
+            <p>Georgiana Scott Jewellery</p>
+          </div>
+
+          <div>
+            <p>January 2017 - February 2019 🇬🇧</p>
+            <h3>Product Major</h3>
+            <p>Moncler</p>
+          </div>
+
+          <div>
+            <p>May 2015 - January 2017 🇬🇧</p>
+            <h3>Brand Manager</h3>
+            <p>Harrods</p>
+          </div>
+
+          <div>
+            <p>September 2014 - April 2015 🇬🇧</p>
+            <h3>Private Client Advisor and VM</h3>
+            <p>Bottega Veneta</p>
+          </div>
+
+          <div>
+            <p>May 2012 - August 2014 🇬🇧</p>
+            <h3>Store Supervisor</h3>
+            <p>Banana Republic</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="tech-skills">
+        <h1>Tech skills</h1>
+        <div>
+          <div><img src='../images/icons/js.png' alt='' /></div>
+          <div><img src='../images/icons/html.png' alt='' /></div>
+          <div><img src='../images/icons/react.svg' alt='' /></div>
+          <div><img src='../images/icons/sass.png' alt='' /></div>
+          <div><img src='../images/icons/wordpress.png' alt='' /></div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script src="../index.js"></script>
+  <script src="../pageTransition.js"></script>
+
+</body>
+
 </html>
