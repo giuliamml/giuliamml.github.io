@@ -1,8 +1,37 @@
-//home button navigation
-let webBtn = document.querySelector("button#web");
-console.log(webBtn);
-webBtn.addEventListener("click", (e) => {
-  window.location.replace("./projects");
+//header shadow
+function handleHeaderShadow() {
+  document.addEventListener("scroll", function (e) {
+    const header = document.querySelector(".header");
+    const name = document.querySelector("a.name");
+
+    if (header.offsetTop !== 0) {
+      if (!header.classList.contains("shadow")) {
+        header.classList.add("shadow");
+        name.classList.add("visible");
+      }
+    } else {
+      header.classList.remove("shadow");
+      name.classList.remove("visible");
+    }
+  });
+}
+
+handleHeaderShadow();
+
+function handleActiveMenuItem() {
+  const items = document.querySelectorAll("ul.header-nav-bar li a");
+
+  items.forEach((item) =>
+    item.addEventListener("click", function (e) {
+      items.forEach((item) => item.classList.remove("active"));
+
+      e.target.classList.add("active");
+    })
+  );
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  handleActiveMenuItem();
 });
 
 //burger-menu-logic
@@ -21,97 +50,66 @@ function menuOpen() {
     burgerMenuItems.style.height = "100vh";
     burgerMenuItems.style.position = "absolute";
     burgerMenuItems.style.zIndex = "111111111";
-    burgerMenuItems.style.background = "#ff4f8e";
-    burgerMenuItems.style.boxShadow = "7px 0px 15px 0px #00000036";
+    burgerMenuItems.style.background = "#fd89b2";
+    burgerMenuItems.style.boxheader = "7px 0px 15px 0px #00000036";
     burgerMenuItems.style.borderRight = "1px solid #ffb2d1";
     burgerMenuItems.style.top = "0";
     burgerMenuItems.style.left = "0";
   }
 }
 
-//canvas animation
-var canvas = document.getElementById("canvas_1");
+const revealElements = document.querySelectorAll(".section-title");
+const fadeElements = document.querySelectorAll(".section-desc");
+const fadeDiv = document.querySelectorAll(".skills");
+const fadeProject = document.querySelectorAll(".project");
+const revealSkills = document.querySelectorAll(".skill");
+const rotateSvg = document.querySelectorAll(".toAnimate");
 
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
-var c = canvas.getContext("2d");
-
-$(function () {
-  var text = $(".text");
-  $(window).scroll(function () {
-    var scroll = $(window).scrollTop();
-
-    if (scroll >= 100) {
-      text.removeClass("hidden");
-    } else {
-      text.addClass("hidden");
+const scrollAnim = () => {
+  let windowHt = window.innerHeight;
+  revealElements.forEach((elements) => {
+    let elementPos = elements.getBoundingClientRect().top;
+    if (elementPos <= windowHt / 1.3) {
+      elements.classList.add("revealed");
     }
   });
-});
-
-//full circles
-function Circle(x, y, dx, dy, radius, color) {
-  this.x = x;
-  this.y = y;
-  this.dx = dx;
-  this.dy = dy;
-  this.radius = radius;
-
-  this.draw = function () {
-    c.fillStyle = "black";
-    c.beginPath();
-    c.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-    c.strokeStyle = color;
-    c.stroke();
-    c.fillStyle = color;
-    c.fill();
-  };
-  this.update = function () {
-    if (this.x + this.radius > innerWidth || this.x - this.radius < 0) {
-      this.dx = -this.dx;
+  fadeElements.forEach((element) => {
+    let elementPos = element.getBoundingClientRect().top;
+    if (elementPos <= windowHt / 1.3) {
+      element.classList.add("faded-in");
     }
+  });
 
-    if (this.y + this.radius > innerHeight || this.y - this.radius < 0) {
-      this.dy = -this.dy;
+  fadeDiv.forEach((element) => {
+    let elementPos = element.getBoundingClientRect().top;
+    if (elementPos <= windowHt / 1.3) {
+      element.classList.add("slide");
     }
-    this.x += this.dx;
-    this.y += this.dy;
-    this.draw();
-  };
-}
+  });
 
-function getRandomNumber(max) {
-  return Math.floor(Math.random() * Math.floor(max));
-}
+  fadeProject.forEach((element) => {
+    let elementPos = element.getBoundingClientRect().top;
+    if (elementPos <= windowHt / 1.3) {
+      element.classList.add("fade-up");
+    }
+  });
 
-function getRandomColor(colorArray) {
-  var i = Math.floor(Math.random() * Math.floor(colorArray.length));
-  return colorArray[i];
-}
-var colorArray = [" #ffb2d1", "#ff4f8e"];
+  revealSkills.forEach((element) => {
+    let elementPos = element.getBoundingClientRect().top;
+    if (elementPos <= windowHt / 1.3) {
+      element.classList.add("reveal-right");
+    }
+  });
 
-var circleArray = [];
-for (var i = 0; i < 200; i++) {
-  var radius = Math.random() * 100;
-  var x = Math.random() * (innerWidth - radius * 2) + radius;
-  var y = Math.random() * (innerHeight - radius * 2) + radius;
-  var dx = (Math.random() - 0.5) * 3;
-  var dy = (Math.random() - 0.5) * 3;
+  rotateSvg.forEach((element) => {
+    let elementPos = element.getBoundingClientRect().top;
+    if (elementPos <= windowHt / 1.3) {
+      element.classList.add("active");
+    }
+  });
+};
 
-  circleArray.push(
-    new Circle(x, y, dx, dy, radius, getRandomColor(colorArray))
-  );
-}
+document.addEventListener("DOMContentLoaded", scrollAnim);
 
-function animate() {
-  requestAnimationFrame(animate);
-  c.clearRect(0, 0, innerWidth, innerHeight);
-
-  for (let i = 0; i < circleArray.length; i++) {
-    circleArray[i].update();
-  }
-}
-
-animate();
-draw();
+window.addEventListener("scroll", scrollAnim);
 

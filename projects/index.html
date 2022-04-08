@@ -1,186 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;400&display=swap"
-      rel="stylesheet"
-    />
-    <script src="../index.js"></script>
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Work+Sans:wght@100;400&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../style.css" />
-    <title>PROJECTS</title>
-  </head>
-  <body>
-    <div class="projects-container">
-      <div class="header" id="projects">
-        <a href="../">Giulia Mummolo</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;400&display=swap" rel="stylesheet" />
 
-        <div id="burger-menu-container" onclick="menuOpen()">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
-        </div>
+  <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Work+Sans:wght@100;400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <title>Projects</title>
+</head>
 
-        <div class="burger-menu-items" id="homepage">
-          <ul>
-            <li><span>00</span><a href="../">Home </a></li>
-            <li><span>01</span><a href="../about">About </a></li>
-            <!-- <li><span>02</span><a href="./journal.html">Journal </a></li> -->
-            <li><span>02</span><a href="../projects">Projects </a></li>
-          </ul>
-        </div>
+<body>
+  <div class="transition transition-1 is-active"></div>
+  <div style="position:fixed" id="test"></div>
+
+
+  <div class="projects-container">
+    <div class="header" id="projects">
+      <a href="../">giulia mummolo</a>
+
+      <ul class='header-nav-bar'>
+        <li><a href="../about/">ABOUT </a>
+        </li>
+        <!-- <li><span>02</span><a href="./journal.html">Journal </a></li> -->
+        <li><a class='active' href="../projects">PROJECTS </a>
+          <div class="dot"></div>
+        </li>
+        </li>
+        <li> <a href='mailto:mail@giuliamummolo.com?subject=🤝 Let%27s build a project'>LET'S CONNECT</a>
+        </li>
+      </ul>
+
+      <div id="burger-menu-container" onclick="menuOpen()">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
       </div>
 
-      <div class="mobile-static-text">
-        <h1 id="mobile">projects</h1>
+      <div class="burger-menu-items" id="homepage">
+        <ul>
+          <li><span>00</span><a href="../">Home </a></li>
+          <li><span>01</span><a href="../about">About </a></li>
+          <!-- <li><span>02</span><a href="./journal.html">Journal </a></li> -->
+          <li><span>02</span><a class='active' href="../projects">Projects </a></li>
+        </ul>
       </div>
-
-      <div class="stream_text">
-        <h1>projects</h1>
-      </div>
-
-      <div class="project" id="0">
-        <h1>01</h1>
-        <a href="../clothing-loop-development/">
-          <img src="../images/main-tcl-img.png" alt="" />
-        </a>
-
-        <div class="project-text">
-          <a href="../clothing-loop-development/">
-            <h3>Developing a web app for The Clothing Loop</h3>
-
-            <p>
-              How I built and managed a fully customized digital solution for
-              the global expansion of a clothing swap initiative.
-            </p>
-          </a>
-          <a href="../clothing-loop-development/" id="button">view more ></a>
-        </div>
-      </div>
-
-      <div class="project" id="0">
-        <h1>02</h1>
-        <a href="../clothing-loop-design/">
-          <img src="../images/TCL-design.png" alt="" />
-        </a>
-        <div class="project-text">
-          <a href="../clothing-loop-design/">
-            <h3>UI redesign for The Clothing Loop</h3>
-
-            <p>
-              How I designed a web application for the global expansion of a
-              clothing swap initiative.
-            </p>
-          </a>
-          <a href="../clothing-loop-design/" id="button">view more ></a>
-        </div>
-      </div>
-
-      <!-- <div class="project" id="0">
-        <h1>03</h1>
-
-        <img src="./images/clothing-loop.png" />
-        <div class="project-text">
-          <h3>Professional website</h3>
-
-          <hr />
-          <p>Design and development of a professional website.</p>
-          <button class="project" id="0">
-            <a
-              href="./project-two.html"
-              class="ca3-scroll-down-link ca3-scroll-down-arrow"
-              data-ca3_iconfont="ETmodules"
-              data-ca3_icon=""
-              >view more ></a
-            >
-          </button>
-        </div>
-      </div>
-
-      <div class="project" id="0">
-        <h1>04</h1>
-
-        <img src="./images/decora_landingpage.png" />
-        <div class="project-text">
-          <h3>The Decora Edit</h3>
-
-          <hr />
-          <p>Custom Wordpress template for a blog on sustainable fashion.</p>
-          <button class="project" id="0">
-            <a
-              href="./project-four.html"
-              class="ca3-scroll-down-link ca3-scroll-down-arrow"
-              data-ca3_iconfont="ETmodules"
-              data-ca3_icon=""
-              >view more ></a
-            >
-          </button>
-        </div>
-      </div> -->
-
-      <div class="project" id="0">
-        <h1>03</h1>
-        <a href="../collection-of-prototypes/">
-          <img src="../images/rest app.png" />
-        </a>
-        <div class="project-text">
-          <a href="../clothing-loop-design/">
-            <h3>A collection of app prototypes</h3>
-
-            <p>Web and mobile apps built in JS and React.</p>
-          </a>
-          <a href="../collection-of-prototypes/" id="button">view more ></a>
-        </div>
-      </div>
-
-      <section id="contacts">
-        <div class="contacts" id="home-contacts">
-          <div class="stream_text">
-            <h1>Let's Keep in touch</h1>
-          </div>
-          <div class="contacts-txt">
-            <h1 id="sub-text">
-              Want to build a project together?
-              <span
-                >Contact me via
-                <a id="email_link" href="mailto:mail@giuliamummolo.com"
-                  >email</a
-                ></span
-              >
-            </h1>
-            <h1 id="sub-text">
-              Let's connect on
-              <a
-                id="social_link"
-                href="https://www.linkedin.com/in/giulia-mummolo-1042b798/"
-                >Linkedin</a
-              >
-            </h1>
-          </div>
-        </div>
-
-        <div class="copyright">
-          <p>
-            <a href="https://github.com/giuliamml/giuliamml.github.io">Theme</a>
-            designed and built by Giulia Mummolo
-          </p>
-        </div>
-      </section>
     </div>
 
-    <script src="../index.js"></script>
+    <section id="projects-home">
+      <div class="projects-wrapper">
+        <div class="single-project">
+          <a href='../clothing-loop-development/'>
+            <div class='project-content-wrapper'>
+              <div class='project-img'><img src='../images/main-tcl-img.png'></div>
+              <div class="project-txt">
+                <h3>WEB DEVELOPMENT</h3>
+                <h1>The Clothing Loop</h1>
+                <svg class="arrow-over" viewBox="0 0 78 16" xml:space="preserve">
+                  <path class="arrow-line" style="stroke-width:1.5;fill:none;stroke:#ff5a62;" d="M0 8h77"></path>
+                  <path class="arrow-linel" style="stroke-width:1.5;fill:none;stroke:#ff5a62;" d="M68 15s-.3-6.8 9-7">
+                  </path>
+                  <path class="arrow-liner" style="stroke-width:1.5;fill:none;stroke:#ff5a62;" d="M68 1s-.3 6.8 9 7">
+                  </path>
+                </svg>
+              </div>
+            </div>
 
-    <script
-      async
-      defer
-      data-domain="giuliamummolo.com"
-      src="https://plausible.io/js/plausible.js"
-    ></script>
-  </body>
+          </a>
+
+        </div>
+        <div class="single-project">
+          <a href='../clothing-loop-design/'>
+            <div class='project-content-wrapper'>
+              <div class='project-img'><img src='../images/TCL-design.png'></div>
+
+              <div class="project-txt">
+                <h3>UI DESIGN</h3>
+                <h1>The Clothing Loop</h1>
+
+                <svg class="arrow-over" viewBox="0 0 78 16" xml:space="preserve">
+                  <path class="arrow-line" style="stroke-width:1.5;fill:none;stroke:#ff5a62;" d="M0 8h77"></path>
+                  <path class="arrow-linel" style="stroke-width:1.5;fill:none;stroke:#ff5a62;" d="M68 15s-.3-6.8 9-7">
+                  </path>
+                  <path class="arrow-liner" style="stroke-width:1.5;fill:none;stroke:#ff5a62;" d="M68 1s-.3 6.8 9 7">
+                  </path>
+                </svg>
+              </div>
+
+            </div>
+          </a>
+
+
+        </div>
+
+        <div class="single-project">
+          <a href='../collection-of-prototypes/'>
+            <div class='project-content-wrapper'>
+              <div class='project-img'><img src='../images/rest app.png'></div>
+              <div class="project-txt">
+                <h3>WEB DEVELOPMENT</h3>
+                <h1>A collection of app prototypes</h1>
+
+                <svg class="arrow-over" viewBox="0 0 78 16" xml:space="preserve">
+                  <path class="arrow-line" style="stroke-width:1.5;fill:none;stroke:#ff5a62;" d="M0 8h77"></path>
+                  <path class="arrow-linel" style="stroke-width:1.5;fill:none;stroke:#ff5a62;" d="M68 15s-.3-6.8 9-7">
+                  </path>
+                  <path class="arrow-liner" style="stroke-width:1.5;fill:none;stroke:#ff5a62;" d="M68 1s-.3 6.8 9 7">
+                  </path>
+                </svg>
+
+              </div>
+            </div>
+
+        </div></a>
+
+      </div>
+
+    </section>
+
+    <section id="contacts">
+      <div class="copyright">
+        <ul>
+          <li>
+            <a href='https://www.linkedin.com/in/giulia-mummolo-1042b798/' target="_blank">linkedin</a>
+          </li>
+          <li>
+            <a href='https://www.instagram.com/giulia.mummolo/' target="_blank">instagram</a>
+          </li>
+        </ul>
+        <hr />
+        <p>
+          Giulia Mummolo © 2022</p>
+      </div>
+    </section>
+  </div>
+
+  <script src="../index.js"></script>
+  <script src="../pageTransition.js"></script>
+
+  <script async defer data-domain="giuliamummolo.com" src="https://plausible.io/js/plausible.js"></script>
+</body>
+
 </html>
