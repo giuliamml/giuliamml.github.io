@@ -25,7 +25,7 @@ $lilac: #d5adfb;
 
 $primary: #4400ff;
 $secondary: #ffb2d1;
-$highlight: #ff5a62;
+$highlight: #fa338c;
 $lilac: #d5adfb;
 
 $text-font: "Grotesk";
@@ -784,6 +784,11 @@ ul.header-nav-bar {
                 text-transform: uppercase;
               }
             }
+
+            p,
+            .button-wrapper {
+              display: none;
+            }
           }
 
           .scroll-down {
@@ -1189,7 +1194,7 @@ ul.header-nav-bar {
           transition: 0.5s;
 
           a.button {
-            font-family: $text-other;
+            font-family: $text-heading;
             text-transform: uppercase;
             text-decoration: none;
             cursor: pointer;
@@ -1202,7 +1207,7 @@ ul.header-nav-bar {
             transition: 0.5s;
 
             a {
-              color: #ffff;
+              color: $secondary;
               transition: 0.5s;
             }
           }
@@ -1817,11 +1822,9 @@ ul.header-nav-bar {
               font-size: 18px;
               color: $primary;
               opacity: 0.6;
-
-              
             }
 
-            &:last-of-type{
+            &:last-of-type {
               border: 1px solid #4400ff8a;
               border-radius: 50%;
               padding: 8px;
@@ -2018,9 +2021,7 @@ ul.header-nav-bar {
           display: inline;
           color: $primary;
           font-family: $text-other;
-          text-transform: uppercase;
-          font-weight: lighter;
-          font-size: 3rem;
+          font-size: 4rem;
           line-height: 1;
           text-decoration: none;
         }
@@ -2062,7 +2063,6 @@ ul.header-nav-bar {
           -webkit-text-stroke: 1px $primary;
           font-weight: lighter;
           position: absolute;
-          line-height: 0.8;
           top: 120px;
         }
 
@@ -2087,6 +2087,7 @@ ul.header-nav-bar {
             &:nth-of-type(2) {
               text-transform: uppercase;
               margin-right: 0;
+              font-weight: lighter;
             }
           }
 
@@ -2094,18 +2095,30 @@ ul.header-nav-bar {
             display: none;
           }
 
-          a#button {
-            font-family: $text-other;
-            text-transform: uppercase;
-            font-size: 1vw;
-            color: $pink2;
-            text-decoration: none;
-            padding-top: 10%;
-            position: absolute;
+          p {
+            color: $highlight;
+            font-family: $text-font;
+            text-align: center;
+            font-size: 18px;
+          }
+
+          .button-wrapper {
             display: flex;
-            text-align: right;
-            float: right;
-            right: 10%;
+            padding-top: 30px;
+            justify-content: center;
+            a#button {
+              width: max-content;
+              position: relative;
+              background-color: $primary;
+              border-radius: 60px;
+              padding: 1rem;
+              color: $secondary;
+              text-decoration: none;
+              font-size: 18px;
+              font-family: $text-font;
+              text-transform: uppercase;
+              opacity: 0.8;
+            }
           }
         }
 
@@ -2299,7 +2312,7 @@ ul.header-nav-bar {
       transition: 0.5s;
 
       a.button {
-        font-family: $text-other;
+        font-family: $text-font;
         text-transform: uppercase;
         text-decoration: none;
         cursor: pointer;
