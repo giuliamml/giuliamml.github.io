@@ -6,7 +6,7 @@ window.onload = () => {
     transition_el.classList.remove("is-active");
   }, 500);
 
-  anchor.forEach((anchor) => {
+  anchors.forEach((anchor) => {
     anchor.addEventListener("click", (e) => {
       e.preventDefault();
       let target = e.target.href;

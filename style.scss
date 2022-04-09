@@ -24,7 +24,8 @@ $light-blue: #d5e6f7;
 $lilac: #d5adfb;
 
 $primary: #4400ff;
-$secondary: #ffb2d1;
+// $secondary: #ffb2d1;
+$secondary: pink;
 $highlight: #fa338c;
 $lilac: #d5adfb;
 
@@ -1928,6 +1929,9 @@ ul.header-nav-bar {
 }
 
 @media (max-width: 768px) {
+  body {
+    background-color: $secondary;
+  }
   .header-nav-bar,
   .name,
   .progress {
@@ -2252,9 +2256,6 @@ ul.header-nav-bar {
   }
 
   .about-page {
-    background-color: $secondary;
-    height: 100vh;
-
     .content {
       display: none;
     }
