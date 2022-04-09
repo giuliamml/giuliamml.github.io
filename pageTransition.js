@@ -8,21 +8,16 @@ window.onload = () => {
 
   for (let i = 0; i < anchors.length; i++) {
     const anchor = anchors[i];
-    console.log("🚀 ~ file: pageTransition.js ~ line 12 ~ anchor", anchor);
 
-    // anchor.addEventListener("click", (e) => {
-    //   e.preventDefault();
-    //   let target = e.target.href;
-    //   console.log(
-    //     "🚀 ~ file: pageTransition.js ~ line 16 ~ anchor.addEventListener ~ target",
-    //     target
-    //   );
+    anchor.addEventListener("click", (e) => {
+      e.preventDefault();
+      let target = e.target.href;
 
-    //   transition_el.classList.add("is-active");
+      transition_el.classList.add("is-active");
 
-    //   setInterval(() => {
-    //     window.location.href = target;
-    //   }, 500);
-    // });
+      setInterval(() => {
+        window.location.href = target;
+      }, 500);
+    });
   }
 };

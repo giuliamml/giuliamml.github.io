@@ -260,7 +260,7 @@ ul.header-nav-bar li .dot {
   width: 400px;
   height: 400px;
   border-radius: 50%;
-  background-image: linear-gradient(#4400ff, #ff5a62);
+  background-image: linear-gradient(#4400ff, #fa338c);
   filter: blur(100px);
   position: absolute;
   opacity: 0.6;
@@ -424,6 +424,10 @@ body .container .landing_page .header #burger-menu-container {
     margin-left: 100px;
     text-transform: uppercase;
   }
+  body .container .landing_page .main .landing-page-description p,
+body .container .landing_page .main .landing-page-description .button-wrapper {
+    display: none;
+  }
   body .container .landing_page .main .scroll-down {
     position: relative;
     float: right;
@@ -570,8 +574,8 @@ body .container .landing_page .header #burger-menu-container {
   }
   body .container section#about .section-about-content .skills ul li {
     width: max-content;
-    background-color: #ff5a62;
-    border: 1px solid #ff5a62;
+    background-color: #fa338c;
+    border: 1px solid #fa338c;
     opacity: 0.8;
     padding: 5px 10px;
     border-radius: 50px;
@@ -604,7 +608,7 @@ body .container .landing_page .header #burger-menu-container {
     align-self: flex-end;
   }
   body .container section#about .section-about-content .skills h1 {
-    color: #ff5a62;
+    color: #fa338c;
     margin: 20px 0;
     text-align: right;
     margin-right: 200px;
@@ -697,7 +701,7 @@ body .container .landing_page .header #burger-menu-container {
     padding: 50px 50px;
   }
   body .container section#projects-home .projects-wrapper .project a .project-content-wrapper .project-txt h3 {
-    color: #ff5a62;
+    color: #fa338c;
     text-transform: uppercase;
     font-size: 0.8vw;
     letter-spacing: 0.16rem;
@@ -801,7 +805,7 @@ body .container .landing_page .header #burger-menu-container {
     transition: 0.5s;
   }
   body .container section#connect .button-wrapper a.button {
-    font-family: "areminiscentsmile";
+    font-family: "Monument";
     text-transform: uppercase;
     text-decoration: none;
     cursor: pointer;
@@ -813,7 +817,7 @@ body .container .landing_page .header #burger-menu-container {
     transition: 0.5s;
   }
   body .container section#connect .button-wrapper:hover a {
-    color: #ffff;
+    color: #ffb2d1;
     transition: 0.5s;
   }
   body .container section#contacts {
@@ -987,7 +991,7 @@ body .projects-container .header #burger-menu-container {
     padding: 50px 50px;
   }
   body .projects-container section#projects-home .projects-wrapper .single-project a .project-content-wrapper .project-txt h3 {
-    color: #ff5a62;
+    color: #fa338c;
     text-transform: uppercase;
     font-size: 0.8vw;
     letter-spacing: 0.16rem;
@@ -1256,7 +1260,7 @@ body .single-project-container .header #burger-menu-container {
   }
   body .single-project-container .template .overview .intro h5 {
     font-family: "Monument";
-    color: #ff5a62;
+    color: #fa338c;
     text-transform: uppercase;
     padding-bottom: 5px;
   }
@@ -1283,7 +1287,7 @@ body .single-project-container .header #burger-menu-container {
   }
   body .single-project-container .template .overview .specs .single-spec h5 {
     font-family: "Monument";
-    color: #ff5a62;
+    color: #fa338c;
     padding-bottom: 5px;
     text-transform: uppercase;
   }
@@ -1779,9 +1783,7 @@ body .about-page .header #burger-menu-container {
     display: inline;
     color: #4400ff;
     font-family: "areminiscentsmile";
-    text-transform: uppercase;
-    font-weight: lighter;
-    font-size: 3rem;
+    font-size: 4rem;
     line-height: 1;
     text-decoration: none;
   }
@@ -1817,7 +1819,6 @@ body .about-page .header #burger-menu-container {
     -webkit-text-stroke: 1px #4400ff;
     font-weight: lighter;
     position: absolute;
-    line-height: 0.8;
     top: 120px;
   }
   .container .landing_page .main .landing-page-text h1 {
@@ -1838,22 +1839,34 @@ body .about-page .header #burger-menu-container {
   .container .landing_page .main .landing-page-description h1:nth-of-type(2) {
     text-transform: uppercase;
     margin-right: 0;
+    font-weight: lighter;
   }
   .container .landing_page .main .landing-page-description h3 {
     display: none;
   }
-  .container .landing_page .main .landing-page-description a#button {
-    font-family: "areminiscentsmile";
-    text-transform: uppercase;
-    font-size: 1vw;
-    color: #ef7a85;
-    text-decoration: none;
-    padding-top: 10%;
-    position: absolute;
+  .container .landing_page .main .landing-page-description p {
+    color: #fa338c;
+    font-family: "Grotesk";
+    text-align: center;
+    font-size: 18px;
+  }
+  .container .landing_page .main .landing-page-description .button-wrapper {
     display: flex;
-    text-align: right;
-    float: right;
-    right: 10%;
+    padding-top: 30px;
+    justify-content: center;
+  }
+  .container .landing_page .main .landing-page-description .button-wrapper a#button {
+    width: max-content;
+    position: relative;
+    background-color: #4400ff;
+    border-radius: 60px;
+    padding: 1rem;
+    color: #ffb2d1;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "Grotesk";
+    text-transform: uppercase;
+    opacity: 0.8;
   }
   .container .landing_page .main button {
     display: none;
@@ -1940,7 +1953,7 @@ body .about-page .header #burger-menu-container {
     padding: 10px 10px;
   }
   .projects-container section#projects-home .projects-wrapper .single-project a .project-content-wrapper .project-txt h3 {
-    color: #ff5a62;
+    color: #fa338c;
     text-transform: uppercase;
     font-size: 2vw;
     letter-spacing: 0.16rem;
@@ -2008,7 +2021,7 @@ body .about-page .header #burger-menu-container {
     text-decoration: none;
     font-family: "Grotesk";
     text-transform: capitalize;
-    color: #ff5a62;
+    color: #fa338c;
     font-size: 1rem;
   }
 
@@ -2024,7 +2037,7 @@ body .about-page .header #burger-menu-container {
     transition: 0.5s;
   }
   section#contacts .button-wrapper a.button {
-    font-family: "areminiscentsmile";
+    font-family: "Grotesk";
     text-transform: uppercase;
     text-decoration: none;
     cursor: pointer;
@@ -2186,7 +2199,7 @@ body .about-page .header #burger-menu-container {
   }
   .single-project-container .template .overview .intro h5 {
     font-family: "Monument";
-    color: #ff5a62;
+    color: #fa338c;
     text-transform: uppercase;
   }
   .single-project-container .template .overview .intro p {
@@ -2212,7 +2225,7 @@ body .about-page .header #burger-menu-container {
   .single-project-container .template .overview .specs .single-spec h5 {
     font-family: "Monument";
     text-transform: uppercase;
-    color: #ff5a62;
+    color: #fa338c;
   }
   .single-project-container .template .overview .specs .single-spec p {
     width: 100%;
@@ -2343,7 +2356,7 @@ body .about-page .header #burger-menu-container {
     font-size: 1.25rem;
     text-decoration: underline;
     font-family: "Monument";
-    color: #ff5a62;
+    color: #fa338c;
   }
   .single-project-container .template .section .tech-stack .frontend mark,
 .single-project-container .template .section .tech-stack .backend mark {
