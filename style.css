@@ -120,7 +120,7 @@ ul.header-nav-bar li .dot {
   width: 100%;
   top: 0;
   right: 0;
-  background: #ffb2d1;
+  background: pink;
   transition: 800ms ease-in-out;
 }
 
@@ -273,7 +273,7 @@ ul.header-nav-bar li .dot {
     height: 100%;
     overflow: hidden;
     overflow-y: scroll;
-    background-color: #ffb2d1;
+    background-color: pink;
     font-size: 16px;
   }
   body .container {
@@ -301,7 +301,7 @@ body .container .landing_page .burger-menu-items {
     align-items: center;
     position: sticky;
     top: 0;
-    background-color: #ffb2d1;
+    background-color: pink;
   }
   body .container .landing_page .header .name {
     opacity: 0;
@@ -583,7 +583,7 @@ body .container .landing_page .main .landing-page-description .button-wrapper {
     opacity: 0;
   }
   body .container section#about .section-about-content .skills ul li p {
-    color: #ffb2d1;
+    color: pink;
     text-transform: uppercase;
     font-size: 2.5vw;
     text-align: center;
@@ -746,8 +746,8 @@ body .container .landing_page .main .landing-page-description .button-wrapper {
     z-index: 11111111;
     background-color: #4400ff;
     height: 3rem;
-    border-top: 1px solid #ffb2d1;
-    border-bottom: 1px solid #ffb2d1;
+    border-top: 1px solid pink;
+    border-bottom: 1px solid pink;
     box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
   }
   body .container section#journal .stream_text p {
@@ -758,7 +758,7 @@ body .container .landing_page .main .landing-page-description .button-wrapper {
     animation: stream 10s linear infinite;
     font-family: "Monument";
     font-size: 1rem !important;
-    color: #ffb2d1;
+    color: pink;
   }
   body .container section#journal .medium-widget-article__image img {
     position: relative;
@@ -817,7 +817,7 @@ body .container .landing_page .main .landing-page-description .button-wrapper {
     transition: 0.5s;
   }
   body .container section#connect .button-wrapper:hover a {
-    color: #ffb2d1;
+    color: pink;
     transition: 0.5s;
   }
   body .container section#contacts {
@@ -882,9 +882,9 @@ body .container .landing_page .main .landing-page-description .button-wrapper {
   }
   body .single-project-container #single-project a {
     text-decoration: none;
-    color: #ffb2d1;
+    color: pink;
     font-size: 3rem;
-    color: #ffb2d1;
+    color: pink;
     font-family: "Monument";
   }
   body .single-project-container #single-project #burger-menu-container {
@@ -901,7 +901,7 @@ body .container .landing_page .main .landing-page-description .button-wrapper {
   body .projects-container .header {
     display: flex;
     justify-content: space-between;
-    background-color: #ffb2d1;
+    background-color: pink;
     z-index: 1;
     padding: 10px 20px;
     align-items: center;
@@ -1252,7 +1252,7 @@ body .single-project-container .header #burger-menu-container {
   body .single-project-container .template .overview {
     display: grid;
     grid-template-columns: 60% 40%;
-    background-color: #ffb2d1;
+    background-color: pink;
     padding: 5% 0;
   }
   body .single-project-container .template .overview .intro {
@@ -1431,7 +1431,7 @@ body .single-project-container .template .section .tech-stack .backend h3 {
   }
   body .single-project-container .template .section .tech-stack .frontend mark,
 body .single-project-container .template .section .tech-stack .backend mark {
-    background-color: #ffb2d1;
+    background-color: pink;
     color: #4400ff;
   }
   body .single-project-container .template .section .tech-stack .frontend .tech-icons,
@@ -1472,7 +1472,7 @@ body .single-project-container .template .section .tech-stack .backend .tech-ico
   body .single-project-container .breadcrumbs p {
     font-family: "areminiscentsmile";
     text-transform: lowercase;
-    color: #ffb2d1;
+    color: pink;
     font-size: 1rem;
     text-align: center;
   }
@@ -1699,6 +1699,10 @@ body .about-page .header #burger-menu-container {
   }
 }
 @media (max-width: 768px) {
+  body {
+    background-color: pink;
+  }
+
   .header-nav-bar,
 .name,
 .progress {
@@ -1709,7 +1713,7 @@ body .about-page .header #burger-menu-container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: #ffb2d1;
+    background-color: pink;
     z-index: 1;
     height: 3.7rem;
     position: relative;
@@ -1773,7 +1777,7 @@ body .about-page .header #burger-menu-container {
   }
   .header .burger-menu-items#homepage ul li span {
     display: block;
-    color: #ffb2d1;
+    color: pink;
     font-family: "Monument";
     position: relative;
     text-align: left;
@@ -1794,7 +1798,7 @@ body .about-page .header #burger-menu-container {
   .container {
     width: 100vw;
     height: 100vh;
-    background-color: #ffb2d1;
+    background-color: pink;
     overflow: hidden;
   }
   .container .header {
@@ -1861,7 +1865,7 @@ body .about-page .header #burger-menu-container {
     background-color: #4400ff;
     border-radius: 60px;
     padding: 1rem;
-    color: #ffb2d1;
+    color: pink;
     text-decoration: none;
     font-size: 18px;
     font-family: "Grotesk";
@@ -1902,7 +1906,7 @@ body .about-page .header #burger-menu-container {
     height: 100%;
     display: flex;
     flex-direction: column;
-    background-color: #ffb2d1;
+    background-color: pink;
     padding-bottom: 5%;
   }
   .projects-container .mobile-static-text {
@@ -1984,10 +1988,6 @@ body .about-page .header #burger-menu-container {
     display: none;
   }
 
-  .about-page {
-    background-color: #ffb2d1;
-    height: 100vh;
-  }
   .about-page .content {
     display: none;
   }
@@ -2194,7 +2194,7 @@ body .about-page .header #burger-menu-container {
   .single-project-container .template .overview {
     display: flex;
     flex-direction: column;
-    background-color: #ffb2d1;
+    background-color: pink;
     padding: 5% 5%;
   }
   .single-project-container .template .overview .intro h5 {
