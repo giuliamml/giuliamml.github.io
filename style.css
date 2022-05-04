@@ -120,7 +120,7 @@ ul.header-nav-bar li .dot {
   width: 100%;
   top: 0;
   right: 0;
-  background: pink;
+  background: #ffc0cb;
   transition: 800ms ease-in-out;
 }
 
@@ -215,7 +215,7 @@ ul.header-nav-bar li .dot {
   right: 0;
   bottom: 0;
   z-index: 101;
-  background-color: #ff90b3;
+  background-color: #ffc0cb;
   opacity: 0;
   pointer-events: none;
   transition: 0.5s ease-out;
@@ -233,7 +233,7 @@ ul.header-nav-bar li .dot {
   width: 100%;
   bottom: 0;
   z-index: 101;
-  background-color: #ff90b3;
+  background-color: #ffc0cb;
   transition: 0.5s ease-out;
 }
 
@@ -248,7 +248,7 @@ ul.header-nav-bar li .dot {
   width: 100%;
   height: 100%;
   z-index: 101;
-  background-color: #ff90b3;
+  background-color: #ffc0cb;
   transition: 0.5s ease-out;
 }
 
@@ -273,7 +273,7 @@ ul.header-nav-bar li .dot {
     height: 100%;
     overflow: hidden;
     overflow-y: scroll;
-    background-color: pink;
+    background-color: #ffc0cb;
     font-size: 16px;
   }
   body .container {
@@ -288,6 +288,10 @@ ul.header-nav-bar li .dot {
   }
   body .container .landing_page {
     padding: 0;
+    max-width: 1440px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
   }
   body .container .landing_page #burger-menu-container,
 body .container .landing_page .burger-menu-items {
@@ -301,7 +305,7 @@ body .container .landing_page .burger-menu-items {
     align-items: center;
     position: sticky;
     top: 0;
-    background-color: pink;
+    background-color: #ffc0cb;
   }
   body .container .landing_page .header .name {
     opacity: 0;
@@ -540,7 +544,7 @@ body .container .landing_page .main .landing-page-description .button-wrapper {
   }
   body .container section#about .section-about-content p {
     font-family: "Grotesk";
-    color: #ff90b3;
+    color: #ffc0cb;
     font-size: 1.8rem;
     line-height: 1.4;
     font-weight: 300;
@@ -551,7 +555,7 @@ body .container .landing_page .main .landing-page-description .button-wrapper {
     margin-right: 80px;
   }
   body .container section#about .section-about-content p span {
-    color: #ff90b3;
+    color: #ffc0cb;
     font-size: 64px;
     text-align: left;
     line-height: 76.8px;
@@ -583,7 +587,7 @@ body .container .landing_page .main .landing-page-description .button-wrapper {
     opacity: 0;
   }
   body .container section#about .section-about-content .skills ul li p {
-    color: pink;
+    color: #ffc0cb;
     text-transform: uppercase;
     font-size: 2.5vw;
     text-align: center;
@@ -746,8 +750,8 @@ body .container .landing_page .main .landing-page-description .button-wrapper {
     z-index: 11111111;
     background-color: #4400ff;
     height: 3rem;
-    border-top: 1px solid pink;
-    border-bottom: 1px solid pink;
+    border-top: 1px solid #ffc0cb;
+    border-bottom: 1px solid #ffc0cb;
     box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
   }
   body .container section#journal .stream_text p {
@@ -758,7 +762,7 @@ body .container .landing_page .main .landing-page-description .button-wrapper {
     animation: stream 10s linear infinite;
     font-family: "Monument";
     font-size: 1rem !important;
-    color: pink;
+    color: #ffc0cb;
   }
   body .container section#journal .medium-widget-article__image img {
     position: relative;
@@ -817,7 +821,7 @@ body .container .landing_page .main .landing-page-description .button-wrapper {
     transition: 0.5s;
   }
   body .container section#connect .button-wrapper:hover a {
-    color: pink;
+    color: #ffc0cb;
     transition: 0.5s;
   }
   body .container section#contacts {
@@ -882,9 +886,9 @@ body .container .landing_page .main .landing-page-description .button-wrapper {
   }
   body .single-project-container #single-project a {
     text-decoration: none;
-    color: pink;
+    color: #ffc0cb;
     font-size: 3rem;
-    color: pink;
+    color: #ffc0cb;
     font-family: "Monument";
   }
   body .single-project-container #single-project #burger-menu-container {
@@ -897,11 +901,14 @@ body .container .landing_page .main .landing-page-description .button-wrapper {
     display: flex;
     flex-direction: column;
     max-width: 1440px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
   }
   body .projects-container .header {
     display: flex;
     justify-content: space-between;
-    background-color: pink;
+    background-color: #ffc0cb;
     z-index: 1;
     padding: 10px 20px;
     align-items: center;
@@ -1178,7 +1185,7 @@ body .single-project-container .header #burger-menu-container {
     position: absolute;
     left: 50%;
     bottom: 0px;
-    color: #ef7a85;
+    color: #fa338c;
     text-align: center;
     font-size: 70px;
     text-decoration: none;
@@ -1252,7 +1259,7 @@ body .single-project-container .header #burger-menu-container {
   body .single-project-container .template .overview {
     display: grid;
     grid-template-columns: 60% 40%;
-    background-color: pink;
+    background-color: #ffc0cb;
     padding: 5% 0;
   }
   body .single-project-container .template .overview .intro {
@@ -1393,7 +1400,8 @@ body .single-project-container .header #burger-menu-container {
     position: relative;
     width: 100vw;
     background-color: #e0cefd66;
-    left: -50%;
+    left: 50%;
+    transform: translateX(-50%);
     padding: 5% 0;
   }
   body .single-project-container .template .section .section-img h1 {
@@ -1431,7 +1439,7 @@ body .single-project-container .template .section .tech-stack .backend h3 {
   }
   body .single-project-container .template .section .tech-stack .frontend mark,
 body .single-project-container .template .section .tech-stack .backend mark {
-    background-color: pink;
+    background-color: #ffc0cb;
     color: #4400ff;
   }
   body .single-project-container .template .section .tech-stack .frontend .tech-icons,
@@ -1472,7 +1480,7 @@ body .single-project-container .template .section .tech-stack .backend .tech-ico
   body .single-project-container .breadcrumbs p {
     font-family: "areminiscentsmile";
     text-transform: lowercase;
-    color: pink;
+    color: #ffc0cb;
     font-size: 1rem;
     text-align: center;
   }
@@ -1548,7 +1556,7 @@ body .single-project-container .template .section .tech-stack .backend .tech-ico
   }
   body .about-page .header a {
     text-decoration: none;
-    color: #ff90b3;
+    color: #ffc0cb;
     font-size: 2rem;
     font-family: "areminiscentsmile";
   }
@@ -1616,7 +1624,7 @@ body .about-page .header #burger-menu-container {
   body .about-page h3 {
     font-family: "areminiscentsmile";
     font-size: 1.25rem;
-    color: #ef7a85;
+    color: #fa338c;
     text-align: left;
   }
   body .about-page section {
@@ -1626,7 +1634,7 @@ body .about-page .header #burger-menu-container {
     padding: 10px 0;
   }
   body .about-page section p {
-    color: #ff90b3;
+    color: #ffc0cb;
   }
   body .about-page section.tech-skills {
     width: 100%;
@@ -1700,7 +1708,7 @@ body .about-page .header #burger-menu-container {
 }
 @media (max-width: 768px) {
   body {
-    background-color: pink;
+    background-color: #ffc0cb;
   }
 
   .header-nav-bar,
@@ -1713,7 +1721,7 @@ body .about-page .header #burger-menu-container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: pink;
+    background-color: #ffc0cb;
     z-index: 1;
     height: 3.7rem;
     position: relative;
@@ -1777,7 +1785,7 @@ body .about-page .header #burger-menu-container {
   }
   .header .burger-menu-items#homepage ul li span {
     display: block;
-    color: pink;
+    color: #ffc0cb;
     font-family: "Monument";
     position: relative;
     text-align: left;
@@ -1798,7 +1806,7 @@ body .about-page .header #burger-menu-container {
   .container {
     width: 100vw;
     height: 100vh;
-    background-color: pink;
+    background-color: #ffc0cb;
     overflow: hidden;
   }
   .container .header {
@@ -1827,7 +1835,7 @@ body .about-page .header #burger-menu-container {
   }
   .container .landing_page .main .landing-page-text h1 {
     font-family: "Monument";
-    color: #ef7a85;
+    color: #fa338c;
   }
   .container .landing_page .main .landing-page-description {
     padding-top: 200px;
@@ -1865,7 +1873,7 @@ body .about-page .header #burger-menu-container {
     background-color: #4400ff;
     border-radius: 60px;
     padding: 1rem;
-    color: pink;
+    color: #ffc0cb;
     text-decoration: none;
     font-size: 18px;
     font-family: "Grotesk";
@@ -1877,7 +1885,7 @@ body .about-page .header #burger-menu-container {
   }
 
   .about-container {
-    background-color: #ef7a85;
+    background-color: #fa338c;
     height: 100vh;
     width: 100vw;
     padding: 0 5%;
@@ -1888,7 +1896,7 @@ body .about-page .header #burger-menu-container {
   }
   .about-container h1 {
     font-family: "areminiscentsmile";
-    color: #ef7a85;
+    color: #fa338c;
     text-align: center;
     padding: 2% 0;
   }
@@ -1906,19 +1914,19 @@ body .about-page .header #burger-menu-container {
     height: 100%;
     display: flex;
     flex-direction: column;
-    background-color: pink;
+    background-color: #ffc0cb;
     padding-bottom: 5%;
   }
   .projects-container .mobile-static-text {
     background-color: blue;
     padding: 1% 0;
-    border-top: 1px solid #ef7a85;
-    border-bottom: 1px solid #ef7a85;
+    border-top: 1px solid #fa338c;
+    border-bottom: 1px solid #fa338c;
   }
   .projects-container .mobile-static-text h1 {
     font-size: 2rem;
     font-family: "Monument";
-    color: #ef7a85;
+    color: #fa338c;
     text-align: center;
     text-transform: uppercase;
   }
@@ -1988,416 +1996,415 @@ body .about-page .header #burger-menu-container {
     display: none;
   }
 
+  .about-page {
+    padding: 0 20px;
+  }
   .about-page .content {
     display: none;
   }
-  .about-page .template {
-    padding: 0 20px;
-  }
-  .about-page .template h1 {
+  .about-page h1 {
     font-family: "areminiscentsmile";
     color: #4400ff;
   }
-  .about-page .template .intro-img {
+  .about-page .intro-img {
     display: none;
   }
-  .about-page .template .intro-text {
+  .about-page .intro-text {
     padding-top: 50px;
   }
-  .about-page .template .intro-text p {
+  .about-page .intro-text p {
     font-family: "Grotesk";
     font-size: 1rem;
     margin: 10px 0;
     color: #4400ff;
   }
-  .about-page .template ul {
+  .about-page ul {
     margin: 20px 0;
   }
-  .about-page .template ul li {
+  .about-page ul li {
     display: inline;
     margin: 0 20px;
   }
-  .about-page .template ul li a {
+  .about-page ul li a {
     text-decoration: none;
     font-family: "Grotesk";
     text-transform: capitalize;
     color: #fa338c;
     font-size: 1rem;
   }
+}
+section#contacts .button-wrapper {
+  width: max-content;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 50px 0;
+  border: 1px solid #4400ff;
+  border-radius: 60px;
+  padding: 1rem;
+  transition: 0.5s;
+}
+section#contacts .button-wrapper a.button {
+  font-family: "Grotesk";
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  color: #4400ff;
+  transition: 0.5s;
+}
+section#contacts .button-wrapper:hover {
+  background-color: #4400ff;
+  transition: 0.5s;
+}
+section#contacts .button-wrapper:hover a {
+  color: #ffff;
+  transition: 0.5s;
+}
 
-  section#contacts .button-wrapper {
-    width: max-content;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    margin: 50px 0;
-    border: 1px solid #4400ff;
-    border-radius: 60px;
-    padding: 1rem;
-    transition: 0.5s;
+.single-project-container .name {
+  display: inline;
+}
+.single-project-container .template {
+  background-color: #ffff;
+}
+.single-project-container .template p {
+  font-family: "Grotesk";
+  color: #d5adfb;
+  font-size: 1rem;
+  width: 50%;
+  position: relative;
+  left: 25%;
+  line-height: 30px;
+  text-align: left;
+}
+.single-project-container .template .intro-text {
+  padding: 50px 20px;
+  position: relative;
+  height: 60vh;
+}
+.single-project-container .template .intro-text h1 {
+  font-family: "Monument";
+  font-size: 1.5rem;
+  color: #4400ff;
+  text-align: left;
+  text-transform: uppercase;
+}
+.single-project-container .template .intro-text .subtitle {
+  width: 100%;
+  position: relative;
+  margin: 20px 0;
+}
+.single-project-container .template .intro-text .subtitle h3 {
+  font-family: "Monument";
+  font-size: 1rem;
+  color: #4400ff;
+  text-align: left;
+  margin: 2% 0;
+  opacity: 0.8;
+}
+.single-project-container .template .intro-text p {
+  font-size: 1rem;
+  width: 100%;
+  left: 0;
+}
+.single-project-container .template .intro-text a {
+  font-family: "Mattone";
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: #fa338c;
+  text-decoration: none;
+  padding-top: 10%;
+  display: flex;
+  text-align: left;
+}
+.single-project-container .template .intro-text .view-more {
+  /*animated scroll arrow animation*/
+}
+.single-project-container .template .intro-text .view-more .ca3-scroll-down-arrow {
+  background-image: url("./images/icons/arrowPinkIcon.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: rotateY(-90deg);
+}
+.single-project-container .template .intro-text .view-more .ca3-scroll-down-link {
+  cursor: pointer;
+  height: 60px;
+  width: 80px;
+  margin: 0px 0 0 -40px;
+  line-height: 60px;
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
+  color: #fa338c;
+  text-align: center;
+  font-size: 70px;
+  text-decoration: none;
+  text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+  -webkit-animation: ca3_fade_move_down 2s ease-in-out infinite;
+  -moz-animation: ca3_fade_move_down 2s ease-in-out infinite;
+  animation: ca3_fade_move_down 2s ease-in-out infinite;
+}
+@-webkit-keyframes ca3_fade_move_down {
+  0% {
+    -webkit-transform: translate(0, -20px);
+    opacity: 0;
   }
-  section#contacts .button-wrapper a.button {
-    font-family: "Grotesk";
-    text-transform: uppercase;
-    text-decoration: none;
-    cursor: pointer;
-    color: #4400ff;
-    transition: 0.5s;
+  50% {
+    opacity: 1;
   }
-  section#contacts .button-wrapper:hover {
-    background-color: #4400ff;
-    transition: 0.5s;
+  100% {
+    -webkit-transform: translate(0, 20px);
+    opacity: 0;
   }
-  section#contacts .button-wrapper:hover a {
-    color: #ffff;
-    transition: 0.5s;
+}
+@-moz-keyframes ca3_fade_move_down {
+  0% {
+    -moz-transform: translate(0, -20px);
+    opacity: 0;
   }
-
-  .single-project-container .name {
-    display: inline;
+  50% {
+    opacity: 1;
   }
-  .single-project-container .template {
-    background-color: #ffff;
+  100% {
+    -moz-transform: translate(0, 20px);
+    opacity: 0;
   }
-  .single-project-container .template p {
-    font-family: "Grotesk";
-    color: #d5adfb;
-    font-size: 1rem;
-    width: 50%;
-    position: relative;
-    left: 25%;
-    line-height: 30px;
-    text-align: left;
+}
+@keyframes ca3_fade_move_down {
+  0% {
+    transform: translate(0, -20px);
+    opacity: 0;
   }
-  .single-project-container .template .intro-text {
-    padding: 50px 20px;
-    position: relative;
-    height: 60vh;
+  50% {
+    opacity: 1;
   }
-  .single-project-container .template .intro-text h1 {
-    font-family: "Monument";
-    font-size: 1.5rem;
-    color: #4400ff;
-    text-align: left;
-    text-transform: uppercase;
+  100% {
+    transform: translate(0, 20px);
+    opacity: 0;
   }
-  .single-project-container .template .intro-text .subtitle {
-    width: 100%;
-    position: relative;
-    margin: 20px 0;
-  }
-  .single-project-container .template .intro-text .subtitle h3 {
-    font-family: "Monument";
-    font-size: 1rem;
-    color: #4400ff;
-    text-align: left;
-    margin: 2% 0;
-    opacity: 0.8;
-  }
-  .single-project-container .template .intro-text p {
-    font-size: 1rem;
-    width: 100%;
-    left: 0;
-  }
-  .single-project-container .template .intro-text a {
-    font-family: "Mattone";
-    text-transform: uppercase;
-    font-size: 1rem;
-    color: #ef7a85;
-    text-decoration: none;
-    padding-top: 10%;
-    display: flex;
-    text-align: left;
-  }
-  .single-project-container .template .intro-text .view-more {
-    /*animated scroll arrow animation*/
-  }
-  .single-project-container .template .intro-text .view-more .ca3-scroll-down-arrow {
-    background-image: url("./images/icons/arrowPinkIcon.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    transform: rotateY(-90deg);
-  }
-  .single-project-container .template .intro-text .view-more .ca3-scroll-down-link {
-    cursor: pointer;
-    height: 60px;
-    width: 80px;
-    margin: 0px 0 0 -40px;
-    line-height: 60px;
-    position: absolute;
-    left: 50%;
-    bottom: 0px;
-    color: #ef7a85;
-    text-align: center;
-    font-size: 70px;
-    text-decoration: none;
-    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
-    -webkit-animation: ca3_fade_move_down 2s ease-in-out infinite;
-    -moz-animation: ca3_fade_move_down 2s ease-in-out infinite;
-    animation: ca3_fade_move_down 2s ease-in-out infinite;
-  }
-  @-webkit-keyframes ca3_fade_move_down {
-    0% {
-      -webkit-transform: translate(0, -20px);
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-    100% {
-      -webkit-transform: translate(0, 20px);
-      opacity: 0;
-    }
-  }
-  @-moz-keyframes ca3_fade_move_down {
-    0% {
-      -moz-transform: translate(0, -20px);
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-    100% {
-      -moz-transform: translate(0, 20px);
-      opacity: 0;
-    }
-  }
-  @keyframes ca3_fade_move_down {
-    0% {
-      transform: translate(0, -20px);
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-    100% {
-      transform: translate(0, 20px);
-      opacity: 0;
-    }
-  }
-  .single-project-container .template .intro-img {
-    position: relative;
-    background-color: #ffb2d159;
-    overflow: hidden;
-    padding: 2% 0;
-  }
-  .single-project-container .template .intro-img .img-wrapper {
-    width: 100%;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  .single-project-container .template .intro-img .img-wrapper img {
-    width: 100%;
-    height: auto;
-  }
-  .single-project-container .template .overview {
-    display: flex;
-    flex-direction: column;
-    background-color: pink;
-    padding: 5% 5%;
-  }
-  .single-project-container .template .overview .intro h5 {
-    font-family: "Monument";
-    color: #fa338c;
-    text-transform: uppercase;
-  }
-  .single-project-container .template .overview .intro p {
-    font-size: 1rem;
-    left: 0;
-    width: 100%;
-    color: white;
-  }
-  .single-project-container .template .overview .intro p mark {
-    background-color: #4400ff;
-    color: white;
-  }
-  .single-project-container .template .overview .specs {
-    display: flex;
-    flex-direction: column;
-    padding: 2% 0;
-  }
-  .single-project-container .template .overview .specs .single-spec {
-    position: relative;
-    width: 100%;
-    padding: 2% 0;
-  }
-  .single-project-container .template .overview .specs .single-spec h5 {
-    font-family: "Monument";
-    text-transform: uppercase;
-    color: #fa338c;
-  }
-  .single-project-container .template .overview .specs .single-spec p {
-    width: 100%;
-    font-size: 1rem;
-    left: 0;
-    padding-right: 5%;
-    color: white;
-  }
-  .single-project-container .template .overview .specs .single-spec a {
-    font-family: "Grotesk";
-    font-size: 1rem;
-    text-decoration: underline;
-    color: white;
-  }
-  .single-project-container .template .overview .specs .single-spec .tech-stack {
-    display: flex;
-    flex-direction: row;
-  }
-  .single-project-container .template .overview .specs .single-spec .tech-stack div {
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    object-fit: fill;
-    margin: 0 2%;
-  }
-  .single-project-container .template .overview .specs .single-spec .tech-stack div img {
-    width: 50px;
-    height: auto;
-  }
-  .single-project-container .template .section {
-    width: 100%;
-    position: relative;
-    background-color: #ffff;
-    padding: 5% 5%;
-  }
-  .single-project-container .template .section h1 {
-    font-family: "Monument";
-    color: #4400ff;
-    text-transform: uppercase;
-    text-align: left;
-    font-size: 2rem;
-    line-height: 56px;
-    font-weight: 400;
-    padding: 2% 0;
-  }
-  .single-project-container .template .section p {
-    width: 100%;
-    font-size: 1rem;
-    left: 0;
-    padding: 2% 0;
-    color: #4400ff;
-  }
-  .single-project-container .template .section p .underline {
-    text-decoration: underline;
-  }
-  .single-project-container .template .section .img-wrapper {
-    width: 100%;
-    margin: 5% 0;
-  }
-  .single-project-container .template .section .img-wrapper img {
-    width: 100%;
-    height: auto;
-  }
-  .single-project-container .template .section .img-wrapper video {
-    width: 100%;
-    height: auto;
-  }
-  .single-project-container .template .section ul {
-    list-style-type: none;
-    margin: 0 5%;
-    padding-bottom: 10%;
-  }
-  .single-project-container .template .section ul li {
-    font-family: "Grotesk";
-    font-size: 1rem;
-    color: #4400ff;
-    margin: 1% 0;
-    line-height: 30px;
-    text-align: left;
-  }
-  .single-project-container .template .section ul li::before {
-    content: "> ";
-  }
-  .single-project-container .template .section ul li .img-wrapper {
-    width: 80%;
-    margin: 5% 0;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  .single-project-container .template .section ul li .img-wrapper img {
-    width: 100%;
-    height: auto;
-  }
-  .single-project-container .template .section .section-img {
-    position: relative;
-    width: 100%;
-    padding: 5% 0;
-    margin-bottom: 2%;
-  }
-  .single-project-container .template .section .section-img h1 {
-    text-align: center;
-    padding: 2% 0;
-  }
-  .single-project-container .template .section .section-img img {
-    height: auto;
-    width: 100%;
-  }
-  .single-project-container .template .section .section-img a {
-    text-decoration: none;
-    margin: 0;
-  }
-  .single-project-container .template .section .section-img a p {
-    color: #4400ff;
-    opacity: 0.8;
-    text-align: center;
-    font-size: 0.8rem;
-    margin: 0;
-    padding: 0;
-  }
-  .single-project-container .template .section .tech-stack .frontend,
+}
+.single-project-container .template .intro-img {
+  position: relative;
+  background-color: #ffb2d159;
+  overflow: hidden;
+  padding: 2% 0;
+}
+.single-project-container .template .intro-img .img-wrapper {
+  width: 100%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.single-project-container .template .intro-img .img-wrapper img {
+  width: 100%;
+  height: auto;
+}
+.single-project-container .template .overview {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffc0cb;
+  padding: 5% 5%;
+}
+.single-project-container .template .overview .intro h5 {
+  font-family: "Monument";
+  color: #fa338c;
+  text-transform: uppercase;
+}
+.single-project-container .template .overview .intro p {
+  font-size: 1rem;
+  left: 0;
+  width: 100%;
+  color: white;
+}
+.single-project-container .template .overview .intro p mark {
+  background-color: #4400ff;
+  color: white;
+}
+.single-project-container .template .overview .specs {
+  display: flex;
+  flex-direction: column;
+  padding: 2% 0;
+}
+.single-project-container .template .overview .specs .single-spec {
+  position: relative;
+  width: 100%;
+  padding: 2% 0;
+}
+.single-project-container .template .overview .specs .single-spec h5 {
+  font-family: "Monument";
+  text-transform: uppercase;
+  color: #fa338c;
+}
+.single-project-container .template .overview .specs .single-spec p {
+  width: 100%;
+  font-size: 1rem;
+  left: 0;
+  padding-right: 5%;
+  color: white;
+}
+.single-project-container .template .overview .specs .single-spec a {
+  font-family: "Grotesk";
+  font-size: 1rem;
+  text-decoration: underline;
+  color: white;
+}
+.single-project-container .template .overview .specs .single-spec .tech-stack {
+  display: flex;
+  flex-direction: row;
+}
+.single-project-container .template .overview .specs .single-spec .tech-stack div {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  object-fit: fill;
+  margin: 0 2%;
+}
+.single-project-container .template .overview .specs .single-spec .tech-stack div img {
+  width: 50px;
+  height: auto;
+}
+.single-project-container .template .section {
+  width: 100%;
+  position: relative;
+  background-color: #ffff;
+  padding: 5% 5%;
+}
+.single-project-container .template .section h1 {
+  font-family: "Monument";
+  color: #4400ff;
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 2rem;
+  line-height: 56px;
+  font-weight: 400;
+  padding: 2% 0;
+}
+.single-project-container .template .section p {
+  width: 100%;
+  font-size: 1rem;
+  left: 0;
+  padding: 2% 0;
+  color: #4400ff;
+}
+.single-project-container .template .section p .underline {
+  text-decoration: underline;
+}
+.single-project-container .template .section .img-wrapper {
+  width: 100%;
+  margin: 5% 0;
+}
+.single-project-container .template .section .img-wrapper img {
+  width: 100%;
+  height: auto;
+}
+.single-project-container .template .section .img-wrapper video {
+  width: 100%;
+  height: auto;
+}
+.single-project-container .template .section ul {
+  list-style-type: none;
+  margin: 0 5%;
+  padding-bottom: 10%;
+}
+.single-project-container .template .section ul li {
+  font-family: "Grotesk";
+  font-size: 1rem;
+  color: #4400ff;
+  margin: 1% 0;
+  line-height: 30px;
+  text-align: left;
+}
+.single-project-container .template .section ul li::before {
+  content: "> ";
+}
+.single-project-container .template .section ul li .img-wrapper {
+  width: 80%;
+  margin: 5% 0;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.single-project-container .template .section ul li .img-wrapper img {
+  width: 100%;
+  height: auto;
+}
+.single-project-container .template .section .section-img {
+  position: relative;
+  width: 100%;
+  padding: 5% 0;
+  margin-bottom: 2%;
+}
+.single-project-container .template .section .section-img h1 {
+  text-align: center;
+  padding: 2% 0;
+}
+.single-project-container .template .section .section-img img {
+  height: auto;
+  width: 100%;
+}
+.single-project-container .template .section .section-img a {
+  text-decoration: none;
+  margin: 0;
+}
+.single-project-container .template .section .section-img a p {
+  color: #4400ff;
+  opacity: 0.8;
+  text-align: center;
+  font-size: 0.8rem;
+  margin: 0;
+  padding: 0;
+}
+.single-project-container .template .section .tech-stack .frontend,
 .single-project-container .template .section .tech-stack .backend {
-    padding: 5% 0;
-  }
-  .single-project-container .template .section .tech-stack .frontend h3,
+  padding: 5% 0;
+}
+.single-project-container .template .section .tech-stack .frontend h3,
 .single-project-container .template .section .tech-stack .backend h3 {
-    font-size: 1.25rem;
-    text-decoration: underline;
-    font-family: "Monument";
-    color: #fa338c;
-  }
-  .single-project-container .template .section .tech-stack .frontend mark,
+  font-size: 1.25rem;
+  text-decoration: underline;
+  font-family: "Monument";
+  color: #fa338c;
+}
+.single-project-container .template .section .tech-stack .frontend mark,
 .single-project-container .template .section .tech-stack .backend mark {
-    background-color: #4400ff;
-    color: white;
-  }
-  .single-project-container .template .section .tech-stack .frontend .tech-icons,
+  background-color: #4400ff;
+  color: white;
+}
+.single-project-container .template .section .tech-stack .frontend .tech-icons,
 .single-project-container .template .section .tech-stack .backend .tech-icons {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    width: 100%;
-    padding: 2% 0;
-  }
-  .single-project-container .template .section .tech-stack .frontend .tech-icons img,
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  width: 100%;
+  padding: 2% 0;
+}
+.single-project-container .template .section .tech-stack .frontend .tech-icons img,
 .single-project-container .template .section .tech-stack .backend .tech-icons img {
-    width: 50px;
-    height: auto;
-  }
-  .single-project-container .template .links {
-    width: 100%;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    margin: 10% 0;
-  }
-  .single-project-container .template .links .link-icon {
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    margin-right: 2%;
-  }
-  .single-project-container .template .links .link-icon img {
-    width: 100%;
-    height: auto;
-    opacity: 0.8;
-  }
-  .single-project-container section#contacts-single-project {
-    display: none;
-  }
+  width: 50px;
+  height: auto;
+}
+.single-project-container .template .links {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 10% 0;
+}
+.single-project-container .template .links .link-icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  margin-right: 2%;
+}
+.single-project-container .template .links .link-icon img {
+  width: 100%;
+  height: auto;
+  opacity: 0.8;
+}
+.single-project-container section#contacts-single-project {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

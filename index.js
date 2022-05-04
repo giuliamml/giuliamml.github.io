@@ -58,6 +58,49 @@ function menuOpen() {
   }
 }
 
+//page transition
+window.onload = () => {
+  const anchors = document.querySelectorAll("a#clickable");
+  const transition_el = document.querySelector(".transition");
+
+  setTimeout(() => {
+    transition_el.classList.remove("is-active");
+  }, 500);
+
+  anchors.forEach((anchor) => {
+    anchor.addEventListener("click", (e) => {
+      let target = e.target.href;
+
+      transition_el.classList.add("is-active");
+
+      return setInterval(() => {
+        window.location.href = target;
+      }, 500);
+    });
+  });
+};
+
+//progress bar
+const scrollBarAnimation = () => {
+  let scrollTop = window.scrollY;
+  let viewportHeight = document.body.clientHeight - window.innerHeight;
+  let scrollPercent = (scrollTop / viewportHeight) * 100;
+  let progressBar = document.querySelector("#js-progressbar");
+
+  progressBar.setAttribute("value", scrollPercent);
+
+  window.addEventListener("scroll", function () {
+    scrollTop = window.scrollY;
+    viewportHeight = document.body.clientHeight - window.innerHeight;
+    scrollPercent = (scrollTop / viewportHeight) * 100;
+    progressBar.setAttribute("value", scrollPercent);
+  });
+};
+
+document.addEventListener("DOMContentLoaded", function () {
+  scrollBarAnimation();
+});
+
 const revealElements = document.querySelectorAll(".section-title");
 const fadeElements = document.querySelectorAll(".section-desc");
 const fadeDiv = document.querySelectorAll(".skills");
@@ -112,4 +155,3 @@ const scrollAnim = () => {
 document.addEventListener("DOMContentLoaded", scrollAnim);
 
 window.addEventListener("scroll", scrollAnim);
-
