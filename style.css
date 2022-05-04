@@ -1396,6 +1396,10 @@ body .single-project-container .header #burger-menu-container {
     width: 100%;
     height: auto;
   }
+  body .single-project-container .template .section ul li a {
+    color: #4400ff;
+    display: inline-block;
+  }
   body .single-project-container .template .section .section-img {
     position: relative;
     width: 100vw;

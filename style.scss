@@ -1672,6 +1672,11 @@ ul.header-nav-bar {
                   height: auto;
                 }
               }
+
+              a{
+                color: $primary;
+                display: inline-block;
+              }
             }
           }
 
