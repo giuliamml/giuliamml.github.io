@@ -387,7 +387,7 @@ body .container .landing_page .header #burger-menu-container {
     font-family: "Grotesk";
     font-weight: 600;
     font-size: 1.2vw;
-    color: #4400ff;
+    color: #4400ff !important;
     text-align: left;
     letter-spacing: 2px;
     opacity: 0.8;
@@ -400,11 +400,17 @@ body .container .landing_page .header #burger-menu-container {
     animation: 1s ease 1.8s 1 slideUp;
     animation-fill-mode: forwards;
     opacity: 0;
+    text-transform: lowercase;
   }
   body .container .landing_page .main .landing-page-description h3 span:nth-last-of-type(2) {
     animation: 1s ease 1.5s 1 slideUp;
     animation-fill-mode: forwards;
     opacity: 0;
+  }
+  body .container .landing_page .main .landing-page-description h3 span a.company-link {
+    color: #4400ff !important;
+    text-decoration: none;
+    text-transform: uppercase;
   }
   body .container .landing_page .main .landing-page-description h1 {
     color: #4400ff;
@@ -530,6 +536,11 @@ body .container .landing_page .main .landing-page-description .button-wrapper {
     transform: translate3d(-50px, 50px, -150px);
     opacity: 0;
     transition: 0.8s ease-out;
+  }
+  body .container section#about .section-about-content .section-desc a.company-link {
+    color: #4400ff;
+    text-decoration: none;
+    font-weight: 400;
   }
   body .container section#about .section-about-content .faded-in {
     transform: translateY(0);

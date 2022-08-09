@@ -737,7 +737,7 @@ ul.header-nav-bar {
               font-family: $text-font;
               font-weight: 600;
               font-size: 1.2vw;
-              color: $primary;
+              color: $primary !important;
               text-align: left;
               letter-spacing: 2px;
               opacity: 0.8;
@@ -750,10 +750,18 @@ ul.header-nav-bar {
                 animation: 1s ease 1.8s 1 slideUp;
                 animation-fill-mode: forwards;
                 opacity: 0;
+                text-transform: lowercase;
+
                 &:nth-last-of-type(2) {
                   animation: 1s ease 1.5s 1 slideUp;
                   animation-fill-mode: forwards;
                   opacity: 0;
+                }
+
+                a.company-link {
+                  color: $primary !important;
+                  text-decoration: none;
+                  text-transform: uppercase;
                 }
               }
             }
@@ -899,6 +907,12 @@ ul.header-nav-bar {
             transform: translate3d(-50px, 50px, -150px);
             opacity: 0;
             transition: 0.8s ease-out;
+
+            a.company-link {
+              color: $primary;
+              text-decoration: none;
+              font-weight: 400;
+            }
           }
 
           .faded-in {
@@ -1673,7 +1687,7 @@ ul.header-nav-bar {
                 }
               }
 
-              a{
+              a {
                 color: $primary;
                 display: inline-block;
               }
