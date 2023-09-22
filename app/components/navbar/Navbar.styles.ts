@@ -2,6 +2,15 @@ import { keyframes } from "@emotion/react";
 import styled from "@emotion/styled";
 import theme from "../../theme";
 
+type ListContainer = {
+  isBurgerMenu?: boolean;
+};
+
+type Item = {
+  delay?: string;
+  isActive: boolean;
+};
+
 const fadeInFromTop = keyframes`
   from {
     opacity: 0;
@@ -13,14 +22,14 @@ const fadeInFromTop = keyframes`
   }
 `;
 
-export const ListContainer = styled.ul`
+export const ListContainer = styled.ul<ListContainer>`
   list-style-type: none;
   display: flex;
   gap: 1rem;
   flex-direction: ${(props) => (props.isBurgerMenu ? "column" : "row")};
 `;
 
-export const Item = styled.li`
+export const Item = styled.li<Item>`
   display: inline-block;
   position: relative;
   opacity: 0;

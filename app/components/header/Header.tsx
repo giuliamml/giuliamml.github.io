@@ -19,7 +19,7 @@ const Items = [
 ];
 
 const Header = () => {
-  const ref = useRef();
+  const ref = useRef<HTMLElement | null>(null);
   const [width, setWidth] = useState(0);
 
   useEffect(() => {
@@ -28,7 +28,6 @@ const Header = () => {
     };
 
     if (typeof window !== "undefined") {
-      // Check if window is defined (client-side)
       setWidth(window.innerWidth);
       window.addEventListener("resize", handleResize);
     }

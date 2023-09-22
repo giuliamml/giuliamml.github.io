@@ -2,7 +2,11 @@ import { keyframes } from "@emotion/react";
 import styled from "@emotion/styled";
 import theme from "../../theme";
 
-export const BurgerMenuContainer = styled.div`
+type BurgerMenuContainerType = {
+  isMenuOpen: boolean;
+};
+
+export const BurgerMenuContainer = styled.div<BurgerMenuContainerType>`
   display: inline-block;
   cursor: pointer;
   top: 20px;
