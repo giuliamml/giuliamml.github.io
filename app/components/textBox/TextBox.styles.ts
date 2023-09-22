@@ -1,9 +1,9 @@
-import { keyframes } from "@emotion/react";
 import styled from "@emotion/styled";
 import Link from "next/link";
+import theme from "../../theme";
 
 export const Wrapper = styled.div`
-  color: ${(props) => props.theme.colors.secondary};
+  color: ${theme.colors.secondary};
   position: relative;
   left: 50%;
   transform: translateX(-50%);
@@ -54,7 +54,7 @@ export const Text = styled.p`
 `;
 
 export const StyledLink = styled(Link)`
-  color: ${(props) => props.theme.colors.secondary};
+  color: ${theme.colors.secondary};
   text-align: center;
   text-decoration: underline;
 `;

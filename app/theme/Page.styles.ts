@@ -1,5 +1,6 @@
 import { keyframes } from "@emotion/react";
 import styled from "@emotion/styled";
+import theme from ".";
 
 const slideUp = keyframes`
 0% {
@@ -30,7 +31,7 @@ export const MainContentDescriptionContainer = styled.section`
   height: 76vh;
 
   h1 {
-    color: ${(props) => props.theme.colors.textColor};
+    color: ${theme.colors.textColor};
     font-family: "areminiscentsmile";
     font-size: 10vw;
     font-weight: lighter;
@@ -54,7 +55,7 @@ export const MainContentDescriptionContainer = styled.section`
   }
 
   p {
-    color: ${(props) => props.theme.colors.secondary};
+    color: ${theme.colors.secondary};
     text-align: left;
     margin-block: 1rem;
     width: 60%;

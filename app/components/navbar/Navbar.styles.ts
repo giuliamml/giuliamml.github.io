@@ -1,5 +1,6 @@
 import { keyframes } from "@emotion/react";
 import styled from "@emotion/styled";
+import theme from "../../theme";
 
 const fadeInFromTop = keyframes`
   from {
@@ -30,9 +31,7 @@ export const Item = styled.li`
     cursor: pointer;
     text-decoration: none;
     color: ${(props) =>
-      props.isActive
-        ? props.theme.colors.salmon
-        : props.theme.colors.secondary};
+      props.isActive ? theme.colors.salmon : theme.colors.secondary};
     position: relative;
 
     &:before {
@@ -43,7 +42,7 @@ export const Item = styled.li`
       width: 100%;
       padding-inline: 0.5rem;
       height: 1.5rem;
-      border: 1px solid ${(props) => props.theme.colors.salmon};
+      border: 1px solid ${theme.colors.salmon};
       border-radius: 50%;
       display: ${(props) => (props.isActive ? "block" : "none")};
       transform: translateY(-50%) rotate(-10deg);

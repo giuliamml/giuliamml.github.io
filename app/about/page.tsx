@@ -1,4 +1,5 @@
 import TextBox from "../components/textBox/TextBox";
+import React from "react";
 
 const content = {
   title: "I am",

@@ -1,4 +1,5 @@
 "use client";
+import React from "react";
 import { Title, Wrapper, Text, StyledLink } from "./TextBox.styles";
 
 const TextBox = ({ content }) => {

@@ -1,6 +1,5 @@
 /** @jsxImportSource @emotion/react */
 "use client";
-import { useEffect, useState } from "react";
 import { MainContentDescriptionContainer } from "./theme/Page.styles";
 
 export default function Home() {

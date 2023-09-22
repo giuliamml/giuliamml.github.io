@@ -1,3 +1,4 @@
+import React from "react";
 import { Item, ListContainer } from "./Navbar.styles";
 import Link from "next/link";
 import { usePathname } from "next/navigation";

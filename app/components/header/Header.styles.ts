@@ -1,5 +1,6 @@
 import { keyframes } from "@emotion/react";
 import styled from "@emotion/styled";
+import theme from "../../theme";
 
 const slideInFromLeft = keyframes`
   from {
@@ -24,7 +25,7 @@ export const StyledHeader = styled.header`
 
   hr {
     margin-inline: 1rem;
-    background-color: ${(props) => props.theme.colors.secondary};
+    background-color: ${theme.colors.secondary};
     height: 0.05rem;
     border: none;
     width: 100%;

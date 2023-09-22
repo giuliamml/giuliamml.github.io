@@ -1,10 +1,11 @@
-import localFont from "next/font/local";
+import { Theme } from "@emotion/react";
 
-// const Gerbil = localFont({ src: "./fonts/gerbil.otf" });
-// const Monument = localFont({ src: "./fonts/PPMonumentExtended-Regular.otf" });
-// const Grotesk = localFont({ src: "./fonts/HKGrotesk-Regular.otf" });
+type CustomTheme = Theme & {
+  colors: Record<string, string>;
+  fonts: Record<string, string>;
+};
 
-const theme = {
+const theme: CustomTheme = {
   colors: {
     primary: "#4400ff",
     secondary: "#ffc0cb",

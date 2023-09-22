@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import BurgerMenu from "../burgerMenu/BurgerMenu";
 import Navbar from "../navbar/Navbar";
 import { StyledHeader } from "./Header.styles";

@@ -1,5 +1,6 @@
 import { keyframes } from "@emotion/react";
 import styled from "@emotion/styled";
+import theme from "../../theme";
 
 export const BurgerMenuContainer = styled.div`
   display: inline-block;
@@ -12,7 +13,7 @@ export const BurgerMenuContainer = styled.div`
   .bar1 {
     width: 35px;
     height: 1px;
-    background-color: ${(props) => props.theme.colors.secondary};
+    background-color: ${theme.colors.secondary};
     margin: 6px 0;
     transition: 0.4s;
     transform: ${({ isMenuOpen }) =>
@@ -22,7 +23,7 @@ export const BurgerMenuContainer = styled.div`
   .bar2 {
     width: 35px;
     height: 1px;
-    background-color: ${(props) => props.theme.colors.secondary};
+    background-color: ${theme.colors.secondary};
     margin: 6px 0;
     transition: 0.4s;
     opacity: ${({ isMenuOpen }) => (isMenuOpen ? 0 : 1)};
@@ -31,7 +32,7 @@ export const BurgerMenuContainer = styled.div`
   .bar3 {
     width: 35px;
     height: 1px;
-    background-color: ${(props) => props.theme.colors.secondary};
+    background-color: ${theme.colors.secondary};
     margin: 6px 0;
     transition: 0.4s;
     transform: ${({ isMenuOpen }) =>
@@ -57,7 +58,7 @@ export const BurgerMenuItems = styled.div`
   list-style-type: none;
   padding-inline: 5rem;
   animation: ${slideIn} 1s;
-  background-color: ${(props) => props.theme.colors.backgroundColor};
+  background-color: ${theme.colors.backgroundColor};
   height: 100vh;
   width: 100vw;
 

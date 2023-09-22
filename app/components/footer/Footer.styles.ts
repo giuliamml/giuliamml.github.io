@@ -1,5 +1,6 @@
 import { keyframes } from "@emotion/react";
 import styled from "@emotion/styled";
+import theme from "../../theme";
 
 const slideInFromRight = keyframes`
   from {
@@ -17,11 +18,11 @@ export const Wrapper = styled.footer`
   display: grid;
   grid-template-columns: max-content auto max-content;
   align-items: center;
-  color: ${(props) => props.theme.colors.secondary};
+  color: ${theme.colors.secondary};
 
   hr {
     margin-inline: 1rem;
-    background-color: ${(props) => props.theme.colors.secondary};
+    background-color: ${theme.colors.secondary};
     height: 0.05rem;
     border: none;
     animation: ${slideInFromRight} 1s ease-in-out forwards;

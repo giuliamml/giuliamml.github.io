@@ -1,3 +1,4 @@
+import React from "react";
 import EmotionRootStyleRegistry from "./EmotionRootStyleRegistry";
 
 export default function RootLayout({

@@ -1,5 +1,5 @@
 "use client";
-
+import React from "react";
 import { CacheProvider } from "@emotion/react";
 import { GlobalStyles } from "./theme/GlobalStyles";
 import { useServerInsertedHTML } from "next/navigation";

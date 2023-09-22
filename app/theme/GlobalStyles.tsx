@@ -1,9 +1,6 @@
+import React from "react";
 import { Global, css } from "@emotion/react";
 import theme from "./";
-import messina from "../../public/fonts/MessinaSans-Regular.ttf";
-import localFont from "next/font/local";
-
-const myFont = localFont({ src: "../../public/fonts/MessinaSans-Regular.ttf" });
 
 export const GlobalStyles = () => {
   return (
