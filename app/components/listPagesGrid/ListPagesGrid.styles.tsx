@@ -23,13 +23,13 @@ export const ContentWrapper = styled.div`
 `;
 
 export const ImageWrapper = styled.div`
-  max-width: 500px;
+  width: 500px;
   height: 300px;
   overflow: hidden;
+  position: relative;
 
   img {
-    width: 100%;
-    height: auto;
+    object-fit: cover;
   }
 `;
 

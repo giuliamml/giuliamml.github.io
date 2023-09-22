@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 import {
   ContentWrapper,
   ImageWrapper,
@@ -15,21 +16,21 @@ const ListPagesGrid = (props) => {
 
   return (
     <Wrapper>
-      {projects.map((project, i) => {
+      {projects.map(({ image, category, name, slug }, i) => {
         return (
           <ProjectWrapper key={i}>
             <Link
               id="clickable"
-              href={`https://projects.giuliamummolo.com/${project.slug}`}
+              href={`https://projects.giuliamummolo.com/${slug}`}
             >
               <ContentWrapper>
                 <ImageWrapper>
-                  <img src={project.image.src} alt={project.image.alt} />
+                  <Image src={image.src} alt={image.alt} fill />
                 </ImageWrapper>
 
                 <TextWrapper>
-                  <h3>{project.category}</h3>
-                  <h1>{project.name}</h1>
+                  <h3>{category}</h3>
+                  <h1>{name}</h1>
 
                   <ArrowSVG />
                 </TextWrapper>

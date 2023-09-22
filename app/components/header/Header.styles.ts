@@ -22,6 +22,7 @@ export const StyledHeader = styled.header`
   top: 0;
   align-items: center;
   z-index: 1;
+  background-color: ${theme.colors.backgroundColor};
 
   hr {
     margin-inline: 1rem;
