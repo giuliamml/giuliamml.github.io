@@ -14,7 +14,7 @@ const Items = [
   },
   {
     name: "projects",
-    href: "http://projects.giuliamummolo.com/projects/",
+    href: "/projects",
   },
 ];
 
