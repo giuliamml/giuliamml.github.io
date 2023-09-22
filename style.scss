@@ -21,6 +21,9 @@ $primary: #4400ff;
 $secondary: #ffc0cb;
 $highlight: #fa338c;
 $lilac: #d5adfb;
+$background-color: #2b49f4;
+$text-color: #f68790;
+$white: #fcfdfc;
 
 $text-font: "Grotesk";
 $text-heading: "Monument";
@@ -611,7 +614,8 @@ ul.header-nav-bar {
     height: 100%;
     overflow: hidden;
     overflow-y: scroll;
-    background-color: $secondary;
+    // background-color: $secondary;
+    background-color: $background-color;
     font-size: 16px;
 
     .container {
@@ -622,14 +626,13 @@ ul.header-nav-bar {
       text-align: center;
       scroll-behavior: smooth;
       scroll-snap-type: mandatory;
-      display: inline;
+      height: 100vh;
 
       .landing_page {
         padding: 0;
         max-width: 1440px;
         position: relative;
-        left: 50%;
-        transform: translateX(-50%);
+        height: 100%;
         #burger-menu-container,
         .burger-menu-items {
           display: none;
@@ -697,20 +700,19 @@ ul.header-nav-bar {
 
         .main {
           position: relative;
-          height: 80vh;
-          margin: 150px 20%;
+          margin: 9.5rem 20%;
 
-          .symbol {
-            font-size: 300px;
-            position: absolute;
-            color: transparent;
-            line-height: 0;
-            font-family: $text-other;
-            font-weight: lighter;
-            transform: translateX(-60%);
-            opacity: 0.6;
-            -webkit-text-stroke: 1px $primary;
-          }
+          // .symbol {
+          //   font-size: 300px;
+          //   position: absolute;
+          //   color: transparent;
+          //   line-height: 0;
+          //   font-family: $text-other;
+          //   font-weight: lighter;
+          //   transform: translateX(-60%);
+          //   opacity: 0.6;
+          //   -webkit-text-stroke: 1px $primary;
+          // }
 
           .landing-page-description {
             position: relative;
@@ -767,9 +769,10 @@ ul.header-nav-bar {
             }
 
             h1 {
-              color: $primary;
+              // color: $primary;
+              color: $text-color;
               font-family: $text-other;
-              font-size: 7vw;
+              font-size: 10vw;
               font-weight: lighter;
               text-align: left;
               position: relative;
@@ -786,7 +789,6 @@ ul.header-nav-bar {
               }
 
               &:nth-last-of-type(1) {
-                margin-left: 100px;
                 text-transform: uppercase;
               }
             }
@@ -1228,6 +1230,9 @@ ul.header-nav-bar {
 
       section#contacts {
         @include contactsSection;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
       }
     }
 
