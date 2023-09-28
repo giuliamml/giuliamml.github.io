@@ -7,14 +7,22 @@ const Items = [
   {
     name: "home",
     href: "/",
+    isTargetBlank: false,
   },
-  {
-    name: "about",
-    href: "/about",
-  },
+  // TODO: add about page with content
+  // {
+  //   name: "about",
+  //   href: "/about",
+  // },
   {
     name: "projects",
     href: "/projects",
+    isTargetBlank: false,
+  },
+  {
+    name: "CV",
+    href: "/files/Giulia-Mummolo-CV.pdf",
+    isTargetBlank: true,
   },
 ];
 

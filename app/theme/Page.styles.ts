@@ -67,7 +67,7 @@ export const MainContentDescriptionContainer = styled.section`
 
   @media (max-width: 769px) {
     margin-inline: 2rem;
-    top: 40%;
+    top: 50%;
     transform: translateY(-50%);
 
     p {

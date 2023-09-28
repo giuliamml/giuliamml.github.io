@@ -10,10 +10,12 @@ export default function Home() {
         <h1>Mummolo</h1>
       </div>
       <p>
-        I'm a creative professional with a background in fashion, now
-        specializing in UI design and frontend development. My journey from
-        fashion to tech has enabled me to merge aesthetics and technology by
-        crafting digital experiences. <br />
+        I am a frontend web developer and UI designer with a background in
+        fashion design and professional experience in retail and e-commerce. My
+        background in design and analytical mind allows me to work at the
+        intersection between UI design and code. I have experience in building
+        interactive and accessible user interfaces within the Javascript
+        ecosystem. <br />
         Currently, I work as Frontend Engineer @
         <a
           className="company-link"

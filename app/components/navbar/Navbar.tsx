@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 type Item = {
   name: string;
   href: string;
+  isTargetBlank: boolean;
 };
 
 type PopsType = {
@@ -14,7 +15,7 @@ type PopsType = {
 };
 
 const Navbar = (props: PopsType) => {
-  const { items, isTargetBlank } = props;
+  const { items } = props;
 
   const currentPath = usePathname();
 
@@ -26,7 +27,10 @@ const Navbar = (props: PopsType) => {
           isActive={item.href === currentPath}
           delay={`${i * 0.3}s`}
         >
-          <Link href={item.href} target={isTargetBlank ? "_blank" : "_self"}>
+          <Link
+            href={item.href}
+            target={item.isTargetBlank ? "_blank" : "_self"}
+          >
             {item.name}
           </Link>
         </Item>

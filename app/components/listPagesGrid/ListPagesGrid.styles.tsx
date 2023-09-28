@@ -20,6 +20,10 @@ export const ContentWrapper = styled.div`
   grid-gap: 10px;
   grid-template-columns: repeat(auto-fill, 500px);
   justify-content: center;
+
+  @media (max-width: 769px) {
+    grid-template-columns: repeat(auto-fill, 300px);
+  }
 `;
 
 export const ImageWrapper = styled.div`
@@ -30,6 +34,11 @@ export const ImageWrapper = styled.div`
 
   img {
     object-fit: cover;
+  }
+
+  @media (max-width: 769px) {
+    width: 300px;
+    height: 200px;
   }
 `;
 
@@ -45,11 +54,20 @@ export const TextWrapper = styled.div`
   }
 
   h1 {
-    font-family: $text-heading;
     font-size: 2vw;
     padding: 2% 0;
     opacity: 1;
     display: inline-block;
     text-transform: uppercase;
+  }
+
+  @media (max-width: 769px) {
+    padding: 0;
+    h1 {
+      font-size: 1.5rem;
+    }
+    h3 {
+      font-size: 0.6rem;
+    }
   }
 `;
