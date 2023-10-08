@@ -1725,7 +1725,6 @@ ul.header-nav-bar li .dot {
     z-index: 1;
     height: 3.7rem;
     position: relative;
-    position: sticky;
     top: 0;
     display: flex;
     align-items: center;
