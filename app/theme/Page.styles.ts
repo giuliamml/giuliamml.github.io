@@ -66,9 +66,12 @@ export const MainContentDescriptionContainer = styled.section`
   }
 
   @media (max-width: 769px) {
+    margin-block: 2rem;
     margin-inline: 2rem;
     top: 50%;
     transform: translateY(-50%);
+    height: 100%;
+    flex-wrap: initial;
 
     p {
       width: 100%;

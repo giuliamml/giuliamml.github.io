@@ -12,9 +12,9 @@ export default function Home() {
       <p>
         I am a frontend web developer and UI designer. My background in fashion
         design and analytical mind, allows me to bring digital products to life.
-        Since August 2019, I have been designing and building clean and
-        accessible user interfaces within the Javascript ecosystem. I enjoy
-        working in collaborative environments and solving challenges as a team.
+        Since August 2019, I have been designing and building user interfaces
+        within the Javascript ecosystem. I enjoy working in collaborative
+        environments and solving challenges as a team.
         <br />
         Currently, I work as Frontend Engineer @
         <a
