@@ -17,6 +17,11 @@
   src: url(./files/areminiscentsmile-Regular.ttf);
 }
 
+@font-face {
+  font-family: "Metropolis";
+  src: url(./files/Metropolis-Regular.otf);
+}
+
 $primary: #4400ff;
 $secondary: #ffc0cb;
 $highlight: #fa338c;
@@ -407,12 +412,6 @@ svg {
   padding: 0;
 }
 
-// .header {
-//   &.shadow {
-//     box-shadow: 0px 5px 8px 3px rgb(0 0 0 / 14%);
-//   }
-// }
-
 ul.header-nav-bar {
   li {
     padding-left: 30px;
@@ -574,8 +573,8 @@ ul.header-nav-bar {
   width: 100%;
   bottom: 0;
   z-index: 101;
-  background-color: $secondary;
-  transition: 0.5s ease-out;
+  background-color: $primary;
+  transition: 0.3s ease-out;
 }
 
 .transition-2.is-active {
@@ -1252,7 +1251,7 @@ ul.header-nav-bar {
 
         a {
           text-decoration: none;
-          color: $secondary;
+          color: $primary;
           font-size: 3rem;
           color: $secondary;
           font-family: $text-heading;
@@ -1415,7 +1414,7 @@ ul.header-nav-bar {
     .single-project-container {
       .header {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         background-color: #ffff;
         z-index: 1;
         padding: 10px 20px;
@@ -1426,10 +1425,7 @@ ul.header-nav-bar {
         height: 60px;
 
         a {
-          text-decoration: none;
-          color: $primary;
-          font-size: 2rem;
-          font-family: $text-other;
+          display: none;
         }
 
         ul.header-nav-bar {
@@ -1494,18 +1490,18 @@ ul.header-nav-bar {
             position: relative;
             margin: 5% 0;
             h3 {
-              font-family: $text-heading;
+              font-family: $text-font;
               font-size: 2.5rem;
               color: $primary;
               text-align: left;
               margin: 2% 0;
-              opacity: 0.8;
             }
           }
 
           .view-more {
             @include buttonCtaArrow;
             @include animatedArrow("./images/icons/arrowPinkIcon.png");
+            border: none;
           }
 
           img {
@@ -1520,7 +1516,6 @@ ul.header-nav-bar {
 
         .intro-img {
           position: relative;
-          background-color: #ffb2d159;
           overflow: hidden;
 
           .img-wrapper {
@@ -1538,14 +1533,14 @@ ul.header-nav-bar {
         .overview {
           display: grid;
           grid-template-columns: 60% 40%;
-          background-color: $secondary;
           padding: 5% 0;
+          background-color: $primary;
 
           .intro {
             margin: 0 10%;
             h5 {
               font-family: $text-heading;
-              color: $highlight;
+              color: $white;
               text-transform: uppercase;
               padding-bottom: 5px;
             }
@@ -1553,12 +1548,11 @@ ul.header-nav-bar {
               width: 90%;
               font-size: 1rem;
               left: 0;
-              color: white;
+              color: $white;
 
               mark {
-                background-color: $primary;
-                color: white;
-                opacity: 0.8;
+                background-color: $white;
+                color: $primary;
               }
             }
           }
@@ -1575,7 +1569,7 @@ ul.header-nav-bar {
 
               h5 {
                 font-family: $text-heading;
-                color: $highlight;
+                color: $white;
                 padding-bottom: 5px;
                 text-transform: uppercase;
               }
@@ -1585,14 +1579,14 @@ ul.header-nav-bar {
                 font-size: 1rem;
                 left: 0;
                 padding-right: 5%;
-                color: white;
+                color: $white;
               }
 
               a {
                 font-family: $text-font;
                 font-size: 1rem;
                 text-decoration: underline;
-                color: white;
+                color: $white;
               }
 
               .tech-stack {
@@ -1702,7 +1696,6 @@ ul.header-nav-bar {
           .section-img {
             position: relative;
             width: 100vw;
-            background-color: #e0cefd66;
             left: 50%;
             transform: translateX(-50%);
             padding: 5% 0;
@@ -1746,8 +1739,8 @@ ul.header-nav-bar {
               }
 
               mark {
-                background-color: $secondary;
-                color: $primary;
+                background-color: $primary;
+                color: $white;
               }
 
               .tech-icons {
@@ -1955,7 +1948,7 @@ ul.header-nav-bar {
 
 @media (max-width: 768px) {
   body {
-    background-color: $secondary;
+    background-color: $primary;
   }
   .header-nav-bar,
   .name,
@@ -1967,7 +1960,7 @@ ul.header-nav-bar {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: $secondary;
+    background-color: $primary;
     z-index: 1;
     height: 3.7rem;
     position: relative;
@@ -1975,12 +1968,22 @@ ul.header-nav-bar {
     top: 0;
     display: flex;
     align-items: center;
+    max-height: 12vh;
+
+    button {
+      position: absolute;
+    }
 
     a {
       text-decoration: none;
-      color: $primary;
-      font-size: 1.75rem;
-      font-family: $text-other;
+      color: $secondary;
+      font-family: $text-heading;
+      text-transform: uppercase;
+      font-size: 1.5rem;
+      font-family: "Metropolis";
+      margin-block: 1.3rem;
+      margin: 0;
+      text-align: center;
     }
 
     .header-nav-bar {
@@ -2395,12 +2398,11 @@ section#contacts {
         position: relative;
         margin: 20px 0;
         h3 {
-          font-family: $text-heading;
           font-size: 1rem;
+          font-family: $text-font;
           color: $primary;
           text-align: left;
           margin: 2% 0;
-          opacity: 0.8;
         }
       }
 
@@ -2423,12 +2425,12 @@ section#contacts {
 
       .view-more {
         @include animatedArrow("./images/icons/arrowPinkIcon.png");
+        border: none;
       }
     }
 
     .intro-img {
       position: relative;
-      background-color: #ffb2d159;
       overflow: hidden;
       padding: 2% 0;
 
@@ -2448,20 +2450,20 @@ section#contacts {
     .overview {
       display: flex;
       flex-direction: column;
-      background-color: $secondary;
+      background-color: $white;
       padding: 5% 5%;
 
       .intro {
         h5 {
           font-family: $text-heading;
-          color: $highlight;
+          color: $primary;
           text-transform: uppercase;
         }
         p {
           font-size: 1rem;
           left: 0;
           width: 100%;
-          color: white;
+          color: $primary;
 
           mark {
             background-color: $primary;
@@ -2483,7 +2485,7 @@ section#contacts {
           h5 {
             font-family: $text-heading;
             text-transform: uppercase;
-            color: $highlight;
+            color: $primary;
           }
 
           p {
@@ -2491,14 +2493,14 @@ section#contacts {
             font-size: 1rem;
             left: 0;
             padding-right: 5%;
-            color: white;
+            color: $primary;
           }
 
           a {
             font-family: $text-font;
             font-size: 1rem;
             text-decoration: underline;
-            color: white;
+            color: $primary;
           }
 
           .tech-stack {
@@ -2635,7 +2637,7 @@ section#contacts {
             font-size: 1.25rem;
             text-decoration: underline;
             font-family: $text-heading;
-            color: $highlight;
+            color: $primary;
           }
 
           mark {
