@@ -3,8 +3,8 @@ import ListPagesGrid from "../components/listPagesGrid/ListPagesGrid";
 
 const projects = [
   {
-    name: "The Clothing Loop",
-    category: "Web Development",
+    name: "Web Development",
+    category: "The Clothing Loop",
     slug: "clothing-loop-development",
     image: {
       src: "/assets/main-tcl-img.png",
@@ -12,8 +12,8 @@ const projects = [
     },
   },
   {
-    name: "The Clothing Loop",
-    category: "UI  Design",
+    name: "UI  Design",
+    category: "The Clothing Loop",
     slug: "clothing-loop-design",
     image: {
       src: "/assets/TCL-design.png",
@@ -21,8 +21,8 @@ const projects = [
     },
   },
   {
-    name: "A Collection of App Prototypes",
-    category: "Web Development",
+    name: "Web Development",
+    category: "A Collection of App Prototypes",
     slug: "collection-of-prototypes",
     image: {
       src: "/assets/rest-app.png",

@@ -1,4 +1,4 @@
-import { keyframes } from "@emotion/react";
+import { css, keyframes } from "@emotion/react";
 import styled from "@emotion/styled";
 import theme from "../../theme";
 
@@ -9,6 +9,7 @@ type ListContainer = {
 type Item = {
   delay?: string;
   isActive: boolean;
+  isBurgerMenu: boolean;
 };
 
 const fadeInFromTop = keyframes`
@@ -32,8 +33,13 @@ export const ListContainer = styled.ul<ListContainer>`
 export const Item = styled.li<Item>`
   display: inline-block;
   position: relative;
-  opacity: 0;
-  animation: ${fadeInFromTop} 0.6s ease forwards;
+  opacity: ${(props) => (props.isBurgerMenu ? "1" : "0")};
+  animation: ${(props) =>
+    !props.isBurgerMenu
+      ? css`
+          ${fadeInFromTop} 0.6s ease forwards
+        `
+      : "none"};
   animation-delay: ${(props) => `calc(${props.delay || "0s"} + 1s)`};
 
   a {
@@ -57,4 +63,4 @@ export const Item = styled.li<Item>`
       transform: translateY(-50%) rotate(-10deg);
     }
   }
-`;
+}`;

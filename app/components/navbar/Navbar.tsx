@@ -2,11 +2,13 @@ import React from "react";
 import { Item, ListContainer } from "./Navbar.styles";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 type Item = {
   name: string;
   href: string;
   isTargetBlank: boolean;
+  iconPath?: string;
 };
 
 type PopsType = {
@@ -21,17 +23,24 @@ const Navbar = (props: PopsType) => {
 
   return (
     <ListContainer>
-      {items.map((item, i) => (
+      {items.map(({ href, isTargetBlank, name, iconPath }, i) => (
         <Item
+          isBurgerMenu
           key={i}
-          isActive={item.href === currentPath}
+          isActive={href === currentPath}
           delay={`${i * 0.3}s`}
         >
-          <Link
-            href={item.href}
-            target={item.isTargetBlank ? "_blank" : "_self"}
-          >
-            {item.name}
+          <Link href={href} target={isTargetBlank ? "_blank" : "_self"}>
+            {iconPath ? (
+              <Image
+                src={iconPath}
+                width={30}
+                height={30}
+                alt={`${name}-logo`}
+              />
+            ) : (
+              <> {name}</>
+            )}
           </Link>
         </Item>
       ))}

@@ -1,9 +1,11 @@
 import styled from "@emotion/styled";
+import theme from "../../theme";
 
 export const Wrapper = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
+  background-color: #fcfdfc;
 `;
 export const ProjectWrapper = styled.div`
   padding-block: 3rem;
@@ -44,6 +46,10 @@ export const ImageWrapper = styled.div`
 
 export const TextWrapper = styled.div`
   padding: 50px 50px;
+  color: ${theme.colors.backgroundColor};
+  position: relative;
+  display: flex;
+  flex-direction: column;
 
   h3 {
     text-transform: uppercase;
@@ -59,6 +65,12 @@ export const TextWrapper = styled.div`
     opacity: 1;
     display: inline-block;
     text-transform: uppercase;
+  }
+
+  svg {
+    align-self: end;
+    width: 6.25rem;
+    height: auto;
   }
 
   @media (max-width: 769px) {

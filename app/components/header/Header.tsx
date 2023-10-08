@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import BurgerMenu from "../burgerMenu/BurgerMenu";
 import Navbar from "../navbar/Navbar";
-import { StyledHeader } from "./Header.styles";
+import { StyledHeader, StyledHeading } from "./Header.styles";
 
 const Items = [
   {
@@ -9,11 +9,6 @@ const Items = [
     href: "/",
     isTargetBlank: false,
   },
-  // TODO: add about page with content
-  // {
-  //   name: "about",
-  //   href: "/about",
-  // },
   {
     name: "projects",
     href: "/projects",
@@ -26,7 +21,7 @@ const Items = [
   },
 ];
 
-const Header = () => {
+const Header = ({ currentPath }) => {
   const ref = useRef<HTMLElement | null>(null);
   const [width, setWidth] = useState(0);
 
@@ -64,11 +59,15 @@ const Header = () => {
   }, []);
 
   const isMobile = width <= 768;
+  const isHomePage = currentPath == "/";
 
   return (
-    <StyledHeader ref={ref}>
+    <StyledHeader ref={ref} showBoxShadow={!isHomePage}>
       {isMobile ? (
-        <BurgerMenu items={Items} />
+        <>
+          <BurgerMenu items={Items} />
+          {!isHomePage && <StyledHeading>Giulia Mummolo</StyledHeading>}
+        </>
       ) : (
         <>
           <hr />

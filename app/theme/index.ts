@@ -13,7 +13,6 @@ const theme: CustomTheme = {
     lilac: "#d5adfb",
     backgroundColor: "#2b49f4",
     textColor: "#f68790",
-    white: "#fcfdfc",
     salmon: "#ff5962",
   },
   fonts: {

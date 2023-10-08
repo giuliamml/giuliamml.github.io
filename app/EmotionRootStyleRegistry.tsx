@@ -8,8 +8,10 @@ import createCache from "@emotion/cache";
 import { ThemeProvider } from "./ThemeProvider";
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
+import { usePathname } from "next/navigation";
 
 export default function RootStyleRegistry({ children }: { children }) {
+  const currentPath = usePathname();
   const [{ cache, flush }] = useState(() => {
     const cache = createCache({ key: "my" });
     cache.compat = true;
@@ -53,7 +55,7 @@ export default function RootStyleRegistry({ children }: { children }) {
     <CacheProvider value={cache}>
       <ThemeProvider>
         <GlobalStyles />
-        <Header />
+        <Header currentPath={currentPath}/>
         {children}
         <Footer />
       </ThemeProvider>

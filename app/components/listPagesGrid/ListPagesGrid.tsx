@@ -8,7 +8,7 @@ import {
   TextWrapper,
   Wrapper,
 } from "./ListPagesGrid.styles";
-import ArrowSVG from "../arrowSVG/ArrowSVG";
+import ArrowSVG from "./assets/ArrowSVG";
 import Link from "next/link";
 
 const ListPagesGrid = (props) => {

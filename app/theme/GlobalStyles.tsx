@@ -26,6 +26,11 @@ export const GlobalStyles = () => {
           src: url("/fonts/PPMonumentExtended-Regular.otf") format("truetype");
         }
 
+        @font-face {
+          font-family: "Metropolis";
+          src: url("/fonts/Metropolis-Regular.otf") format("truetype");
+        }
+
         * {
           box-sizing: border-box;
           margin: 0;
@@ -39,8 +44,7 @@ export const GlobalStyles = () => {
           overflow-y: scroll;
           background-color: ${theme.colors.backgroundColor};
           font-size: 1rem;
-          //   font-family: "DM Sans", sans-serif;
-          font-family: "Messina Sans";
+          font-family: "Metropolis";
         }
 
         h1 {
