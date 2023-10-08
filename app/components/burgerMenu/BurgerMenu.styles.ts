@@ -12,6 +12,10 @@ export const BurgerMenuContainer = styled.div`
   top: 20px;
   left: 20px;
   position: absolute;
+
+  @media (min-width: 769px) {
+    display: none;
+  }
 `;
 
 export const IconWrapper = styled.button`
@@ -23,15 +27,6 @@ export const IconWrapper = styled.button`
     right: 20px;
     top: 20px;
   }
-`;
-
-const slideIn = keyframes`
-from {
-  transform: translateX(-100%);
-}
-to {
-  transform: translateX(0);
-}
 `;
 
 export const BurgerMenuItems = styled.div<BurgerMenuItemsType>`
