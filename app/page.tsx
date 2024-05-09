@@ -16,13 +16,13 @@ export default function Home() {
         within the Javascript ecosystem. I enjoy working in collaborative
         environments and solving challenges as a team.
         <br />
-        Currently, I work as Frontend Engineer @
+        Currently, I work as Frontend Engineer in the space indistry @
         <a
           className="company-link"
-          href="https://www.farfetchplatformsolutions.com/"
+          href="https://www.constellr.com/"
           target="_blank"
         >
-          FARFETCH.
+          Constellr 🛰️
         </a>
       </p>
     </MainContentDescriptionContainer>
