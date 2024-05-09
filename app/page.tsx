@@ -16,7 +16,7 @@ export default function Home() {
         within the Javascript ecosystem. I enjoy working in collaborative
         environments and solving challenges as a team.
         <br />
-        Currently, I work as Frontend Engineer in the space indistry @
+        Currently, I work as Frontend Engineer in the space industry @
         <a
           className="company-link"
           href="https://www.constellr.com/"
